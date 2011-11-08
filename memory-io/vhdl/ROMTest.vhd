@@ -41,17 +41,17 @@ ARCHITECTURE behavior OF ROMTest IS
  
     COMPONENT ROM
     PORT(
-         addressIn : IN  std_logic_vector(31 downto 0);
-         instrucOut : OUT  std_logic_vector(31 downto 0)
+         addressIn : IN  std_logic_vector(15 downto 0);
+         instrucOut : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal addressIn : std_logic_vector(31 downto 0) := (others => '0');
+   signal addressIn : std_logic_vector(15 downto 0) := (others => '0');
 
  	--Outputs
-   signal instrucOut : std_logic_vector(31 downto 0);
+   signal instrucOut : std_logic_vector(15 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -70,15 +70,15 @@ BEGIN
       wait for 100 ns;
 
       -- insert stimulus here 
-		addressIn <= "00000000000000000000000000000000";
+		addressIn <= "0000000000000000";
 		wait for 100 ns;
-		addressIn <= "00000000000000000000000000000001";
+		addressIn <= "0000000000000001";
 		wait for 100 ns;
-		addressIn <= "00000000000000000000000000000010";
+		addressIn <= "0000000000000010";
 		wait for 100 ns;
-		addressIn <= "00000000000000000000000000000011";
+		addressIn <= "0000000000000011";
 		wait for 100 ns;
-		addressIn <= "00000000000000000000000000000100";
+		addressIn <= "0000000000000100";
       wait;
    end process;
 

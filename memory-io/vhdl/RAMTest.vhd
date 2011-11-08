@@ -43,9 +43,9 @@ ARCHITECTURE behavior OF RAMTest IS
     PORT(
          clock : IN  std_logic;
          memWrite : IN  std_logic;
-         memAddress : IN  std_logic_vector(31 downto 0);
-         writeData : IN  std_logic_vector(31 downto 0);
-         readData : OUT  std_logic_vector(31 downto 0)
+         memAddress : IN  std_logic_vector(15 downto 0);
+         writeData : IN  std_logic_vector(15 downto 0);
+         readData : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
@@ -53,11 +53,11 @@ ARCHITECTURE behavior OF RAMTest IS
    --Inputs
    signal clock : std_logic := '0';
    signal memWrite : std_logic := '0';
-   signal memAddress : std_logic_vector(31 downto 0) := (others => '0');
-   signal writeData : std_logic_vector(31 downto 0) := (others => '0');
+   signal memAddress : std_logic_vector(15 downto 0) := (others => '0');
+   signal writeData : std_logic_vector(15 downto 0) := (others => '0');
 
  	--Outputs
-   signal readData : std_logic_vector(31 downto 0);
+   signal readData : std_logic_vector(15 downto 0);
 
    -- Clock period definitions
    constant clock_period : time := 10 ns;
@@ -93,30 +93,30 @@ BEGIN
 
       -- insert stimulus here 
 		memWrite <= '1';
-		memAddress <= "00000000000000000000000000000000";
-		writeData <= "11111111111111111111111111111111";
+		memAddress <= "0000000000000000";
+		writeData <= "1111111111111111";
 		
 		wait for clock_period;
 		
-		memAddress <= "00000000000000000000000000000001";
-		writeData <= "11111111111111111111111111111110";
+		memAddress <= "0000000000000001";
+		writeData <= "1111111111111110";
 		
 		wait for clock_period;
 		
 		memWrite <= '0';
-		memAddress <= "00000000000000000000000000000000";
+		memAddress <= "0000000000000000";
 		
 		wait for clock_period*10;
 		
-		memAddress <= "00000000000000000000000000000001";
+		memAddress <= "0000000000000001";
 		
 		wait for clock_period*10;
 		
-		memAddress <= "00000000000000000000000000000010";
+		memAddress <= "0000000000000010";
 		
 		wait for clock_period*10;
 		
-		memAddress <= "00000000000000000000000000000011";
+		memAddress <= "0000000000000011";
 		
       wait;
    end process;
