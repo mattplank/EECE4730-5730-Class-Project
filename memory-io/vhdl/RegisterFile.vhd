@@ -17,16 +17,16 @@ port ( 	clock	: 	in std_logic;
 	writeReg	: 	in std_logic_vector(5 downto 0);  
 	readReg1	: 	in std_logic_vector(5 downto 0);
 	readReg2	: 	in std_logic_vector(5 downto 0);
-	writeData	: 	in std_logic_vector(31 downto 0);
-	readData1	: 	out std_logic_vector(31 downto 0);
-	readData2	:	out std_logic_vector(31 downto 0)
+	writeData	: 	in std_logic_vector(15 downto 0);
+	readData1	: 	out std_logic_vector(15 downto 0);
+	readData2	:	out std_logic_vector(15 downto 0)
 );
 end reg_file;
 
 architecture behv of reg_file is			
 
   type reg_type is array (0 to 31) of 
-        std_logic_vector(31 downto 0);
+        std_logic_vector(15 downto 0);
   signal temp: reg_type;
 
 begin
@@ -34,7 +34,7 @@ begin
   write: process(clock, reset, writeReg, regWrite, writeData)
   begin
     if reset='1' then				-- high active
-        temp <= (temp'range => "00000000000000000000000000000000");
+        temp <= (temp'range => "0000000000000000");
     else
 		if (clock'event and clock = '0') then
 		  if regWrite='1' then
@@ -47,7 +47,7 @@ begin
   read1: process(clock, reset, readReg1)
   begin
     if reset='1' then
-		readData1 <= "00000000000000000000000000000000";
+		readData1 <= "0000000000000000";
     else								 
 	    readData1 <= temp(conv_integer(readReg1));
     end if;
@@ -56,7 +56,7 @@ begin
   read2: process(clock, reset, readReg2)
   begin
     if reset='1' then
-		readData2 <= "00000000000000000000000000000000";
+		readData2 <= "0000000000000000";
     else			 
 	    readData2 <= temp(conv_integer(readReg2));
     end if;

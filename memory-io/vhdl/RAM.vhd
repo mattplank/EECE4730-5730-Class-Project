@@ -32,16 +32,16 @@ use STD.TEXTIO.ALL;
 entity RAM is
 port ( 	clock	: 	in std_logic; 	
 	memWrite	: 	in std_logic;
-	memAddress : 	in std_logic_vector(31 downto 0); --memory address correct size?
-	writeData	: 	in std_logic_vector(31 downto 0);
-	readData : out std_logic_vector(31 downto 0)
+	memAddress : 	in std_logic_vector(15 downto 0); --memory address correct size?
+	writeData	: 	in std_logic_vector(15 downto 0);
+	readData : out std_logic_vector(15 downto 0)
 );
 end RAM;
 
 architecture Behavioral of RAM is
 
-  type RamType is array (0 to 31) of --words
-        std_logic_vector(31 downto 0); --bits
+  type RamType is array (0 to 15) of --words
+        std_logic_vector(15 downto 0); --bits
   
   -- Subprogram to read a text file into RAM     
 	impure function Load_RAM (RamFileName: in string) return RamType is
