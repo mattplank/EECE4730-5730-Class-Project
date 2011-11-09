@@ -31,15 +31,16 @@ use STD.TEXTIO.ALL;
 
 entity ROM is
 port (
-	addressIn : 	in std_logic_vector(15 downto 0);  
+	clock : in std_logic;
+	addressIn : 	in std_logic_vector(10 downto 0);  
 	instrucOut : out std_logic_vector(15 downto 0)
 );
 end ROM;
 
 architecture Behavioral of ROM is
 
-  type MemType is array (0 to 15) of --words
-        std_logic_vector(15 downto 0); --bits
+  type MemType is array (0 to 2047) of --stores 2^11 words
+        std_logic_vector(15 downto 0); --
   
   -- Subprogram to read a text file into RAM     
 	impure function Load_Mem (MemFileName: in string) return MemType is
@@ -61,9 +62,11 @@ architecture Behavioral of ROM is
 
 begin	   
 	
-  readMem: process(addressIn)
+  readMem: process(clock, addressIn)
   begin
-		instrucOut <= temp(conv_integer(addressIn));
+      if (clock'event and clock = '0') then
+			instrucOut <= temp(conv_integer(addressIn));
+		end if;
   end process;
 
 end Behavioral;
