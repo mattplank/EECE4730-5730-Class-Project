@@ -1,0 +1,64 @@
+====================================================================================================
+Ian Tannehill and Manny Villa
+COEN 4730 - Computer Architecture
+Instruction set bit codes
+====================================================================================================
+
+Supported instructions:
+-NOOP
+-ADD
+-INC
+-SLT
+-ADDI
+-INCI
+-SLTI
+-BEQ
+-LW
+-SW
+-JAL
+-J
+-JR
+
+====================================================================================================
+
+NOOP
+0000  0000  0000  0000
+
+ADD   $Rd,  $Rs,  $Rt
+0001  ssss  tttt  dddd
+
+INC   $Rd,  $Rs
+0010  ssss  dddd  dddd
+
+SLT   $Rd,  $Rs,  $Rt
+0011  ssss  tttt  dddd
+
+ADDI  $Rd,  $Rs,  IMM
+0100  ssss  tttt  dddd
+
+INCI  $Rt,  IMM
+0101  tttt  tttt  iiii
+
+SLTI  $Rt,  $Rs,  IMM
+0110  ssss  tttt  iiii
+
+BEQ   $Rs,  $Rt,  IMM
+0111  ssss  tttt  iiii
+
+LW    $Rt,  IMM   ($Rt)
+1000  ssss  tttt  iiii
+
+SW    $Rt,  IMM   ($Rt)
+1001  ssss  tttt  iiii
+
+JAL   IMM
+1010  iiii  iiii  iiii
+
+J	  IMM
+1011  iiii  iiii  iiii
+
+JR    $Rs
+1100  ssss  0000  0000
+
+====================================================================================================
+
