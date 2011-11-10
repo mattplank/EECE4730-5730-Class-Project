@@ -1,0 +1,27 @@
+====================================================================================================
+Ian Tannehill and Manny Villa
+COEN 4730 - Computer Architecture
+Initialization Program
+====================================================================================================
+Initialization 
+
+Assumptions: 
+1 - The program counter is hardware initialized to zero when the processor first gets power.
+2 - The start of this initialization program is located at the zeroth index in the instruction 
+	memory (ROM)
+
+00 ADD	$zero,  $zero,  $s0
+01 ADD	$zero,  $zero,  $s1
+02 ADD	$zero,  $zero,  $s2
+03 ADD	$zero,  $zero,  $s3
+04 ADD	$zero,  $zero,  $s4
+05 ADD	$zero,  $zero,  $s5
+06 ADD	$zero,  $zero,  $s6
+07 ADD	$zero,  $zero,  $t0
+08 ADD	$zero,  $zero,  $t1
+09 ADD	$zero,  $zero,  $a0
+10 ADD	$zero,  $zero,  $a1
+11 ADD	$zero,  $zero,  $vo
+12 ADD	$zero,  $zero,  $ra
+13 J	START_OF_PROGRAM
+
