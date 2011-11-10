@@ -44,9 +44,9 @@ ARCHITECTURE behavior OF reg_file_test IS
          clock : IN  std_logic;
          reset : IN  std_logic;
          regWrite : IN  std_logic;
-         writeReg : IN  std_logic_vector(5 downto 0);
-         readReg1 : IN  std_logic_vector(5 downto 0);
-         readReg2 : IN  std_logic_vector(5 downto 0);
+         writeReg : IN  std_logic_vector(3 downto 0);
+         readReg1 : IN  std_logic_vector(3 downto 0);
+         readReg2 : IN  std_logic_vector(3 downto 0);
          writeData : IN  std_logic_vector(15 downto 0);
          readData1 : OUT  std_logic_vector(15 downto 0);
          readData2 : OUT  std_logic_vector(15 downto 0)
@@ -58,9 +58,9 @@ ARCHITECTURE behavior OF reg_file_test IS
    signal clock : std_logic := '0';
    signal reset : std_logic := '0';
    signal regWrite : std_logic := '0';
-   signal writeReg : std_logic_vector(5 downto 0) := (others => '0');
-   signal readReg1 : std_logic_vector(5 downto 0) := (others => '0');
-   signal readReg2 : std_logic_vector(5 downto 0) := (others => '0');
+   signal writeReg : std_logic_vector(3 downto 0) := (others => '0');
+   signal readReg1 : std_logic_vector(3 downto 0) := (others => '0');
+   signal readReg2 : std_logic_vector(3 downto 0) := (others => '0');
    signal writeData : std_logic_vector(15 downto 0) := (others => '0');
 
  	--Outputs
@@ -110,19 +110,19 @@ BEGIN
 		
 		reset <= '0';
 		regWrite <= '1';
-		writeReg <= "000001";
+		writeReg <= "0001";
 		writeData <= "0000000000000001";
 		
 		wait for clock_period;
 		
-		writeReg <= "000010";
+		writeReg <= "0010";
 		writeData <= "1111111111111111";
 		
 		wait for clock_period;
 		
 		regWrite <= '0';
-		readReg1 <= "000001";
-		readReg2 <= "000010";
+		readReg1 <= "0001";
+		readReg2 <= "0010";
 		
       wait;
    end process;

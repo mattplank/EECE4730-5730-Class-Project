@@ -32,7 +32,7 @@ use STD.TEXTIO.ALL;
 entity RAM is
 port ( 	clock	: 	in std_logic; 	
 	memWrite	: 	in std_logic;
-	memAddress : 	in std_logic_vector(15 downto 0); --memory address correct size?
+	memAddress : 	in std_logic_vector(12 downto 0); --memory address correct size?
 	writeData	: 	in std_logic_vector(15 downto 0);
 	readData : out std_logic_vector(15 downto 0)
 );
@@ -40,7 +40,7 @@ end RAM;
 
 architecture Behavioral of RAM is
 
-  type RamType is array (0 to 15) of --words
+  type RamType is array (0 to 8191) of --words
         std_logic_vector(15 downto 0); --bits
   
   -- Subprogram to read a text file into RAM     

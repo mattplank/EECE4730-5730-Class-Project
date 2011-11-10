@@ -14,9 +14,9 @@ entity reg_file is
 port ( 	clock	: 	in std_logic; 	
 	reset	: 	in std_logic;
 	regWrite	: 	in std_logic;
-	writeReg	: 	in std_logic_vector(5 downto 0);  
-	readReg1	: 	in std_logic_vector(5 downto 0);
-	readReg2	: 	in std_logic_vector(5 downto 0);
+	writeReg	: 	in std_logic_vector(3 downto 0);  
+	readReg1	: 	in std_logic_vector(3 downto 0);
+	readReg2	: 	in std_logic_vector(3 downto 0);
 	writeData	: 	in std_logic_vector(15 downto 0);
 	readData1	: 	out std_logic_vector(15 downto 0);
 	readData2	:	out std_logic_vector(15 downto 0)
@@ -25,7 +25,7 @@ end reg_file;
 
 architecture behv of reg_file is			
 
-  type reg_type is array (0 to 31) of 
+  type reg_type is array (0 to 15) of 
         std_logic_vector(15 downto 0);
   signal temp: reg_type;
 
