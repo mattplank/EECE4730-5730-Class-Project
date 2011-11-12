@@ -40,7 +40,7 @@ end RAM;
 
 architecture Behavioral of RAM is
 
-  type RamType is array (0 to 8191) of --words
+  type RamType is array (0 to 15) of --words
         std_logic_vector(15 downto 0); --bits
   
   -- Subprogram to read a text file into RAM     
