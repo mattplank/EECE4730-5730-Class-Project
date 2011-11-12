@@ -1,0 +1,34 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Users/7206toellnm/Desktop/SCC/SCC.ise -intstyle ise -incremental -lib
+uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o
+SccTest_isim_beh.exe -prj SccTest_beh.prj -top SccTest -top glbl
+Determining compilation order of HDL files
+Analyzing Verilog file SccTest.tfw
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Analyzing VHDL file SingleCycleStuff.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.control into
+c:/users/7206toellnm/desktop/scc/isim/work/control.vdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 111824 Kb
+Fuse CPU Usage: 249 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling module glbl
+Compiling module SccTest
+Compiling architecture behv of entity control
+Compiled 6 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable SccTest_isim_beh.exe
+Fuse Memory Usage: 113212 Kb
+Fuse CPU Usage: 295 ms

@@ -1,0 +1,7 @@
+select figure at 2708 3646 35 -branches -sn=1
+select figure at 2700 3637 35 -branches -sn=1
+select figure at 1468 2624 35 -branches -sn=1
+select figure at 1460 2615 35 -branches -sn=1
+select figure at 3857 4248 28 -branches -sn=1
+select all in 3166 4060 3850 4241 -branches -enclosed -noattrwin -sn=1
+select figure at 4114 843 35 -branches -toggle -sn=1

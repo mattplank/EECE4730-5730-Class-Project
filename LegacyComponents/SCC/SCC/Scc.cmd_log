@@ -1,0 +1,5 @@
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/SCC/Scc.sch" Scc.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/SCC/Scc.sch" Scc.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/SCC/Scc.sch" Scc.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "F:/Design Project 2/XilinxCode/SCC/SCC/Scc.sch" Scc.vf
+xst -ise "F:/Design Project 2/XilinxCode/SCC/SCC/SCC.ise" -intstyle ise -ifn "F:/Design Project 2/XilinxCode/SCC/SCC/Scc.xst" -ofn "F:/Design Project 2/XilinxCode/SCC/SCC/Scc.syr"

@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/7206toellnm/Desktop/SCC/SingleCycleStuff.vhd 2011/04/04.02:18:25 K.39
+EN work/Control 1301901509 \
+      FL C:/Users/7206toellnm/Desktop/SCC/SingleCycleStuff.vhd \
+      PB ieee/std_logic_1164 1217055545 PB ieee/std_logic_arith 1217055546 \
+      PB ieee/STD_LOGIC_UNSIGNED 1217055547
+AR work/Control/behv 1301901510 \
+      FL C:/Users/7206toellnm/Desktop/SCC/SingleCycleStuff.vhd EN work/Control 1301901509

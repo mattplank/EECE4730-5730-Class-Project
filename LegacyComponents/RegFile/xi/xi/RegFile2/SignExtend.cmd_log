@@ -1,0 +1,6 @@
+xst -ise "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/RegFile2.ise" -intstyle ise -ifn "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/SignExtend.xst" -ofn "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/SignExtend.syr"
+ngdbuild -ise "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/RegFile2.ise" -intstyle ise -dd _ngo  -i -p xa9500xl "SignExtend.ngc" SignExtend.ngd
+cpldfit -ise "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/RegFile2.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SignExtend.ngd
+XSLTProcess -ise "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/RegFile2.ise" SignExtend_build.xml
+tsim -ise "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/RegFile2.ise" -intstyle ise SignExtend SignExtend.nga
+taengine -ise "F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/RegFile2.ise" -intstyle ise -f SignExtend -w --format html1 -l F:/Design Project 2/XilinxCode/RegFile/xi/xi/RegFile2/SignExtend_html/tim/timing_report.htm

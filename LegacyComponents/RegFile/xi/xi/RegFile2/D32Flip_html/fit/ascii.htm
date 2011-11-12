@@ -1,0 +1,512 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version K.39                              Xilinx Inc.
+                                  Fitter Report
+Design Name: D32Flip                             Date:  4- 4-2011,  0:24AM
+Device Used: XA9572XL-15-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+32 /72  ( 44%) 32  /360  (  9%) 32 /216 ( 15%)   32 /72  ( 44%) 65 /72  ( 90%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           8/18        8/54        8/90      17/18
+FB2           8/18        8/54        8/90      17/18
+FB3           8/18        8/54        8/90      14/18
+FB4           8/18        8/54        8/90      17/18
+             -----       -----       -----      -----    
+             32/72       32/216      32/360     65/72 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Signal 'clock' mapped onto global clock net GCK1.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   32          32    |  I/O              :    59      66
+Output        :   32          32    |  GCK/IO           :     3       3
+Bidirectional :    0           0    |  GTS/IO           :     2       2
+GCK           :    1           1    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     65          65
+
+** Power Data **
+
+There are 0 macrocells in high performance mode (MCHP).
+There are 32 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+*************************  Summary of Mapped Logic  ************************
+
+** 32 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+DOUT<12>            1     1     FB1_2   13   I/O     O       LOW  FAST RESET
+DOUT<13>            1     1     FB1_4   20   I/O     O       LOW  FAST RESET
+DOUT<14>            1     1     FB1_6   15   I/O     O       LOW  FAST RESET
+DOUT<15>            1     1     FB1_8   17   I/O     O       LOW  FAST RESET
+DOUT<16>            1     1     FB1_10  28   I/O     O       LOW  FAST RESET
+DOUT<17>            1     1     FB1_13  36   I/O     O       LOW  FAST RESET
+DOUT<18>            1     1     FB1_16  39   I/O     O       LOW  FAST RESET
+DOUT<19>            1     1     FB1_18  40   I/O     O       LOW  FAST RESET
+DOUT<22>            1     1     FB2_2   94   I/O     O       LOW  FAST RESET
+DOUT<23>            1     1     FB2_4   93   I/O     O       LOW  FAST RESET
+DOUT<24>            1     1     FB2_6   96   I/O     O       LOW  FAST RESET
+DOUT<25>            1     1     FB2_8   97   I/O     O       LOW  FAST RESET
+DOUT<26>            1     1     FB2_12  6    I/O     O       LOW  FAST RESET
+DOUT<27>            1     1     FB2_14  9    I/O     O       LOW  FAST RESET
+DOUT<28>            1     1     FB2_16  10   I/O     O       LOW  FAST RESET
+DOUT<29>            1     1     FB2_18  92   I/O     O       LOW  FAST RESET
+DOUT<31>            1     1     FB3_1   41   I/O     O       LOW  FAST RESET
+DOUT<3>             1     1     FB3_4   50   I/O     O       LOW  FAST RESET
+DOUT<4>             1     1     FB3_6   53   I/O     O       LOW  FAST RESET
+DOUT<5>             1     1     FB3_8   37   I/O     O       LOW  FAST RESET
+DOUT<6>             1     1     FB3_10  60   I/O     O       LOW  FAST RESET
+DOUT<7>             1     1     FB3_12  61   I/O     O       LOW  FAST RESET
+DOUT<8>             1     1     FB3_14  55   I/O     O       LOW  FAST RESET
+DOUT<9>             1     1     FB3_16  64   I/O     O       LOW  FAST RESET
+DOUT<0>             1     1     FB4_1   65   I/O     O       LOW  FAST RESET
+DOUT<10>            1     1     FB4_4   72   I/O     O       LOW  FAST RESET
+DOUT<11>            1     1     FB4_6   76   I/O     O       LOW  FAST RESET
+DOUT<1>             1     1     FB4_8   70   I/O     O       LOW  FAST RESET
+DOUT<20>            1     1     FB4_10  81   I/O     O       LOW  FAST RESET
+DOUT<21>            1     1     FB4_12  82   I/O     O       LOW  FAST RESET
+DOUT<2>             1     1     FB4_14  78   I/O     O       LOW  FAST RESET
+DOUT<30>            1     1     FB4_16  86   I/O     O       LOW  FAST RESET
+
+** 33 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+DIN<18>             FB1_1   16   I/O     I
+DIN<3>              FB1_3   18   I/O     I
+DIN<31>             FB1_5   14   I/O     I
+DIN<24>             FB1_7   25   I/O     I
+clock               FB1_9   22~  GCK/I/O GCK
+DIN<20>             FB1_11  23   GCK/I/O I
+DIN<25>             FB1_14  27   GCK/I/O I
+DIN<2>              FB1_15  29   I/O     I
+DIN<7>              FB1_17  30   I/O     I
+DIN<10>             FB2_1   87   I/O     I
+DIN<21>             FB2_3   91   I/O     I
+DIN<14>             FB2_5   95   I/O     I
+DIN<30>             FB2_7   3    GTS/I/O I
+DIN<11>             FB2_9   99   GSR/I/O I
+DIN<22>             FB2_10  1    I/O     I
+DIN<12>             FB2_11  4    GTS/I/O I
+DIN<15>             FB2_13  8    I/O     I
+DIN<16>             FB2_17  12   I/O     I
+DIN<27>             FB3_7   54   I/O     I
+DIN<5>              FB3_11  52   I/O     I
+DIN<6>              FB3_13  63   I/O     I
+DIN<23>             FB3_15  56   I/O     I
+DIN<19>             FB3_17  58   I/O     I
+DIN<4>              FB3_18  59   I/O     I
+DIN<29>             FB4_2   67   I/O     I
+DIN<1>              FB4_5   68   I/O     I
+DIN<8>              FB4_7   77   I/O     I
+DIN<17>             FB4_9   66   I/O     I
+DIN<13>             FB4_11  74   I/O     I
+DIN<26>             FB4_13  85   I/O     I
+DIN<0>              FB4_15  89   I/O     I
+DIN<9>              FB4_17  90   I/O     I
+DIN<28>             FB4_18  79   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               8/46
+Number of signals used by logic mapping into function block:  8
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1   16    I/O     I
+DOUT<12>              1       0     0   4     FB1_2   13    I/O     O
+(unused)              0       0     0   5     FB1_3   18    I/O     I
+DOUT<13>              1       0     0   4     FB1_4   20    I/O     O
+(unused)              0       0     0   5     FB1_5   14    I/O     I
+DOUT<14>              1       0     0   4     FB1_6   15    I/O     O
+(unused)              0       0     0   5     FB1_7   25    I/O     I
+DOUT<15>              1       0     0   4     FB1_8   17    I/O     O
+(unused)              0       0     0   5     FB1_9   22    GCK/I/O GCK
+DOUT<16>              1       0     0   4     FB1_10  28    I/O     O
+(unused)              0       0     0   5     FB1_11  23    GCK/I/O I
+(unused)              0       0     0   5     FB1_12  33    I/O     
+DOUT<17>              1       0     0   4     FB1_13  36    I/O     O
+(unused)              0       0     0   5     FB1_14  27    GCK/I/O I
+(unused)              0       0     0   5     FB1_15  29    I/O     I
+DOUT<18>              1       0     0   4     FB1_16  39    I/O     O
+(unused)              0       0     0   5     FB1_17  30    I/O     I
+DOUT<19>              1       0     0   4     FB1_18  40    I/O     O
+
+Signals Used by Logic in Function Block
+  1: DIN<12>            4: DIN<15>            7: DIN<18> 
+  2: DIN<13>            5: DIN<16>            8: DIN<19> 
+  3: DIN<14>            6: DIN<17>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DOUT<12>             X....................................... 1
+DOUT<13>             .X...................................... 1
+DOUT<14>             ..X..................................... 1
+DOUT<15>             ...X.................................... 1
+DOUT<16>             ....X................................... 1
+DOUT<17>             .....X.................................. 1
+DOUT<18>             ......X................................. 1
+DOUT<19>             .......X................................ 1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               8/46
+Number of signals used by logic mapping into function block:  8
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB2_1   87    I/O     I
+DOUT<22>              1       0     0   4     FB2_2   94    I/O     O
+(unused)              0       0     0   5     FB2_3   91    I/O     I
+DOUT<23>              1       0     0   4     FB2_4   93    I/O     O
+(unused)              0       0     0   5     FB2_5   95    I/O     I
+DOUT<24>              1       0     0   4     FB2_6   96    I/O     O
+(unused)              0       0     0   5     FB2_7   3     GTS/I/O I
+DOUT<25>              1       0     0   4     FB2_8   97    I/O     O
+(unused)              0       0     0   5     FB2_9   99    GSR/I/O I
+(unused)              0       0     0   5     FB2_10  1     I/O     I
+(unused)              0       0     0   5     FB2_11  4     GTS/I/O I
+DOUT<26>              1       0     0   4     FB2_12  6     I/O     O
+(unused)              0       0     0   5     FB2_13  8     I/O     I
+DOUT<27>              1       0     0   4     FB2_14  9     I/O     O
+(unused)              0       0     0   5     FB2_15  11    I/O     
+DOUT<28>              1       0     0   4     FB2_16  10    I/O     O
+(unused)              0       0     0   5     FB2_17  12    I/O     I
+DOUT<29>              1       0     0   4     FB2_18  92    I/O     O
+
+Signals Used by Logic in Function Block
+  1: DIN<22>            4: DIN<25>            7: DIN<28> 
+  2: DIN<23>            5: DIN<26>            8: DIN<29> 
+  3: DIN<24>            6: DIN<27>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DOUT<22>             X....................................... 1
+DOUT<23>             .X...................................... 1
+DOUT<24>             ..X..................................... 1
+DOUT<25>             ...X.................................... 1
+DOUT<26>             ....X................................... 1
+DOUT<27>             .....X.................................. 1
+DOUT<28>             ......X................................. 1
+DOUT<29>             .......X................................ 1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               8/46
+Number of signals used by logic mapping into function block:  8
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+DOUT<31>              1       0     0   4     FB3_1   41    I/O     O
+(unused)              0       0     0   5     FB3_2   32    I/O     
+(unused)              0       0     0   5     FB3_3   49    I/O     
+DOUT<3>               1       0     0   4     FB3_4   50    I/O     O
+(unused)              0       0     0   5     FB3_5   35    I/O     
+DOUT<4>               1       0     0   4     FB3_6   53    I/O     O
+(unused)              0       0     0   5     FB3_7   54    I/O     I
+DOUT<5>               1       0     0   4     FB3_8   37    I/O     O
+(unused)              0       0     0   5     FB3_9   42    I/O     
+DOUT<6>               1       0     0   4     FB3_10  60    I/O     O
+(unused)              0       0     0   5     FB3_11  52    I/O     I
+DOUT<7>               1       0     0   4     FB3_12  61    I/O     O
+(unused)              0       0     0   5     FB3_13  63    I/O     I
+DOUT<8>               1       0     0   4     FB3_14  55    I/O     O
+(unused)              0       0     0   5     FB3_15  56    I/O     I
+DOUT<9>               1       0     0   4     FB3_16  64    I/O     O
+(unused)              0       0     0   5     FB3_17  58    I/O     I
+(unused)              0       0     0   5     FB3_18  59    I/O     I
+
+Signals Used by Logic in Function Block
+  1: DIN<31>            4: DIN<5>             7: DIN<8> 
+  2: DIN<3>             5: DIN<6>             8: DIN<9> 
+  3: DIN<4>             6: DIN<7>           
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DOUT<31>             X....................................... 1
+DOUT<3>              .X...................................... 1
+DOUT<4>              ..X..................................... 1
+DOUT<5>              ...X.................................... 1
+DOUT<6>              ....X................................... 1
+DOUT<7>              .....X.................................. 1
+DOUT<8>              ......X................................. 1
+DOUT<9>              .......X................................ 1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               8/46
+Number of signals used by logic mapping into function block:  8
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+DOUT<0>               1       0     0   4     FB4_1   65    I/O     O
+(unused)              0       0     0   5     FB4_2   67    I/O     I
+(unused)              0       0     0   5     FB4_3   71    I/O     
+DOUT<10>              1       0     0   4     FB4_4   72    I/O     O
+(unused)              0       0     0   5     FB4_5   68    I/O     I
+DOUT<11>              1       0     0   4     FB4_6   76    I/O     O
+(unused)              0       0     0   5     FB4_7   77    I/O     I
+DOUT<1>               1       0     0   4     FB4_8   70    I/O     O
+(unused)              0       0     0   5     FB4_9   66    I/O     I
+DOUT<20>              1       0     0   4     FB4_10  81    I/O     O
+(unused)              0       0     0   5     FB4_11  74    I/O     I
+DOUT<21>              1       0     0   4     FB4_12  82    I/O     O
+(unused)              0       0     0   5     FB4_13  85    I/O     I
+DOUT<2>               1       0     0   4     FB4_14  78    I/O     O
+(unused)              0       0     0   5     FB4_15  89    I/O     I
+DOUT<30>              1       0     0   4     FB4_16  86    I/O     O
+(unused)              0       0     0   5     FB4_17  90    I/O     I
+(unused)              0       0     0   5     FB4_18  79    I/O     I
+
+Signals Used by Logic in Function Block
+  1: DIN<0>             4: DIN<1>             7: DIN<2> 
+  2: DIN<10>            5: DIN<20>            8: DIN<30> 
+  3: DIN<11>            6: DIN<21>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+DOUT<0>              X....................................... 1
+DOUT<10>             .X...................................... 1
+DOUT<11>             ..X..................................... 1
+DOUT<1>              ...X.................................... 1
+DOUT<20>             ....X................................... 1
+DOUT<21>             .....X.................................. 1
+DOUT<2>              ......X................................. 1
+DOUT<30>             .......X................................ 1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+FDCPE_DOUT0: FDCPE port map (DOUT(0),DIN(0),clock,'0','0');
+
+FDCPE_DOUT1: FDCPE port map (DOUT(1),DIN(1),clock,'0','0');
+
+FDCPE_DOUT2: FDCPE port map (DOUT(2),DIN(2),clock,'0','0');
+
+FDCPE_DOUT3: FDCPE port map (DOUT(3),DIN(3),clock,'0','0');
+
+FDCPE_DOUT4: FDCPE port map (DOUT(4),DIN(4),clock,'0','0');
+
+FDCPE_DOUT5: FDCPE port map (DOUT(5),DIN(5),clock,'0','0');
+
+FDCPE_DOUT6: FDCPE port map (DOUT(6),DIN(6),clock,'0','0');
+
+FDCPE_DOUT7: FDCPE port map (DOUT(7),DIN(7),clock,'0','0');
+
+FDCPE_DOUT8: FDCPE port map (DOUT(8),DIN(8),clock,'0','0');
+
+FDCPE_DOUT9: FDCPE port map (DOUT(9),DIN(9),clock,'0','0');
+
+FDCPE_DOUT10: FDCPE port map (DOUT(10),DIN(10),clock,'0','0');
+
+FDCPE_DOUT11: FDCPE port map (DOUT(11),DIN(11),clock,'0','0');
+
+FDCPE_DOUT12: FDCPE port map (DOUT(12),DIN(12),clock,'0','0');
+
+FDCPE_DOUT13: FDCPE port map (DOUT(13),DIN(13),clock,'0','0');
+
+FDCPE_DOUT14: FDCPE port map (DOUT(14),DIN(14),clock,'0','0');
+
+FDCPE_DOUT15: FDCPE port map (DOUT(15),DIN(15),clock,'0','0');
+
+FDCPE_DOUT16: FDCPE port map (DOUT(16),DIN(16),clock,'0','0');
+
+FDCPE_DOUT17: FDCPE port map (DOUT(17),DIN(17),clock,'0','0');
+
+FDCPE_DOUT18: FDCPE port map (DOUT(18),DIN(18),clock,'0','0');
+
+FDCPE_DOUT19: FDCPE port map (DOUT(19),DIN(19),clock,'0','0');
+
+FDCPE_DOUT20: FDCPE port map (DOUT(20),DIN(20),clock,'0','0');
+
+FDCPE_DOUT21: FDCPE port map (DOUT(21),DIN(21),clock,'0','0');
+
+FDCPE_DOUT22: FDCPE port map (DOUT(22),DIN(22),clock,'0','0');
+
+FDCPE_DOUT23: FDCPE port map (DOUT(23),DIN(23),clock,'0','0');
+
+FDCPE_DOUT24: FDCPE port map (DOUT(24),DIN(24),clock,'0','0');
+
+FDCPE_DOUT25: FDCPE port map (DOUT(25),DIN(25),clock,'0','0');
+
+FDCPE_DOUT26: FDCPE port map (DOUT(26),DIN(26),clock,'0','0');
+
+FDCPE_DOUT27: FDCPE port map (DOUT(27),DIN(27),clock,'0','0');
+
+FDCPE_DOUT28: FDCPE port map (DOUT(28),DIN(28),clock,'0','0');
+
+FDCPE_DOUT29: FDCPE port map (DOUT(29),DIN(29),clock,'0','0');
+
+FDCPE_DOUT30: FDCPE port map (DOUT(30),DIN(30),clock,'0','0');
+
+FDCPE_DOUT31: FDCPE port map (DOUT(31),DIN(31),clock,'0','0');
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XA9572XL-15-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13               XA9572XL-15-TQ100              63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 DIN<22>                          51 VCC                           
+  2 NC                               52 DIN<5>                        
+  3 DIN<30>                          53 DOUT<4>                       
+  4 DIN<12>                          54 DIN<27>                       
+  5 VCC                              55 DOUT<8>                       
+  6 DOUT<26>                         56 DIN<23>                       
+  7 NC                               57 VCC                           
+  8 DIN<15>                          58 DIN<19>                       
+  9 DOUT<27>                         59 DIN<4>                        
+ 10 DOUT<28>                         60 DOUT<6>                       
+ 11 KPR                              61 DOUT<7>                       
+ 12 DIN<16>                          62 GND                           
+ 13 DOUT<12>                         63 DIN<6>                        
+ 14 DIN<31>                          64 DOUT<9>                       
+ 15 DOUT<14>                         65 DOUT<0>                       
+ 16 DIN<18>                          66 DIN<17>                       
+ 17 DOUT<15>                         67 DIN<29>                       
+ 18 DIN<3>                           68 DIN<1>                        
+ 19 NC                               69 GND                           
+ 20 DOUT<13>                         70 DOUT<1>                       
+ 21 GND                              71 KPR                           
+ 22 clock                            72 DOUT<10>                      
+ 23 DIN<20>                          73 NC                            
+ 24 NC                               74 DIN<13>                       
+ 25 DIN<24>                          75 GND                           
+ 26 VCC                              76 DOUT<11>                      
+ 27 DIN<25>                          77 DIN<8>                        
+ 28 DOUT<16>                         78 DOUT<2>                       
+ 29 DIN<2>                           79 DIN<28>                       
+ 30 DIN<7>                           80 NC                            
+ 31 GND                              81 DOUT<20>                      
+ 32 KPR                              82 DOUT<21>                      
+ 33 KPR                              83 TDO                           
+ 34 NC                               84 GND                           
+ 35 KPR                              85 DIN<26>                       
+ 36 DOUT<17>                         86 DOUT<30>                      
+ 37 DOUT<5>                          87 DIN<10>                       
+ 38 VCC                              88 VCC                           
+ 39 DOUT<18>                         89 DIN<0>                        
+ 40 DOUT<19>                         90 DIN<9>                        
+ 41 DOUT<31>                         91 DIN<21>                       
+ 42 KPR                              92 DOUT<29>                      
+ 43 NC                               93 DOUT<23>                      
+ 44 GND                              94 DOUT<22>                      
+ 45 TDI                              95 DIN<14>                       
+ 46 NC                               96 DOUT<24>                      
+ 47 TMS                              97 DOUT<25>                      
+ 48 TCK                              98 VCC                           
+ 49 KPR                              99 DIN<11>                       
+ 50 DOUT<3>                         100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

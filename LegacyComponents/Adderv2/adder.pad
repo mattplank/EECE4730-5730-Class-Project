@@ -1,0 +1,173 @@
+Release 8.1i - Fit K.39
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 4- 4-2011  9:17AM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  adder.ngd
+output file: adder.pad
+Part type:   xa95144xl
+Speed grade: -15
+Package:     cs144
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+A1|VCC||VCCIO||||||||||
+A10|A<26>|I|I/O|INPUT|||||||||
+A11|TIE||I/O||||||||||
+A12|TIE||I/O||||||||||
+A13|VCC||VCCIO||||||||||
+A2|B<11>|I|I/O/GSR|INPUT|||||||||
+A3|B<25>|I|I/O|INPUT|||||||||
+A4|A<15>|I|I/O|INPUT|||||||||
+A5|TIE||I/O||||||||||
+A6|B<22>|I|I/O|INPUT|||||||||
+A7|Z<21>|O|I/O|OUTPUT|||||||||
+A8|A<21>|I|I/O|INPUT|||||||||
+A9|Z<2>|O|I/O|OUTPUT|||||||||
+B1|A<4>|I|I/O/GTS3|INPUT|||||||||
+B10|B<27>|I|I/O|INPUT|||||||||
+B11|B<31>|I|I/O|INPUT|||||||||
+B12|GND||GND||||||||||
+B13|B<12>|I|I/O|INPUT|||||||||
+B2|GND||GND||||||||||
+B3|VCC||VCCINT||||||||||
+B4|Z<22>|O|I/O|OUTPUT|||||||||
+B5|Z<20>|O|I/O|OUTPUT|||||||||
+B6|TIE||I/O||||||||||
+B7|A<7>|I|I/O|INPUT|||||||||
+B8|GND||GND||||||||||
+B9|A<20>|I|I/O|INPUT|||||||||
+C1|Z<11>|O|I/O|OUTPUT|||||||||
+C10|GND||GND||||||||||
+C11|Z<3>|O|I/O|OUTPUT|||||||||
+C12|A<31>|I|I/O|INPUT|||||||||
+C13|Z<0>|O|I/O|OUTPUT|||||||||
+C2|B<19>|I|I/O/GTS4|INPUT|||||||||
+C3|A<6>|I|I/O|INPUT|||||||||
+C4|B<18>|I|I/O|INPUT|||||||||
+C5|B<23>|I|I/O|INPUT|||||||||
+C6|Z<12>|O|I/O|OUTPUT|||||||||
+C7|VCC||VCCIO||||||||||
+C8|TDO||TDO||||||||||
+C9|B<5>|I|I/O|INPUT|||||||||
+D1|VCC||VCCINT||||||||||
+D10|Z<28>|O|I/O|OUTPUT|||||||||
+D11|A<12>|I|I/O|INPUT|||||||||
+D12|A<3>|I|I/O|INPUT|||||||||
+D13|B<24>|I|I/O|INPUT|||||||||
+D2|Z<13>|O|I/O|OUTPUT|||||||||
+D3|B<0>|I|I/O/GTS2|INPUT|||||||||
+D4|B<1>|I|I/O/GTS1|INPUT|||||||||
+D5|B<7>|I|I/O|INPUT|||||||||
+D6|A<25>|I|I/O|INPUT|||||||||
+D7|Z<23>|O|I/O|OUTPUT|||||||||
+D8|A<5>|I|I/O|INPUT|||||||||
+D9|B<17>|I|I/O|INPUT|||||||||
+E1|Z<9>|O|I/O|OUTPUT|||||||||
+E10|B<21>|I|I/O|INPUT|||||||||
+E11|GND||GND||||||||||
+E12|Z<8>|O|I/O|OUTPUT|||||||||
+E13|A<0>|I|I/O|INPUT|||||||||
+E2|A<23>|I|I/O|INPUT|||||||||
+E3|A<22>|I|I/O|INPUT|||||||||
+E4|A<1>|I|I/O|INPUT|||||||||
+F1|O1|O|I/O|OUTPUT|||||||||
+F10|TIE||I/O||||||||||
+F11|TIE||I/O||||||||||
+F12|B<3>|I|I/O|INPUT|||||||||
+F13|Z<1>|O|I/O|OUTPUT|||||||||
+F2|Z<10>|O|I/O|OUTPUT|||||||||
+F3|A<11>|I|I/O|INPUT|||||||||
+F4|B<28>|I|I/O|INPUT|||||||||
+G1|GND||GND||||||||||
+G10|A<9>|I|I/O|INPUT|||||||||
+G11|O0|O|I/O|OUTPUT|||||||||
+G12|GND||GND||||||||||
+G13|GND||GND||||||||||
+G2|TIE||I/O||||||||||
+G3|Z<15>|O|I/O|OUTPUT|||||||||
+G4|A<17>|I|I/O|INPUT|||||||||
+H1|Z<31>|O|I/O|OUTPUT|||||||||
+H10|TIE||I/O||||||||||
+H11|A<27>|I|I/O|INPUT|||||||||
+H12|TIE||I/O||||||||||
+H13|B<20>|I|I/O|INPUT|||||||||
+H2|TIE||I/O||||||||||
+H3|B<26>|I|I/O|INPUT|||||||||
+H4|Z<14>|O|I/O|OUTPUT|||||||||
+J1|A<19>|I|I/O|INPUT|||||||||
+J10|Z<4>|O|I/O|OUTPUT|||||||||
+J11|TIE||I/O||||||||||
+J12|Z<6>|O|I/O|OUTPUT|||||||||
+J13|VCC||VCCINT||||||||||
+J2|B<29>|I|I/O|INPUT|||||||||
+J3|B<30>|I|I/O|INPUT|||||||||
+J4|Z<30>|O|I/O|OUTPUT|||||||||
+K1|GND||GND||||||||||
+K10|A<2>|I|I/O|INPUT|||||||||
+K11|A<24>|I|I/O|INPUT|||||||||
+K12|Z<16>|O|I/O|OUTPUT|||||||||
+K13|TIE||I/O||||||||||
+K2|A<16>|I|I/O/GCK1|INPUT|||||||||
+K3|B<6>|I|I/O|INPUT|||||||||
+K4|TIE||I/O||||||||||
+K5|B<4>|I|I/O|INPUT|||||||||
+K6|Z<29>|O|I/O|OUTPUT|||||||||
+K7|TIE||I/O||||||||||
+K8|A<30>|I|I/O|INPUT|||||||||
+K9|Z<26>|O|I/O|OUTPUT|||||||||
+L1|B<2>|I|I/O/GCK2|INPUT|||||||||
+L10|TCK||TCK||||||||||
+L11|TIE||I/O||||||||||
+L12|A<14>|I|I/O|INPUT|||||||||
+L13|Z<7>|O|I/O|OUTPUT|||||||||
+L2|TIE||I/O||||||||||
+L3|TIE||I/O||||||||||
+L4|VCC||VCCINT||||||||||
+L5|B<15>|I|I/O|INPUT|||||||||
+L6|B<13>|I|I/O|INPUT|||||||||
+L7|VCC||VCCIO||||||||||
+L8|B<16>|I|I/O|INPUT|||||||||
+L9|TDI||TDI||||||||||
+M1|B<14>|I|I/O|INPUT|||||||||
+M10|Z<27>|O|I/O|OUTPUT|||||||||
+M11|TIE||I/O||||||||||
+M12|GND||GND||||||||||
+M13|A<29>|I|I/O|INPUT|||||||||
+M2|GND||GND||||||||||
+M3|Z<17>|O|I/O|OUTPUT|||||||||
+M4|Z<18>|O|I/O|OUTPUT|||||||||
+M5|GND||GND||||||||||
+M6|B<10>|I|I/O|INPUT|||||||||
+M7|A<8>|I|I/O|INPUT|||||||||
+M8|Z<24>|O|I/O|OUTPUT|||||||||
+M9|GND||GND||||||||||
+N1|VCC||VCCIO||||||||||
+N10|TMS||TMS||||||||||
+N11|A<28>|I|I/O|INPUT|||||||||
+N12|Z<5>|O|I/O|OUTPUT|||||||||
+N13|VCC||VCCIO||||||||||
+N2|A<18>|I|I/O/GCK3|INPUT|||||||||
+N3|B<9>|I|I/O|INPUT|||||||||
+N4|Z<19>|O|I/O|OUTPUT|||||||||
+N5|TIE||I/O||||||||||
+N6|Z<25>|O|I/O|OUTPUT|||||||||
+N7|A<10>|I|I/O|INPUT|||||||||
+N8|B<8>|I|I/O|INPUT|||||||||
+N9|A<13>|I|I/O|INPUT|||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

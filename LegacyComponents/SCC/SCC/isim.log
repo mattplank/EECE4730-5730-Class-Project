@@ -1,0 +1,53 @@
+Command line:
+   ./SccTest_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  29991
+
+Mon Apr 04 02:33:17 2011
+
+Total Line Count : 81
+
+ Elaboration Time: 0 sec
+
+ Current Memory Usage: 265.392 Meg
+
+ Total Signals          : 35
+ Total Nets             : 35
+ Total Signal Drivers   : 30
+ Total Blocks           : 6
+ Total Primitive Blocks : 2
+ Total Processes        : 25
+ Total Traceable Variables  : 37
+ Total Scalar Nets and Variables : 564
+ntrace select -o on -n /SccTest/RegDst 
+ntrace select -o on -n /SccTest/Jump 
+ntrace select -o on -n /SccTest/Branch 
+ntrace select -o on -n /SccTest/MemRead 
+ntrace select -o on -n /SccTest/MemtoReg 
+ntrace select -o on -n /SccTest/ALUOp1 
+ntrace select -o on -n /SccTest/ALUOp0 
+ntrace select -o on -n /SccTest/MemWrite 
+ntrace select -o on -n /SccTest/ALUSrc 
+ntrace select -o on -n /SccTest/RegWrite 
+ntrace select -o on -n /SccTest/PERIOD 
+ntrace select -o on -n /SccTest/DUTY_CYCLE 
+ntrace select -o on -n /SccTest/OFFSET 
+ntrace select -o on -n /SccTest/clock 
+ntrace select -o on -n /SccTest/A 
+ntrace select -o on -n /SccTest/B 
+ntrace select -o on -n /SccTest/C 
+ntrace select -o on -n /SccTest/D 
+ntrace select -o on -n /SccTest/E 
+ntrace select -o on -n /SccTest/F 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.140401 sec
+
+ Current Memory Usage: 279.941 Meg
+
+Mon Apr 04 02:33:58 2011
+

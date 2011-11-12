@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1_Adder1_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="adder1_adder1_sch_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/adder1_adder1_sch_tb/read_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder1_adder1_sch_tb/xlxn_10" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">xlxn_10</obj_property>
+      <obj_property name="ObjectShortName">xlxn_10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder1_adder1_sch_tb/xlxn_11" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">xlxn_11</obj_property>
+      <obj_property name="ObjectShortName">xlxn_11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder1_adder1_sch_tb/xlxn_12" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">xlxn_12</obj_property>
+      <obj_property name="ObjectShortName">xlxn_12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/adder1_adder1_sch_tb/shifted" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shifted[31:0]</obj_property>
+      <obj_property name="ObjectShortName">shifted[31:0]</obj_property>
+   </wvobject>
+</wave_config>

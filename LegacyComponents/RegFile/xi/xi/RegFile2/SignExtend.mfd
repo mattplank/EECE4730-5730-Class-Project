@@ -1,0 +1,259 @@
+MDF Database:  version 1.0
+MDF_INFO | SignExtend | XA9536XL-15-VQ44
+MACROCELL | 1 | 0 | DataIn_IBUF$BUF0
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<9> = DataIn;
+
+MACROCELL | 0 | 0 | DataIn_IBUF$BUF1
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<8> = DataIn;
+
+MACROCELL | 0 | 1 | DataIn_IBUF$BUF10
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<29> = DataIn;
+
+MACROCELL | 0 | 2 | DataIn_IBUF$BUF11
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<28> = DataIn;
+
+MACROCELL | 0 | 3 | DataIn_IBUF$BUF12
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<27> = DataIn;
+
+MACROCELL | 0 | 4 | DataIn_IBUF$BUF13
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<26> = DataIn;
+
+MACROCELL | 0 | 5 | DataIn_IBUF$BUF14
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<25> = DataIn;
+
+MACROCELL | 0 | 6 | DataIn_IBUF$BUF15
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<24> = DataIn;
+
+MACROCELL | 0 | 7 | DataIn_IBUF$BUF16
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<23> = DataIn;
+
+MACROCELL | 0 | 8 | DataIn_IBUF$BUF17
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<22> = DataIn;
+
+MACROCELL | 0 | 9 | DataIn_IBUF$BUF18
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<21> = DataIn;
+
+MACROCELL | 0 | 10 | DataIn_IBUF$BUF19
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<20> = DataIn;
+
+MACROCELL | 0 | 11 | DataIn_IBUF$BUF2
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<7> = DataIn;
+
+MACROCELL | 0 | 12 | DataIn_IBUF$BUF20
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<1> = DataIn;
+
+MACROCELL | 0 | 13 | DataIn_IBUF$BUF21
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<19> = DataIn;
+
+MACROCELL | 0 | 14 | DataIn_IBUF$BUF22
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<18> = DataIn;
+
+MACROCELL | 0 | 15 | DataIn_IBUF$BUF23
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<17> = DataIn;
+
+MACROCELL | 1 | 1 | DataIn_IBUF$BUF24
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<16> = DataIn;
+
+MACROCELL | 1 | 2 | DataIn_IBUF$BUF25
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<15> = DataIn;
+
+MACROCELL | 1 | 3 | DataIn_IBUF$BUF26
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<14> = DataIn;
+
+MACROCELL | 1 | 4 | DataIn_IBUF$BUF27
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<13> = DataIn;
+
+MACROCELL | 1 | 5 | DataIn_IBUF$BUF28
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<12> = DataIn;
+
+MACROCELL | 1 | 6 | DataIn_IBUF$BUF29
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<11> = DataIn;
+
+MACROCELL | 1 | 7 | DataIn_IBUF$BUF3
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<6> = DataIn;
+
+MACROCELL | 1 | 8 | DataIn_IBUF$BUF30
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<10> = DataIn;
+
+MACROCELL | 1 | 9 | DataIn_IBUF$BUF31
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<0> = DataIn;
+
+MACROCELL | 1 | 10 | DataIn_IBUF$BUF4
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<5> = DataIn;
+
+MACROCELL | 1 | 11 | DataIn_IBUF$BUF5
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<4> = DataIn;
+
+MACROCELL | 1 | 12 | DataIn_IBUF$BUF6
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<3> = DataIn;
+
+MACROCELL | 1 | 13 | DataIn_IBUF$BUF7
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<31> = DataIn;
+
+MACROCELL | 1 | 14 | DataIn_IBUF$BUF8
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<30> = DataIn;
+
+MACROCELL | 1 | 15 | DataIn_IBUF$BUF9
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | DataIn
+INPUTP | 1 | 32
+EQ | 1 | 
+   DataOut<2> = DataIn;
+
+PIN | DataIn | 64 | 0 | N/A | 32 | 32 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 15
+PIN | DataOut<9> | 536871040 | 0 | N/A | 6
+PIN | DataOut<8> | 536871040 | 0 | N/A | 7
+PIN | DataOut<29> | 536871040 | 0 | N/A | 8
+PIN | DataOut<28> | 536871040 | 0 | N/A | 10
+PIN | DataOut<27> | 536871040 | 0 | N/A | 9
+PIN | DataOut<26> | 536871040 | 0 | N/A | 11
+PIN | DataOut<25> | 536871040 | 0 | N/A | 13
+PIN | DataOut<24> | 536871040 | 0 | N/A | 12
+PIN | DataOut<23> | 536871040 | 0 | N/A | 14
+PIN | DataOut<22> | 536871040 | 0 | N/A | 16
+PIN | DataOut<21> | 536871040 | 0 | N/A | 17
+PIN | DataOut<20> | 536871040 | 0 | N/A | 18
+PIN | DataOut<7> | 536871040 | 0 | N/A | 19
+PIN | DataOut<1> | 536871040 | 0 | N/A | 23
+PIN | DataOut<19> | 536871040 | 0 | N/A | 24
+PIN | DataOut<18> | 536871040 | 0 | N/A | 25
+PIN | DataOut<17> | 536871040 | 0 | N/A | 27
+PIN | DataOut<16> | 536871040 | 0 | N/A | 5
+PIN | DataOut<15> | 536871040 | 0 | N/A | 3
+PIN | DataOut<14> | 536871040 | 0 | N/A | 4
+PIN | DataOut<13> | 536871040 | 0 | N/A | 1
+PIN | DataOut<12> | 536871040 | 0 | N/A | 47
+PIN | DataOut<11> | 536871040 | 0 | N/A | 46
+PIN | DataOut<6> | 536871040 | 0 | N/A | 45
+PIN | DataOut<10> | 536871040 | 0 | N/A | 44
+PIN | DataOut<0> | 536871040 | 0 | N/A | 43
+PIN | DataOut<5> | 536871040 | 0 | N/A | 42
+PIN | DataOut<4> | 536871040 | 0 | N/A | 41
+PIN | DataOut<3> | 536871040 | 0 | N/A | 37
+PIN | DataOut<31> | 536871040 | 0 | N/A | 35
+PIN | DataOut<30> | 536871040 | 0 | N/A | 34
+PIN | DataOut<2> | 536871040 | 0 | N/A | 33

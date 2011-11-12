@@ -1,0 +1,1280 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version K.39                              Xilinx Inc.
+                                  Fitter Report
+Design Name: adder                               Date:  4- 4-2011,  9:17AM
+Device Used: XA95144XL-15-CS144
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+65 /144 ( 45%) 258 /720  ( 36%) 136/432 ( 31%)   0  /144 (  0%) 98 /117 ( 84%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           7/18       20/54       34/90      13/15
+FB2           8/18       20/54       33/90      15/15*
+FB3          11/18       20/54       44/90      11/15
+FB4          11/18       20/54       39/90      13/15
+FB5           5/18       11/54       21/90      11/14
+FB6           3/18        7/54       10/90      11/13
+FB7           8/18       18/54       33/90      11/15
+FB8          12/18       20/54       44/90      13/15
+             -----       -----       -----      -----    
+             65/144     136/432     258/720     98/117
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   64          64    |  I/O              :    90     109
+Output        :   34          34    |  GCK/IO           :     3       3
+Bidirectional :    0           0    |  GTS/IO           :     4       4
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     98          98
+
+** Power Data **
+
+There are 0 macrocells in high performance mode (MCHP).
+There are 65 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+*************************  Summary of Mapped Logic  ************************
+
+** 34 Outputs **
+
+Signal                                                        Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                          Pts   Inps          No.  Type    Use     Mode Rate State
+O1                                                            6     5     FB1_2   F1   I/O     O       LOW  FAST 
+Z<15>                                                         4     4     FB1_5   G3   I/O     O       LOW  FAST 
+Z<31>                                                         4     4     FB1_8   H1   I/O     O       LOW  FAST 
+Z<14>                                                         3     3     FB1_11  H4   I/O     O       LOW  FAST 
+Z<30>                                                         3     3     FB1_15  J4   I/O     O       LOW  FAST 
+Z<11>                                                         4     4     FB2_4   C1   I/O     O       LOW  FAST 
+Z<13>                                                         4     4     FB2_10  D2   I/O     O       LOW  FAST 
+Z<9>                                                          4     4     FB2_13  E1   I/O     O       LOW  FAST 
+Z<10>                                                         3     3     FB2_17  F2   I/O     O       LOW  FAST 
+Z<17>                                                         4     4     FB3_1   M3   I/O     O       LOW  FAST 
+Z<19>                                                         4     4     FB3_4   N4   I/O     O       LOW  FAST 
+Z<18>                                                         3     3     FB3_11  M4   I/O     O       LOW  FAST 
+Z<29>                                                         4     4     FB3_14  K6   I/O     O       LOW  FAST 
+Z<21>                                                         4     4     FB4_2   A7   I/O     O       LOW  FAST 
+Z<23>                                                         4     4     FB4_5   D7   I/O     O       LOW  FAST 
+Z<12>                                                         3     3     FB4_9   C6   I/O     O       LOW  FAST 
+Z<20>                                                         3     3     FB4_12  B5   I/O     O       LOW  FAST 
+Z<22>                                                         3     3     FB4_15  B4   I/O     O       LOW  FAST 
+Z<25>                                                         4     4     FB5_2   N6   I/O     O       LOW  FAST 
+Z<27>                                                         4     4     FB5_7   M10  I/O     O       LOW  FAST 
+Z<24>                                                         3     3     FB5_11  M8   I/O     O       LOW  FAST 
+Z<26>                                                         3     3     FB5_15  K9   I/O     O       LOW  FAST 
+Z<3>                                                          4     4     FB6_2   C11  I/O     O       LOW  FAST 
+Z<28>                                                         3     3     FB6_8   D10  I/O     O       LOW  FAST 
+Z<2>                                                          3     3     FB6_12  A9   I/O     O       LOW  FAST 
+Z<5>                                                          4     4     FB7_2   N12  I/O     O       LOW  FAST 
+Z<7>                                                          4     4     FB7_6   L13  I/O     O       LOW  FAST 
+Z<16>                                                         3     3     FB7_10  K12  I/O     O       LOW  FAST 
+Z<4>                                                          3     3     FB7_13  J10  I/O     O       LOW  FAST 
+Z<6>                                                          3     3     FB7_16  J12  I/O     O       LOW  FAST 
+O0                                                            8     6     FB8_2   G11  I/O     O       LOW  FAST 
+Z<1>                                                          3     4     FB8_6   F13  I/O     O       LOW  FAST 
+Z<8>                                                          3     3     FB8_11  E12  I/O     O       LOW  FAST 
+Z<0>                                                          2     2     FB8_15  C13  I/O     O       LOW  FAST 
+
+** 31 Buried Nodes **
+
+Signal                                                        Total Total Loc     Pwr  Reg Init
+Name                                                          Pts   Inps          Mode State
+XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2                            7     5     FB1_1   LOW  
+XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2                          7     5     FB1_18  LOW  
+XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_              2     2     FB2_14  LOW  
+XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_              2     2     FB2_15  LOW  
+XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2        7     5     FB2_16  LOW  
+XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2                            7     5     FB2_18  LOW  
+XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_          2     2     FB3_10  LOW  
+XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_          2     2     FB3_12  LOW  
+XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_                2     2     FB3_13  LOW  
+XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_          2     2     FB3_15  LOW  
+XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2  7     5     FB3_16  LOW  
+XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2                          7     5     FB3_17  LOW  
+XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2        7     5     FB3_18  LOW  
+XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_              2     2     FB4_11  LOW  
+XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_              2     2     FB4_13  LOW  
+XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_            2     2     FB4_14  LOW  
+XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_                2     2     FB4_16  LOW  
+XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2      7     5     FB4_17  LOW  
+XLXI_2/C7/XLXI_2/C7_D2                                        7     5     FB4_18  LOW  
+XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2    7     5     FB5_18  LOW  
+XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_            2     2     FB7_15  LOW  
+XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2      7     5     FB7_17  LOW  
+XLXI_1/C7/XLXI_1/C7_D2                                        7     5     FB7_18  LOW  
+XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_            2     2     FB8_1   LOW  
+XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_            2     2     FB8_10  LOW  
+XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_                2     2     FB8_12  LOW  
+XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_                2     2     FB8_13  LOW  
+XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2  3     4     FB8_14  LOW  
+XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_     3     3     FB8_16  LOW  
+XLXN_4/XLXN_4_D242_                                           7     5     FB8_17  LOW  
+XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2    7     5     FB8_18  LOW  
+
+** 64 Inputs **
+
+Signal                                                        Loc     Pin  Pin     Pin     
+Name                                                                  No.  Type    Use     
+B<26>                                                         FB1_1   H3   I/O     I
+A<19>                                                         FB1_4   J1   I/O     I
+A<17>                                                         FB1_6   G4   I/O     I
+B<6>                                                          FB1_10  K3   I/O     I
+B<29>                                                         FB1_12  J2   I/O     I
+B<30>                                                         FB1_14  J3   I/O     I
+B<14>                                                         FB1_16  M1   I/O     I
+A<16>                                                         FB1_17  K2   GCK/I/O I
+A<6>                                                          FB2_1   C3   I/O     I
+B<11>                                                         FB2_2   A2   GSR/I/O I
+A<4>                                                          FB2_5   B1   GTS/I/O I
+B<19>                                                         FB2_6   C2   GTS/I/O I
+B<1>                                                          FB2_8   D4   GTS/I/O I
+B<0>                                                          FB2_9   D3   GTS/I/O I
+A<1>                                                          FB2_11  E4   I/O     I
+A<22>                                                         FB2_12  E3   I/O     I
+A<23>                                                         FB2_14  E2   I/O     I
+B<28>                                                         FB2_15  F4   I/O     I
+A<11>                                                         FB2_16  F3   I/O     I
+B<2>                                                          FB3_2   L1   GCK/I/O I
+B<15>                                                         FB3_7   L5   I/O     I
+A<18>                                                         FB3_8   N2   GCK/I/O I
+B<9>                                                          FB3_9   N3   I/O     I
+B<4>                                                          FB3_12  K5   I/O     I
+B<13>                                                         FB3_15  L6   I/O     I
+B<10>                                                         FB3_17  M6   I/O     I
+B<5>                                                          FB4_1   C9   I/O     I
+B<22>                                                         FB4_6   A6   I/O     I
+B<23>                                                         FB4_10  C5   I/O     I
+A<25>                                                         FB4_11  D6   I/O     I
+A<15>                                                         FB4_13  A4   I/O     I
+B<7>                                                          FB4_14  D5   I/O     I
+B<18>                                                         FB4_16  C4   I/O     I
+B<25>                                                         FB4_17  A3   I/O     I
+B<16>                                                         FB5_3   L8   I/O     I
+A<8>                                                          FB5_5   M7   I/O     I
+A<10>                                                         FB5_6   N7   I/O     I
+B<8>                                                          FB5_9   N8   I/O     I
+A<28>                                                         FB5_10  N11  I/O     I
+A<30>                                                         FB5_12  K8   I/O     I
+
+Signal                                                        Loc     Pin  Pin     Pin     
+Name                                                                  No.  Type    Use     
+A<13>                                                         FB5_14  N9   I/O     I
+B<31>                                                         FB6_4   B11  I/O     I
+A<26>                                                         FB6_9   A10  I/O     I
+B<27>                                                         FB6_10  B10  I/O     I
+A<20>                                                         FB6_11  B9   I/O     I
+A<5>                                                          FB6_14  D8   I/O     I
+A<21>                                                         FB6_15  A8   I/O     I
+B<17>                                                         FB6_16  D9   I/O     I
+A<7>                                                          FB6_17  B7   I/O     I
+A<14>                                                         FB7_3   L12  I/O     I
+A<29>                                                         FB7_5   M13  I/O     I
+A<2>                                                          FB7_7   K10  I/O     I
+A<24>                                                         FB7_8   K11  I/O     I
+A<27>                                                         FB7_14  H11  I/O     I
+B<20>                                                         FB7_17  H13  I/O     I
+A<0>                                                          FB8_4   E13  I/O     I
+A<9>                                                          FB8_5   G10  I/O     I
+B<3>                                                          FB8_8   F12  I/O     I
+B<24>                                                         FB8_10  D13  I/O     I
+B<21>                                                         FB8_12  E10  I/O     I
+A<12>                                                         FB8_13  D11  I/O     I
+A<3>                                                          FB8_14  D12  I/O     I
+B<12>                                                         FB8_16  B13  I/O     I
+A<31>                                                         FB8_17  C12  I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2
+                      7       2<-   0   0     FB1_1   H3    I/O     I
+O1                    6       2<- /\1   0     FB1_2   F1    I/O     O
+(unused)              0       0   /\2   3     FB1_3   G2    I/O     (b)
+(unused)              0       0     0   5     FB1_4   J1    I/O     I
+Z<15>                 4       0     0   1     FB1_5   G3    I/O     O
+(unused)              0       0     0   5     FB1_6   G4    I/O     I
+(unused)              0       0     0   5     FB1_7         (b)     
+Z<31>                 4       0     0   1     FB1_8   H1    I/O     O
+(unused)              0       0     0   5     FB1_9   H2    I/O     
+(unused)              0       0     0   5     FB1_10  K3    I/O     I
+Z<14>                 3       0     0   2     FB1_11  H4    I/O     O
+(unused)              0       0     0   5     FB1_12  J2    I/O     I
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  J3    I/O     I
+Z<30>                 3       0     0   2     FB1_15  J4    I/O     O
+(unused)              0       0     0   5     FB1_16  M1    I/O     I
+(unused)              0       0   \/3   2     FB1_17  K2    GCK/I/O I
+XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2
+                      7       3<- \/1   0     FB1_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<14>              8: B<14>             15: XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_ 
+  2: A<26>              9: B<26>             16: XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2 
+  3: A<27>             10: B<27>             17: XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2 
+  4: A<2>              11: B<2>              18: XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_ 
+  5: A<30>             12: B<30>             19: XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2 
+  6: A<31>             13: B<31>             20: XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 
+  7: A<3>              14: B<3>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2 
+                     .XX.....XX.........X.................... 5
+O1                   ....XX.....XX.....X..................... 5
+Z<15>                X......X......XX........................ 4
+Z<31>                ....X......X.....XX..................... 4
+Z<14>                X......X.......X........................ 3
+Z<30>                ....X......X......X..................... 3
+XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2 
+                     ...X..X...X..X..X....................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\2   3     FB2_1   C3    I/O     I
+(unused)              0       0     0   5     FB2_2   A2    GSR/I/O I
+(unused)              0       0     0   5     FB2_3         (b)     
+Z<11>                 4       0     0   1     FB2_4   C1    I/O     O
+(unused)              0       0     0   5     FB2_5   B1    GTS/I/O I
+(unused)              0       0     0   5     FB2_6   C2    GTS/I/O I
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   D4    GTS/I/O I
+(unused)              0       0     0   5     FB2_9   D3    GTS/I/O I
+Z<13>                 4       0     0   1     FB2_10  D2    I/O     O
+(unused)              0       0     0   5     FB2_11  E4    I/O     I
+(unused)              0       0     0   5     FB2_12  E3    I/O     I
+Z<9>                  4       0     0   1     FB2_13  E1    I/O     O
+XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_
+                      2       0     0   3     FB2_14  E2    I/O     I
+XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_
+                      2       0   \/1   2     FB2_15  F4    I/O     I
+XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2
+                      7       2<-   0   0     FB2_16  F3    I/O     I
+Z<10>                 3       0   /\1   1     FB2_17  F2    I/O     O
+XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2
+                      7       2<-   0   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<10>              8: B<10>             15: XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_ 
+  2: A<11>              9: B<11>             16: XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_ 
+  3: A<12>             10: B<12>             17: XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_ 
+  4: A<13>             11: B<13>             18: XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2 
+  5: A<5>              12: B<5>              19: Z<12> 
+  6: A<7>              13: B<7>              20: Z<8> 
+  7: A<8>              14: B<8>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Z<11>                X......X........XX...................... 4
+Z<13>                ..X......X....X...X..................... 4
+Z<9>                 ......X......X.X...X.................... 4
+XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_ 
+                     .....X......X........................... 2
+XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_ 
+                     ....X......X............................ 2
+XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2 
+                     ..XX.....XX.......X..................... 5
+Z<10>                X......X.........X...................... 3
+XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2 
+                     XX.....XX........X...................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+Z<17>                 4       2<- /\3   0     FB3_1   M3    I/O     O
+(unused)              0       0   /\2   3     FB3_2   L1    GCK/I/O I
+(unused)              0       0     0   5     FB3_3   K4    I/O     
+Z<19>                 4       0     0   1     FB3_4   N4    I/O     O
+(unused)              0       0     0   5     FB3_5   L2    I/O     
+(unused)              0       0     0   5     FB3_6   L3    I/O     
+(unused)              0       0     0   5     FB3_7   L5    I/O     I
+(unused)              0       0     0   5     FB3_8   N2    GCK/I/O I
+(unused)              0       0     0   5     FB3_9   N3    I/O     I
+XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_
+                      2       0     0   3     FB3_10  N5    I/O     (b)
+Z<18>                 3       0     0   2     FB3_11  M4    I/O     O
+XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_
+                      2       0     0   3     FB3_12  K5    I/O     I
+XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_
+                      2       0     0   3     FB3_13        (b)     (b)
+Z<29>                 4       0     0   1     FB3_14  K6    I/O     O
+XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_
+                      2       0   \/3   0     FB3_15  L6    I/O     I
+XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2
+                      7       3<- \/1   0     FB3_16        (b)     (b)
+XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2
+                      7       2<-   0   0     FB3_17  M6    I/O     I
+XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2
+                      7       3<- /\1   0     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<16>              8: B<16>             15: XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_ 
+  2: A<17>              9: B<17>             16: XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_ 
+  3: A<18>             10: B<18>             17: XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_ 
+  4: A<19>             11: B<19>             18: XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2 
+  5: A<28>             12: B<28>             19: Z<16> 
+  6: A<29>             13: B<29>             20: Z<28> 
+  7: A<3>              14: B<3>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Z<17>                X......X.......X..X..................... 4
+Z<19>                ..X......X......XX...................... 4
+XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_ 
+                     ...X......X............................. 2
+Z<18>                ..X......X.......X...................... 3
+XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_ 
+                     .X......X............................... 2
+XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_ 
+                     .....X......X........................... 2
+Z<29>                ....X......X..X....X.................... 4
+XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_ 
+                     ......X......X.......................... 2
+XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2 
+                     XX.....XX.........X..................... 5
+XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2 
+                     ..XX.....XX......X...................... 5
+XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2 
+                     ....XX.....XX......X.................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\2   3     FB4_1   C9    I/O     I
+Z<21>                 4       0     0   1     FB4_2   A7    I/O     O
+(unused)              0       0     0   5     FB4_3   A5    I/O     
+(unused)              0       0     0   5     FB4_4         (b)     
+Z<23>                 4       0     0   1     FB4_5   D7    I/O     O
+(unused)              0       0     0   5     FB4_6   A6    I/O     I
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   B6    I/O     
+Z<12>                 3       0     0   2     FB4_9   C6    I/O     O
+(unused)              0       0     0   5     FB4_10  C5    I/O     I
+XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_
+                      2       0     0   3     FB4_11  D6    I/O     I
+Z<20>                 3       0     0   2     FB4_12  B5    I/O     O
+XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_
+                      2       0     0   3     FB4_13  A4    I/O     I
+XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_
+                      2       0     0   3     FB4_14  D5    I/O     I
+Z<22>                 3       0     0   2     FB4_15  B4    I/O     O
+XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_
+                      2       0   \/2   1     FB4_16  C4    I/O     I
+XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2
+                      7       2<-   0   0     FB4_17  A3    I/O     I
+XLXI_2/C7/XLXI_2/C7_D2
+                      7       2<-   0   0     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<12>              8: B<12>             15: XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2 
+  2: A<20>              9: B<20>             16: XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2 
+  3: A<21>             10: B<21>             17: XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_ 
+  4: A<22>             11: B<22>             18: XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_ 
+  5: A<23>             12: B<23>             19: XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2 
+  6: A<25>             13: B<25>             20: Z<20> 
+  7: A<31>             14: B<31>            
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Z<21>                .X......X.......X..X.................... 4
+Z<23>                ...X......X......XX..................... 4
+Z<12>                X......X......X......................... 3
+XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_ 
+                     ....X......X............................ 2
+Z<20>                .X......X......X........................ 3
+XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_ 
+                     ..X......X.............................. 2
+XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_ 
+                     .....X......X........................... 2
+Z<22>                ...X......X.......X..................... 3
+XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_ 
+                     ......X......X.......................... 2
+XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2 
+                     .XX.....XX.........X.................... 5
+XLXI_2/C7/XLXI_2/C7_D2 
+                     ...XX.....XX......X..................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               11/43
+Number of signals used by logic mapping into function block:  11
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB5_1         (b)     
+Z<25>                 4       0     0   1     FB5_2   N6    I/O     O
+(unused)              0       0     0   5     FB5_3   L8    I/O     I
+(unused)              0       0     0   5     FB5_4         (b)     
+(unused)              0       0     0   5     FB5_5   M7    I/O     I
+(unused)              0       0     0   5     FB5_6   N7    I/O     I
+Z<27>                 4       0     0   1     FB5_7   M10   I/O     O
+(unused)              0       0     0   5     FB5_8   K7    I/O     
+(unused)              0       0     0   5     FB5_9   N8    I/O     I
+(unused)              0       0     0   5     FB5_10  N11   I/O     I
+Z<24>                 3       0     0   2     FB5_11  M8    I/O     O
+(unused)              0       0     0   5     FB5_12  K8    I/O     I
+(unused)              0       0     0   5     FB5_13  L11   I/O     
+(unused)              0       0     0   5     FB5_14  N9    I/O     I
+Z<26>                 3       0     0   2     FB5_15  K9    I/O     O
+(unused)              0       0     0   5     FB5_16        (b)     
+(unused)              0       0   \/2   3     FB5_17  M11   I/O     (b)
+XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2
+                      7       2<-   0   0     FB5_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<24>              5: B<25>                                                9: XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_ 
+  2: A<25>              6: B<26>                                               10: XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 
+  3: A<26>              7: XLXI_2/C7/XLXI_2/C7_D2                              11: Z<24> 
+  4: B<24>              8: XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_ 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Z<25>                X..X...X..X............................. 4
+Z<27>                ..X..X..XX.............................. 4
+Z<24>                X..X..X................................. 3
+Z<26>                ..X..X...X.............................. 3
+XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 
+                     XX.XX.....X............................. 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               7/47
+Number of signals used by logic mapping into function block:  7
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB6_1         (b)     
+Z<3>                  4       0     0   1     FB6_2   C11   I/O     O
+(unused)              0       0     0   5     FB6_3         (b)     
+(unused)              0       0     0   5     FB6_4   B11   I/O     I
+(unused)              0       0     0   5     FB6_5   A12   I/O     
+(unused)              0       0     0   5     FB6_6   A11   I/O     
+(unused)              0       0     0   5     FB6_7         (b)     
+Z<28>                 3       0     0   2     FB6_8   D10   I/O     O
+(unused)              0       0     0   5     FB6_9   A10   I/O     I
+(unused)              0       0     0   5     FB6_10  B10   I/O     I
+(unused)              0       0     0   5     FB6_11  B9    I/O     I
+Z<2>                  3       0     0   2     FB6_12  A9    I/O     O
+(unused)              0       0     0   5     FB6_13        (b)     
+(unused)              0       0     0   5     FB6_14  D8    I/O     I
+(unused)              0       0     0   5     FB6_15  A8    I/O     I
+(unused)              0       0     0   5     FB6_16  D9    I/O     I
+(unused)              0       0     0   5     FB6_17  B7    I/O     I
+(unused)              0       0     0   5     FB6_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: A<28>              4: B<2>                                                   6: XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2 
+  2: A<2>               5: XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_   7: XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2 
+  3: B<28>            
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Z<3>                 .X.XXX.................................. 4
+Z<28>                X.X...X................................. 3
+Z<2>                 .X.X.X.................................. 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB7  ***********************************
+Number of function block inputs used/remaining:               18/36
+Number of signals used by logic mapping into function block:  18
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\2   3     FB7_1         (b)     (b)
+Z<5>                  4       0     0   1     FB7_2   N12   I/O     O
+(unused)              0       0     0   5     FB7_3   L12   I/O     I
+(unused)              0       0     0   5     FB7_4         (b)     
+(unused)              0       0     0   5     FB7_5   M13   I/O     I
+Z<7>                  4       0     0   1     FB7_6   L13   I/O     O
+(unused)              0       0     0   5     FB7_7   K10   I/O     I
+(unused)              0       0     0   5     FB7_8   K11   I/O     I
+(unused)              0       0     0   5     FB7_9   K13   I/O     
+Z<16>                 3       0     0   2     FB7_10  K12   I/O     O
+(unused)              0       0     0   5     FB7_11  J11   I/O     
+(unused)              0       0     0   5     FB7_12  H10   I/O     
+Z<4>                  3       0     0   2     FB7_13  J10   I/O     O
+(unused)              0       0     0   5     FB7_14  H11   I/O     I
+XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_
+                      2       0     0   3     FB7_15  H12   I/O     (b)
+Z<6>                  3       0   \/2   0     FB7_16  J12   I/O     O
+XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2
+                      7       2<-   0   0     FB7_17  H13   I/O     I
+XLXI_1/C7/XLXI_1/C7_D2
+                      7       2<-   0   0     FB7_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<16>              7: B<16>             13: XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2 
+  2: A<27>              8: B<27>             14: XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_ 
+  3: A<4>               9: B<4>              15: XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_ 
+  4: A<5>              10: B<5>              16: XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2 
+  5: A<6>              11: B<6>              17: XLXN_4/XLXN_4_D242_ 
+  6: A<7>              12: B<7>              18: Z<4> 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Z<5>                 ..X.....X....X...X...................... 4
+Z<7>                 ....X.....X...XX........................ 4
+Z<16>                X.....X.........X....................... 3
+Z<4>                 ..X.....X...X........................... 3
+XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_ 
+                     .X.....X................................ 2
+Z<6>                 ....X.....X....X........................ 3
+XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2 
+                     ..XX....XX.......X...................... 5
+XLXI_1/C7/XLXI_1/C7_D2 
+                     ....XX....XX...X........................ 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB8  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_
+                      2       0   \/2   1     FB8_1         (b)     (b)
+O0                    8       3<-   0   0     FB8_2   G11   I/O     O
+(unused)              0       0   /\1   4     FB8_3   F11   I/O     (b)
+(unused)              0       0     0   5     FB8_4   E13   I/O     I
+(unused)              0       0     0   5     FB8_5   G10   I/O     I
+Z<1>                  3       0     0   2     FB8_6   F13   I/O     O
+(unused)              0       0     0   5     FB8_7         (b)     
+(unused)              0       0     0   5     FB8_8   F12   I/O     I
+(unused)              0       0     0   5     FB8_9   F10   I/O     
+XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_
+                      2       0     0   3     FB8_10  D13   I/O     I
+Z<8>                  3       0     0   2     FB8_11  E12   I/O     O
+XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_
+                      2       0     0   3     FB8_12  E10   I/O     I
+XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_
+                      2       0     0   3     FB8_13  D11   I/O     I
+XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2
+                      3       0     0   2     FB8_14  D12   I/O     I
+Z<0>                  2       0   \/2   1     FB8_15  C13   I/O     O
+XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_
+                      3       2<- \/4   0     FB8_16  B13   I/O     I
+XLXN_4/XLXN_4_D242_   7       4<- \/2   0     FB8_17  C12   I/O     I
+XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2
+                      7       2<-   0   0     FB8_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: A<0>               8: A<9>              15: B<8> 
+  2: A<11>              9: B<0>              16: B<9> 
+  3: A<13>             10: B<11>             17: XLXI_1/C7/XLXI_1/C7_D2 
+  4: A<14>             11: B<13>             18: XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_ 
+  5: A<15>             12: B<14>             19: XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2 
+  6: A<1>              13: B<15>             20: Z<8> 
+  7: A<8>              14: B<1>             
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_ 
+                     .X.......X.............................. 2
+O0                   ...XX......XX....XX..................... 6
+Z<1>                 X....X..X....X.......................... 4
+XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_ 
+                     .......X.......X........................ 2
+Z<8>                 ......X.......X.X....................... 3
+XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_ 
+                     ....X.......X........................... 2
+XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_ 
+                     ..X.......X............................. 2
+XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2 
+                     X....X..X....X.......................... 4
+Z<0>                 X.......X............................... 2
+XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_ 
+                     ...X.......X......X..................... 3
+XLXN_4/XLXN_4_D242_  ...XX......XX.....X..................... 5
+XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2 
+                     ......XX......XX...X.................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+O0 <= XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_
+	 XOR 
+O0 <= ((
+	XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_.EXP)
+	OR (EXP17_.EXP)
+	OR (B(15) AND A(15))
+	OR (A(15) AND B(14) AND A(14))
+	OR (A(15) AND B(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2)
+	OR (A(15) AND A(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2));
+
+
+O1 <= ((EXP10_.EXP)
+	OR (B(31) AND A(31) AND NOT B(30) AND NOT A(30))
+	OR (B(31) AND A(31) AND NOT B(30) AND 
+	NOT XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2)
+	OR (B(31) AND A(31) AND NOT A(30) AND 
+	NOT XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2)
+	OR (NOT B(31) AND NOT A(31) AND B(30) AND A(30)));
+
+
+XLXI_1/C7/XLXI_1/C7_D2 <= ((EXP16_.EXP)
+	OR (B(7) AND A(7))
+	OR (B(6) AND A(6) AND B(7))
+	OR (B(6) AND A(6) AND A(7))
+	OR (B(6) AND A(7) AND 
+	XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2)
+	OR (A(6) AND A(7) AND 
+	XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2));
+
+
+XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2 <= ((EXP12_.EXP)
+	OR (B(11) AND A(11))
+	OR (B(10) AND A(10) AND B(11))
+	OR (B(10) AND A(10) AND A(11))
+	OR (B(10) AND A(11) AND 
+	XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2)
+	OR (A(10) AND A(11) AND 
+	XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2));
+
+
+XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_ <= A(13)
+	 XOR 
+XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_ <= B(13);
+
+
+XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_ <= A(15)
+	 XOR 
+XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_ <= B(15);
+
+
+XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_ <= ((Z_0_OBUF.EXP)
+	OR (B(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2));
+
+
+XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2 <= ((
+	XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_.EXP)
+	OR (Z_10_OBUF.EXP)
+	OR (B(13) AND A(13))
+	OR (B(12) AND A(12) AND B(13))
+	OR (B(12) AND A(12) AND A(13))
+	OR (B(12) AND A(13) AND NOT Z(12))
+	OR (A(12) AND A(13) AND NOT Z(12)));
+
+
+XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_ <= A(9)
+	 XOR 
+XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_ <= B(9);
+
+
+XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_ <= A(11)
+	 XOR 
+XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_ <= B(11);
+
+
+XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2 <= ((XLXN_4/XLXN_4_D242_.EXP)
+	OR (B(9) AND A(9))
+	OR (B(8) AND A(8) AND B(9))
+	OR (B(8) AND A(8) AND A(9))
+	OR (B(8) AND A(9) AND NOT Z(8))
+	OR (A(8) AND A(9) AND NOT Z(8)));
+
+
+XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2 <= ((EXP11_.EXP)
+	OR (B(3) AND A(3))
+	OR (B(2) AND A(2) AND A(3))
+	OR (B(2) AND A(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (A(2) AND A(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2));
+
+
+XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_ <= A(5)
+	 XOR 
+XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_ <= B(5);
+
+
+XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_ <= A(7)
+	 XOR 
+XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_ <= B(7);
+
+
+XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2 <= ((Z_6_OBUF.EXP)
+	OR (B(5) AND A(5))
+	OR (B(4) AND A(4) AND B(5))
+	OR (B(4) AND A(4) AND A(5))
+	OR (B(4) AND A(5) AND NOT Z(4))
+	OR (A(4) AND A(5) AND NOT Z(4)));
+
+
+XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_ <= A(3)
+	 XOR 
+XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_ <= B(3);
+
+
+XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2 <= ((B(1) AND A(1))
+	OR (B(0) AND A(0) AND B(1))
+	OR (B(0) AND A(0) AND A(1)));
+
+
+XLXI_2/C7/XLXI_2/C7_D2 <= ((EXP14_.EXP)
+	OR (B(23) AND A(23))
+	OR (B(22) AND A(22) AND B(23))
+	OR (B(22) AND A(22) AND A(23))
+	OR (B(22) AND A(23) AND 
+	XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)
+	OR (A(22) AND A(23) AND 
+	XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2));
+
+
+XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2 <= ((O1_OBUF.EXP)
+	OR (XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2.EXP)
+	OR (B(27) AND A(27))
+	OR (B(26) AND A(26) AND B(27))
+	OR (B(26) AND A(26) AND A(27))
+	OR (B(26) AND A(27) AND 
+	XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)
+	OR (A(26) AND A(27) AND 
+	XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2));
+
+
+XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_ <= A(29)
+	 XOR 
+XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_ <= B(29);
+
+
+XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_ <= A(31)
+	 XOR 
+XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_ <= B(31);
+
+
+XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2 <= ((Z_17_OBUF.EXP)
+	OR (B(29) AND A(29))
+	OR (B(28) AND A(28) AND A(29))
+	OR (B(28) AND A(29) AND NOT Z(28))
+	OR (A(28) AND A(29) AND NOT Z(28)));
+
+
+XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_ <= A(25)
+	 XOR 
+XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_ <= B(25);
+
+
+XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_ <= A(27)
+	 XOR 
+XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_ <= B(27);
+
+
+XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 <= ((EXP15_.EXP)
+	OR (B(25) AND A(25))
+	OR (B(24) AND A(24) AND B(25))
+	OR (B(24) AND A(24) AND A(25))
+	OR (B(24) AND A(25) AND NOT Z(24))
+	OR (A(24) AND A(25) AND NOT Z(24)));
+
+
+XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2 <= ((
+	XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2.EXP)
+	OR (
+	XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2.EXP)
+	OR (B(19) AND A(19))
+	OR (B(18) AND A(18) AND B(19))
+	OR (B(18) AND A(18) AND A(19))
+	OR (B(18) AND A(19) AND 
+	XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (A(18) AND A(19) AND 
+	XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2));
+
+
+XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_ <= A(21)
+	 XOR 
+XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_ <= B(21);
+
+
+XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_ <= A(23)
+	 XOR 
+XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_ <= B(23);
+
+
+XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2 <= ((XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_.EXP)
+	OR (B(21) AND A(21))
+	OR (B(20) AND A(20) AND B(21))
+	OR (B(20) AND A(20) AND A(21))
+	OR (B(20) AND A(21) AND NOT Z(20))
+	OR (A(20) AND A(21) AND NOT Z(20)));
+
+
+XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_ <= A(17)
+	 XOR 
+XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_ <= B(17);
+
+
+XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_ <= A(19)
+	 XOR 
+XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_ <= B(19);
+
+
+XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2 <= ((
+	XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_.EXP)
+	OR (B(17) AND A(17))
+	OR (B(16) AND A(16) AND A(17))
+	OR (B(16) AND A(17) AND NOT Z(16))
+	OR (A(16) AND A(17) AND NOT Z(16)));
+
+
+XLXN_4/XLXN_4_D242_ <= ((
+	XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/S15_8/S7_4/XLXN_27_D258_.EXP)
+	OR (B(15) AND A(15))
+	OR (A(15) AND B(14) AND A(14))
+	OR (A(15) AND A(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2));
+
+
+Z(0) <= A(0)
+	 XOR 
+Z(0) <= B(0);
+
+
+Z(1) <= (B(0) AND A(0))
+	 XOR 
+Z(1) <= ((B(1) AND NOT A(1))
+	OR (NOT B(1) AND A(1)));
+
+
+Z(2) <= NOT (A(2)
+	 XOR 
+Z(2) <= NOT (((B(2) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (NOT B(2) AND 
+	NOT XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2)));
+
+
+Z(3) <= XLXI_1/XLXI_1/XLXI_1/X3/XLXI_1/XLXI_1/XLXI_1/X3_D25_
+	 XOR 
+Z(3) <= ((B(2) AND A(2))
+	OR (B(2) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (A(2) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_1/XLXI_1/XLXN_34_D2));
+
+
+Z(4) <= NOT (A(4)
+	 XOR 
+Z(4) <= NOT (((B(4) AND XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2)
+	OR (NOT B(4) AND NOT XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/C3_D2)));
+
+
+Z(5) <= XLXI_1/XLXI_1/S7_4/X1/XLXI_1/XLXI_1/S7_4/X1_D20_
+	 XOR 
+Z(5) <= ((B(4) AND A(4))
+	OR (B(4) AND NOT Z(4))
+	OR (A(4) AND NOT Z(4)));
+
+
+Z(6) <= NOT (A(6)
+	 XOR 
+Z(6) <= NOT (((B(6) AND 
+	XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2)
+	OR (NOT B(6) AND 
+	NOT XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2)));
+
+
+Z(7) <= XLXI_1/XLXI_1/S7_4/X3/XLXI_1/XLXI_1/S7_4/X3_D22_
+	 XOR 
+Z(7) <= ((B(6) AND A(6))
+	OR (B(6) AND 
+	XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2)
+	OR (A(6) AND 
+	XLXI_1/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_1/S7_4/XLXN_34_D2));
+
+
+Z(8) <= NOT (A(8)
+	 XOR 
+Z(8) <= NOT (((B(8) AND XLXI_1/C7/XLXI_1/C7_D2)
+	OR (NOT B(8) AND NOT XLXI_1/C7/XLXI_1/C7_D2)));
+
+
+Z(9) <= XLXI_1/S15_8/XLXI_1/X1/XLXI_1/S15_8/XLXI_1/X1_D16_
+	 XOR 
+Z(9) <= ((B(8) AND A(8))
+	OR (B(8) AND NOT Z(8))
+	OR (A(8) AND NOT Z(8)));
+
+
+Z(10) <= NOT (A(10)
+	 XOR 
+Z(10) <= NOT (((B(10) AND 
+	XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2)
+	OR (NOT B(10) AND 
+	NOT XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2)));
+
+
+Z(11) <= XLXI_1/S15_8/XLXI_1/X3/XLXI_1/S15_8/XLXI_1/X3_D18_
+	 XOR 
+Z(11) <= ((B(10) AND A(10))
+	OR (B(10) AND 
+	XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2)
+	OR (A(10) AND 
+	XLXI_1/S15_8/XLXI_1/XLXN_34/XLXI_1/S15_8/XLXI_1/XLXN_34_D2));
+
+
+Z(12) <= NOT (A(12)
+	 XOR 
+Z(12) <= NOT (((B(12) AND XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2)
+	OR (NOT B(12) AND NOT XLXI_1/S15_8/C3/XLXI_1/S15_8/C3_D2)));
+
+
+Z(13) <= XLXI_1/S15_8/S7_4/X1/XLXI_1/S15_8/S7_4/X1_D12_
+	 XOR 
+Z(13) <= ((B(12) AND A(12))
+	OR (B(12) AND NOT Z(12))
+	OR (A(12) AND NOT Z(12)));
+
+
+Z(14) <= NOT (A(14)
+	 XOR 
+Z(14) <= NOT (((B(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2)
+	OR (NOT B(14) AND 
+	NOT XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2)));
+
+
+Z(15) <= XLXI_1/S15_8/S7_4/X3/XLXI_1/S15_8/S7_4/X3_D14_
+	 XOR 
+Z(15) <= ((B(14) AND A(14))
+	OR (B(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2)
+	OR (A(14) AND 
+	XLXI_1/S15_8/S7_4/XLXN_34/XLXI_1/S15_8/S7_4/XLXN_34_D2));
+
+
+Z(16) <= NOT (A(16)
+	 XOR 
+Z(16) <= NOT (((B(16) AND XLXN_4/XLXN_4_D242_)
+	OR (NOT B(16) AND NOT XLXN_4/XLXN_4_D242_)));
+
+
+Z(17) <= XLXI_2/XLXI_1/XLXI_1/X1/XLXI_2/XLXI_1/XLXI_1/X1_D38_
+	 XOR 
+Z(17) <= ((EXP13_.EXP)
+	OR (B(16) AND NOT Z(16)));
+
+
+Z(18) <= NOT (A(18)
+	 XOR 
+Z(18) <= NOT (((B(18) AND 
+	XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (NOT B(18) AND 
+	NOT XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)));
+
+
+Z(19) <= XLXI_2/XLXI_1/XLXI_1/X3/XLXI_2/XLXI_1/XLXI_1/X3_D40_
+	 XOR 
+Z(19) <= ((B(18) AND A(18))
+	OR (B(18) AND 
+	XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (A(18) AND 
+	XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2));
+
+
+Z(20) <= NOT (A(20)
+	 XOR 
+Z(20) <= NOT (((B(20) AND XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2)
+	OR (NOT B(20) AND NOT XLXI_2/XLXI_1/C3/XLXI_2/XLXI_1/C3_D2)));
+
+
+Z(21) <= XLXI_2/XLXI_1/S7_4/X1/XLXI_2/XLXI_1/S7_4/X1_D34_
+	 XOR 
+Z(21) <= ((B(20) AND A(20))
+	OR (B(20) AND NOT Z(20))
+	OR (A(20) AND NOT Z(20)));
+
+
+Z(22) <= NOT (A(22)
+	 XOR 
+Z(22) <= NOT (((B(22) AND 
+	XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)
+	OR (NOT B(22) AND 
+	NOT XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)));
+
+
+Z(23) <= XLXI_2/XLXI_1/S7_4/X3/XLXI_2/XLXI_1/S7_4/X3_D36_
+	 XOR 
+Z(23) <= ((B(22) AND A(22))
+	OR (B(22) AND 
+	XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)
+	OR (A(22) AND 
+	XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_2/XLXI_1/S7_4/XLXN_34_D2));
+
+
+Z(24) <= NOT (A(24)
+	 XOR 
+Z(24) <= NOT (((B(24) AND XLXI_2/C7/XLXI_2/C7_D2)
+	OR (NOT B(24) AND NOT XLXI_2/C7/XLXI_2/C7_D2)));
+
+
+Z(25) <= XLXI_2/S15_8/XLXI_1/X1/XLXI_2/S15_8/XLXI_1/X1_D30_
+	 XOR 
+Z(25) <= ((B(24) AND A(24))
+	OR (B(24) AND NOT Z(24))
+	OR (A(24) AND NOT Z(24)));
+
+
+Z(26) <= NOT (A(26)
+	 XOR 
+Z(26) <= NOT (((B(26) AND 
+	XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)
+	OR (NOT B(26) AND 
+	NOT XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)));
+
+
+Z(27) <= XLXI_2/S15_8/XLXI_1/X3/XLXI_2/S15_8/XLXI_1/X3_D32_
+	 XOR 
+Z(27) <= ((B(26) AND A(26))
+	OR (B(26) AND 
+	XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)
+	OR (A(26) AND 
+	XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_2/S15_8/XLXI_1/XLXN_34_D2));
+
+
+Z(28) <= NOT (A(28)
+	 XOR 
+Z(28) <= NOT (((B(28) AND XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2)
+	OR (NOT B(28) AND NOT XLXI_2/S15_8/C3/XLXI_2/S15_8/C3_D2)));
+
+
+Z(29) <= XLXI_2/S15_8/S7_4/X1/XLXI_2/S15_8/S7_4/X1_D27_
+	 XOR 
+Z(29) <= ((B(28) AND A(28))
+	OR (B(28) AND NOT Z(28))
+	OR (A(28) AND NOT Z(28)));
+
+
+Z(30) <= NOT (A(30)
+	 XOR 
+Z(30) <= NOT (((B(30) AND 
+	XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2)
+	OR (NOT B(30) AND 
+	NOT XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2)));
+
+
+Z(31) <= XLXI_2/S15_8/S7_4/X3/XLXI_2/S15_8/S7_4/X3_D60_
+	 XOR 
+Z(31) <= ((B(30) AND A(30))
+	OR (B(30) AND 
+	XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2)
+	OR (A(30) AND 
+	XLXI_2/S15_8/S7_4/XLXN_34/XLXI_2/S15_8/S7_4/XLXN_34_D2));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XA95144XL-15-CS144
+
+
+                     _____________________________________________________
+                    /                                                     \
+                   1|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   2|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   3|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   4|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   5|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   6|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   7|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   8|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   9|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                  10|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  11|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  12|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  13|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    \_____________________________________________________/
+                       A   B   C   D   E   F   G   H   J   K   L   M   N   
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+ A1 VCC                             G10 A<9>                          
+ A2 B<11>                           G11 O0                            
+ A3 B<25>                           G12 GND                           
+ A4 A<15>                           G13 GND                           
+ A5 KPR                              H1 Z<31>                         
+ A6 B<22>                            H2 KPR                           
+ A7 Z<21>                            H3 B<26>                         
+ A8 A<21>                            H4 Z<14>                         
+ A9 Z<2>                            H10 KPR                           
+A10 A<26>                           H11 A<27>                         
+A11 KPR                             H12 KPR                           
+A12 KPR                             H13 B<20>                         
+A13 VCC                              J1 A<19>                         
+ B1 A<4>                             J2 B<29>                         
+ B2 GND                              J3 B<30>                         
+ B3 VCC                              J4 Z<30>                         
+ B4 Z<22>                           J10 Z<4>                          
+ B5 Z<20>                           J11 KPR                           
+ B6 KPR                             J12 Z<6>                          
+ B7 A<7>                            J13 VCC                           
+ B8 GND                              K1 GND                           
+ B9 A<20>                            K2 A<16>                         
+B10 B<27>                            K3 B<6>                          
+B11 B<31>                            K4 KPR                           
+B12 GND                              K5 B<4>                          
+B13 B<12>                            K6 Z<29>                         
+ C1 Z<11>                            K7 KPR                           
+ C2 B<19>                            K8 A<30>                         
+ C3 A<6>                             K9 Z<26>                         
+ C4 B<18>                           K10 A<2>                          
+ C5 B<23>                           K11 A<24>                         
+ C6 Z<12>                           K12 Z<16>                         
+ C7 VCC                             K13 KPR                           
+ C8 TDO                              L1 B<2>                          
+ C9 B<5>                             L2 KPR                           
+C10 GND                              L3 KPR                           
+C11 Z<3>                             L4 VCC                           
+C12 A<31>                            L5 B<15>                         
+C13 Z<0>                             L6 B<13>                         
+ D1 VCC                              L7 VCC                           
+ D2 Z<13>                            L8 B<16>                         
+ D3 B<0>                             L9 TDI                           
+ D4 B<1>                            L10 TCK                           
+ D5 B<7>                            L11 KPR                           
+ D6 A<25>                           L12 A<14>                         
+ D7 Z<23>                           L13 Z<7>                          
+ D8 A<5>                             M1 B<14>                         
+ D9 B<17>                            M2 GND                           
+D10 Z<28>                            M3 Z<17>                         
+D11 A<12>                            M4 Z<18>                         
+D12 A<3>                             M5 GND                           
+D13 B<24>                            M6 B<10>                         
+ E1 Z<9>                             M7 A<8>                          
+ E2 A<23>                            M8 Z<24>                         
+ E3 A<22>                            M9 GND                           
+ E4 A<1>                            M10 Z<27>                         
+E10 B<21>                           M11 KPR                           
+E11 GND                             M12 GND                           
+E12 Z<8>                            M13 A<29>                         
+E13 A<0>                             N1 VCC                           
+ F1 O1                               N2 A<18>                         
+ F2 Z<10>                            N3 B<9>                          
+ F3 A<11>                            N4 Z<19>                         
+ F4 B<28>                            N5 KPR                           
+F10 KPR                              N6 Z<25>                         
+F11 KPR                              N7 A<10>                         
+F12 B<3>                             N8 B<8>                          
+F13 Z<1>                             N9 A<13>                         
+ G1 GND                             N10 TMS                           
+ G2 KPR                             N11 A<28>                         
+ G3 Z<15>                           N12 Z<5>                          
+ G4 A<17>                           N13 VCC                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

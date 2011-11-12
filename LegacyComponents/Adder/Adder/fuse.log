@@ -1,0 +1,70 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Users/7206toellnm/Desktop/Adder/Adder.ise -intstyle ise -incremental -lib
+uni9000_ver -lib aim_ver -lib cpld_ver -lib xilinxcorelib_ver -o
+AdderTest_isim_beh.exe -prj AdderTest_beh.prj -top AdderTest -top glbl
+Determining compilation order of HDL files
+Analyzing Verilog file adder.vf
+Analyzing Verilog file AdderTest.tfw
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.ADD4_MXILINX_adder into
+c:/users/7206toellnm/desktop/adder/isim/work/@a@d@d4_@m@x@i@l@i@n@x_adder.sdb
+Saving Verilog parse-tree work.ADD8_MXILINX_adder into
+c:/users/7206toellnm/desktop/adder/isim/work/@a@d@d8_@m@x@i@l@i@n@x_adder.sdb
+Saving Verilog parse-tree work.ADD16_MXILINX_adder into
+c:/users/7206toellnm/desktop/adder/isim/work/@a@d@d16_@m@x@i@l@i@n@x_adder.sdb
+Saving Verilog parse-tree work.adder into
+c:/users/7206toellnm/desktop/adder/isim/work/adder.sdb
+Saving Verilog parse-tree work.AdderTest into
+c:/users/7206toellnm/desktop/adder/isim/work/@adder@test.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/7206toellnm/desktop/adder/isim/work/glbl.sdb
+Starting static elaboration
+Restoring Verilog parse-tree uni9000_ver.XOR2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.OR2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.OR3 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.OR4 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.AND5 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.AND4 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.AND3 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.AND2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.OR5 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.GND from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.AND3B1 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Restoring Verilog parse-tree uni9000_ver.AND3B2 from
+c:/xilinx/10.1/ise/verilog/hdp/nt/uni9000_ver/uni9000_ver.sdbl
+Completed static elaboration
+Fuse Memory Usage: 109840 Kb
+Fuse CPU Usage: 140 ms
+Compiling module glbl
+Compiling module XOR2
+Compiling module OR2
+Compiling module OR3
+Compiling module OR4
+Compiling module AND5
+Compiling module AND4
+Compiling module AND3
+Compiling module AND2
+Compiling module OR5
+Compiling module GND
+Compiling module AND3B1
+Compiling module AND3B2
+Compiling module ADD4_MXILINX_adder
+Compiling module ADD8_MXILINX_adder
+Compiling module ADD16_MXILINX_adder
+Compiling module adder
+Compiling module AdderTest
+Compiled 18 Verilog Units
+Built simulation executable AdderTest_isim_beh.exe
+Fuse Memory Usage: 111228 Kb
+Fuse CPU Usage: 264 ms

@@ -1,0 +1,7 @@
+select figure at 2414 4634 33 -wires -sn=1
+select figure at 2405 4625 33 -wires -sn=1
+select figure at 582 895 17 -wires -sn=1
+select figure at 582 891 17 -wires -sn=1
+select figure at 565 912 17 -wires -sn=1
+select figure at 536 739 17 -wires -sn=1
+select figure at 531 734 17 -wires -sn=1

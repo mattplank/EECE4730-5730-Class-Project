@@ -1,0 +1,54 @@
+Pin Freeze File:  version K.39
+
+A9536XL44VQ XA9536XL-15-VQ44
+DataIn S:PIN19
+DataOut<9> S:PIN39
+DataOut<8> S:PIN40
+DataOut<29> S:PIN41
+DataOut<28> S:PIN43
+DataOut<27> S:PIN42
+DataOut<26> S:PIN44
+DataOut<25> S:PIN2
+DataOut<24> S:PIN1
+DataOut<23> S:PIN3
+DataOut<22> S:PIN5
+DataOut<21> S:PIN6
+DataOut<20> S:PIN7
+DataOut<7> S:PIN8
+DataOut<1> S:PIN12
+DataOut<19> S:PIN13
+DataOut<18> S:PIN14
+DataOut<17> S:PIN16
+DataOut<16> S:PIN38
+DataOut<15> S:PIN36
+DataOut<14> S:PIN37
+DataOut<13> S:PIN34
+DataOut<12> S:PIN33
+DataOut<11> S:PIN32
+DataOut<6> S:PIN31
+DataOut<10> S:PIN30
+DataOut<0> S:PIN29
+DataOut<5> S:PIN28
+DataOut<4> S:PIN27
+DataOut<3> S:PIN23
+DataOut<31> S:PIN22
+DataOut<30> S:PIN21
+DataOut<2> S:PIN20
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 DataIn_IBUF$BUF1 DataIn_IBUF$BUF10 DataIn_IBUF$BUF11 DataIn_IBUF$BUF12
+		 DataIn_IBUF$BUF13 DataIn_IBUF$BUF14 DataIn_IBUF$BUF15 DataIn_IBUF$BUF16
+		 DataIn_IBUF$BUF17 DataIn_IBUF$BUF18 DataIn_IBUF$BUF19 DataIn_IBUF$BUF2
+		 DataIn_IBUF$BUF20 DataIn_IBUF$BUF21 DataIn_IBUF$BUF22 DataIn_IBUF$BUF23
+		
+
+PARTITION FB2_1 DataIn_IBUF$BUF0 DataIn_IBUF$BUF24 DataIn_IBUF$BUF25 DataIn_IBUF$BUF26
+		 DataIn_IBUF$BUF27 DataIn_IBUF$BUF28 DataIn_IBUF$BUF29 DataIn_IBUF$BUF3
+		 DataIn_IBUF$BUF30 DataIn_IBUF$BUF31 DataIn_IBUF$BUF4 DataIn_IBUF$BUF5
+		 DataIn_IBUF$BUF6 DataIn_IBUF$BUF7 DataIn_IBUF$BUF8 DataIn_IBUF$BUF9
+		
+
+

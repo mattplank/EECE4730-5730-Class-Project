@@ -1,0 +1,113 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Users/3291Bonop/Desktop/xi/xi/xi/RegisterFile/RegisterFile.ise -intstyle ise
+-incremental -o TBREG_isim_beh.exe -prj TBREG_beh.prj -top TBREG
+Determining compilation order of HDL files
+Analyzing VHDL file Mux216Bit.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Analyzing VHDL file Dff32b.vhf
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Analyzing VHDL file Memunit32x32b.vhf
+Analyzing VHDL file Decoder32b.vhf
+Analyzing VHDL file RegFileSch.vhf
+Analyzing VHDL file TBREG.vhw
+Restoring VHDL parse-tree ieee.std_logic_textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.mux216bit into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/mux216bit.vdb
+Saving VHDL parse-tree work.fd_mxilinx_dff32b into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/fd_mxilinx_dff32b.vdb
+Saving VHDL parse-tree work.fd16_mxilinx_dff32b into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/fd16_mxilinx_dff32b.v
+db
+Saving VHDL parse-tree work.dff32b into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/dff32b.vdb
+Saving VHDL parse-tree work.memunit32x32b into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/memunit32x32b.vdb
+Saving VHDL parse-tree work.d4_16e_mxilinx_decoder32b into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/d4_16e_mxilinx_decode
+r32b.vdb
+Saving VHDL parse-tree work.decoder32b into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/decoder32b.vdb
+Saving VHDL parse-tree work.regfilesch into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/regfilesch.vdb
+Saving VHDL parse-tree work.tbreg into
+c:/users/3291bonop/desktop/xi/xi/xi/registerfile/isim/work/tbreg.vdb
+Starting static elaboration
+Restoring VHDL parse-tree unisim.and5b3 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and5b2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and5b1 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and5 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and5b4 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.inv from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.vcc from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.gnd from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fdcp from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+WARNING:HDLCompiler:89 - "RegFileSch.vhf" Line 452. mux1632bit remains a
+   black-box since it has no binding entity
+WARNING:HDLCompiler:89 - "RegFileSch.vhf" Line 488. mux1632bit remains a
+   black-box since it has no binding entity
+Completed static elaboration
+Fuse Memory Usage: 122296 Kb
+Fuse CPU Usage: 685 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+WARNING:Simulator:648 - "RegFileSch.vhf" Line 452. Instance mux1632bit is
+   unbound
+WARNING:Simulator:648 - "RegFileSch.vhf" Line 488. Instance mux1632bit is
+   unbound
+Compiling package vcomponents
+Compiling architecture and5b3_v of entity and5b3 [and5b3_default]
+Compiling architecture and5b2_v of entity and5b2 [and5b2_default]
+Compiling architecture and5b1_v of entity and5b1 [and5b1_default]
+Compiling architecture and5_v of entity and5 [and5_default]
+Compiling architecture and5b4_v of entity and5b4 [and5b4_default]
+Compiling architecture behavioral of entity d4_16e_mxilinx_decoder32b
+[d4_16e_mxilinx_decoder32b_defaul...]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture vcc_v of entity vcc [vcc_default]
+Compiling architecture behavioral of entity decoder32b [decoder32b_default]
+Compiling architecture gnd_v of entity gnd [gnd_default]
+Compiling architecture fdcp_v of entity fdcp [\FDCP('0')\]
+Compiling architecture behavioral of entity fd_mxilinx_dff32b
+[fd_mxilinx_dff32b_default]
+Compiling architecture behavioral of entity fd16_mxilinx_dff32b
+[fd16_mxilinx_dff32b_default]
+Compiling architecture arch of entity mux216bit [mux216bit_default]
+Compiling architecture behavioral of entity dff32b [dff32b_default]
+Compiling architecture behavioral of entity memunit32x32b
+[memunit32x32b_default]
+Compiling architecture behavioral of entity regfilesch [regfilesch_default]
+Compiling architecture testbench_arch of entity tbreg
+Compiled 45 VHDL Units
+Built simulation executable TBREG_isim_beh.exe
+Fuse Memory Usage: 123684 Kb
+Fuse CPU Usage: 857 ms

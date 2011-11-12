@@ -1,0 +1,40 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1_Adder1_sch_tb_isim_beh.exe -prj C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1_Adder1_sch_tb_beh.prj work.Adder1_Adder1_sch_tb 
+ISim O.40d (signature 0x79f3f3a8)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.vhf" into library work
+Parsing VHDL file "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1.vhf" into library work
+Parsing VHDL file "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Shift1Test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 68332 KB
+Fuse CPU Usage: 312 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Compiling package vcomponents
+Compiling architecture xor2_v of entity xor2 [xor2_default]
+Compiling architecture or2_v of entity or2 [or2_default]
+Compiling architecture or3_v of entity or3 [or3_default]
+Compiling architecture or4_v of entity or4 [or4_default]
+Compiling architecture and5_v of entity and5 [and5_default]
+Compiling architecture and4_v of entity and4 [and4_default]
+Compiling architecture and3_v of entity and3 [and3_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture or5_v of entity or5 [or5_default]
+Compiling architecture gnd_v of entity gnd [gnd_default]
+Compiling architecture and3b1_v of entity and3b1 [and3b1_default]
+Compiling architecture and3b2_v of entity and3b2 [and3b2_default]
+Compiling architecture behavioral of entity add4_mxilinx_adder1 [add4_mxilinx_adder1_default]
+Compiling architecture behavioral of entity add8_mxilinx_adder1 [add8_mxilinx_adder1_default]
+Compiling architecture behavioral of entity add16_mxilinx_adder1 [add16_mxilinx_adder1_default]
+Compiling architecture behavioral of entity adder_muser_adder1 [adder_muser_adder1_default]
+Compiling architecture behavioral of entity adder1 [adder1_default]
+Compiling architecture behavioral of entity adder1_adder1_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 39 VHDL Units
+Built simulation executable C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1_Adder1_sch_tb_isim_beh.exe
+Fuse Memory Usage: 76144 KB
+Fuse CPU Usage: 437 ms

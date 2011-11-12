@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\tsim.exe -ise C:/Users/3291Bonop/xi/RegisterFile/RegisterFile.ise -intstyle ise Dff32b Dff32b.nga
+s
+FormatString
+tsim <design[.vm6]> [--intstyle ise|xflow|silent] [<outfile>] 
+s

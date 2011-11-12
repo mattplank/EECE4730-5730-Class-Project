@@ -1,0 +1,205 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1.03
+//  \   \         Application : ISE
+//  /   /         Filename : SccTest.ant
+// /___/   /\     Timestamp : Mon Apr 04 02:32:53 2011
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: SccTest
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module SccTest;
+    reg clock = 1'b0;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    reg C = 1'b0;
+    reg D = 1'b0;
+    reg E = 1'b0;
+    reg F = 1'b0;
+    wire RegDst;
+    wire ALUSrc;
+    wire MemtoReg;
+    wire RegWrite;
+    wire MemRead;
+    wire MemWrite;
+    wire Branch;
+    wire ALUOp1;
+    wire ALUOp0;
+    wire Jump;
+
+    parameter PERIOD = 200;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for clock
+    begin
+        #OFFSET;
+        forever
+        begin
+            clock = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) clock = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Control UUT (
+        .clock(clock),
+        .A(A),
+        .B(B),
+        .C(C),
+        .D(D),
+        .E(E),
+        .F(F),
+        .RegDst(RegDst),
+        .ALUSrc(ALUSrc),
+        .MemtoReg(MemtoReg),
+        .RegWrite(RegWrite),
+        .MemRead(MemRead),
+        .MemWrite(MemWrite),
+        .Branch(Branch),
+        .ALUOp1(ALUOp1),
+        .ALUOp0(ALUOp0),
+        .Jump(Jump));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process for clock clock
+        #0;
+        ANNOTATE_RegDst;
+        ANNOTATE_ALUSrc;
+        ANNOTATE_MemtoReg;
+        ANNOTATE_RegWrite;
+        ANNOTATE_MemRead;
+        ANNOTATE_MemWrite;
+        ANNOTATE_Branch;
+        ANNOTATE_ALUOp1;
+        ANNOTATE_ALUOp0;
+        ANNOTATE_Jump;
+        #OFFSET;
+        forever begin
+            #115;
+            ANNOTATE_RegDst;
+            ANNOTATE_ALUSrc;
+            ANNOTATE_MemtoReg;
+            ANNOTATE_RegWrite;
+            ANNOTATE_MemRead;
+            ANNOTATE_MemWrite;
+            ANNOTATE_Branch;
+            ANNOTATE_ALUOp1;
+            ANNOTATE_ALUOp0;
+            ANNOTATE_Jump;
+            #85;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("C:\\Users\\7206toellnm\\Desktop\\SCC\\SccTest.ano");
+        #1200 // Final time:  1200 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  185ns
+        #185;
+        A = 1'b1;
+        E = 1'b1;
+        F = 1'b1;
+        // -------------------------------------
+    end
+
+    task ANNOTATE_RegDst;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,RegDst,%b]", $time, RegDst);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_ALUSrc;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,ALUSrc,%b]", $time, ALUSrc);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_MemtoReg;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,MemtoReg,%b]", $time, MemtoReg);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_RegWrite;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,RegWrite,%b]", $time, RegWrite);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_MemRead;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,MemRead,%b]", $time, MemRead);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_MemWrite;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,MemWrite,%b]", $time, MemWrite);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_Branch;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,Branch,%b]", $time, Branch);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_ALUOp1;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,ALUOp1,%b]", $time, ALUOp1);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_ALUOp0;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,ALUOp0,%b]", $time, ALUOp0);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_Jump;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,Jump,%b]", $time, Jump);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

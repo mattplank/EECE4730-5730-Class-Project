@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family xa9500xl -flat -suppress -vhdl Adder1_drc.vhf -w {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1.sch} 
+xst -intstyle ise -ifn "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1.xst" -ofn "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl "Adder1.ngc" Adder1.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper Adder1.ngd 
+XSLTProcess Adder1_build.xml 
+tsim -intstyle ise Adder1 Adder1.nga 
+taengine -intstyle ise -f Adder1 -w --format html1 -l Adder1_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n Adder1 -i Adder1 

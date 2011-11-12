@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="memtest" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_textio" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/memtest/d_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/memtest/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[13:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/memtest/wrt_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wrt_enable</obj_property>
+      <obj_property name="ObjectShortName">wrt_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/memtest/rd_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_enable</obj_property>
+      <obj_property name="ObjectShortName">rd_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/memtest/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/memtest/d_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/memtest/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1.03
+//  \   \         Application : ISE
+//  /   /         Filename : SccTest.tfw
+// /___/   /\     Timestamp : Mon Apr 04 02:32:53 2011
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: SccTest
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module SccTest;
+    reg clock = 1'b0;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    reg C = 1'b0;
+    reg D = 1'b0;
+    reg E = 1'b0;
+    reg F = 1'b0;
+    wire RegDst;
+    wire ALUSrc;
+    wire MemtoReg;
+    wire RegWrite;
+    wire MemRead;
+    wire MemWrite;
+    wire Branch;
+    wire ALUOp1;
+    wire ALUOp0;
+    wire Jump;
+
+    parameter PERIOD = 200;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for clock
+    begin
+        #OFFSET;
+        forever
+        begin
+            clock = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) clock = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Control UUT (
+        .clock(clock),
+        .A(A),
+        .B(B),
+        .C(C),
+        .D(D),
+        .E(E),
+        .F(F),
+        .RegDst(RegDst),
+        .ALUSrc(ALUSrc),
+        .MemtoReg(MemtoReg),
+        .RegWrite(RegWrite),
+        .MemRead(MemRead),
+        .MemWrite(MemWrite),
+        .Branch(Branch),
+        .ALUOp1(ALUOp1),
+        .ALUOp0(ALUOp0),
+        .Jump(Jump));
+
+    initial begin
+        // -------------  Current Time:  185ns
+        #185;
+        A = 1'b1;
+        E = 1'b1;
+        F = 1'b1;
+        // -------------------------------------
+    end
+
+endmodule
+

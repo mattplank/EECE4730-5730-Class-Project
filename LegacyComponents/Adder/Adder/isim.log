@@ -1,0 +1,38 @@
+Command line:
+   ./AdderTest_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  29478
+
+Sun Apr 03 23:58:34 2011
+
+Total Line Count : 36
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 267.186 Meg
+
+ Total Signals          : 1334
+ Total Nets             : 353
+ Total Signal Drivers   : 286
+ Total Blocks           : 266
+ Total Primitive Blocks : 250
+ Total Processes        : 289
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 496
+ntrace select -o on -n /AdderTest/O0 
+ntrace select -o on -n /AdderTest/O1 
+ntrace select -o on -n /AdderTest/Z 
+ntrace select -o on -n /AdderTest/A 
+ntrace select -o on -n /AdderTest/B 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.1404 sec
+
+ Current Memory Usage: 279.835 Meg
+
+Sun Apr 03 23:59:24 2011
+

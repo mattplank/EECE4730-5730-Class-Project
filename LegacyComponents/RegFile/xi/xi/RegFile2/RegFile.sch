@@ -1,0 +1,846 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "xa9500xl"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL Clock
+        SIGNAL WriteData(0:31)
+        SIGNAL XLXN_47(0:31)
+        SIGNAL XLXN_48(0:31)
+        SIGNAL WriteAdd(0:4)
+        SIGNAL XLXN_62(0:31)
+        SIGNAL XLXN_64(0:31)
+        SIGNAL XLXN_66(0:31)
+        SIGNAL XLXN_68(0:31)
+        SIGNAL XLXN_70(0:31)
+        SIGNAL XLXN_72(0:31)
+        SIGNAL XLXN_74(0:31)
+        SIGNAL XLXN_76(0:31)
+        SIGNAL XLXN_78(0:31)
+        SIGNAL XLXN_80(0:31)
+        SIGNAL XLXN_82(0:31)
+        SIGNAL XLXN_84(0:31)
+        SIGNAL XLXN_86(0:31)
+        SIGNAL XLXN_88(0:31)
+        SIGNAL XLXN_90(0:31)
+        SIGNAL XLXN_92(0:31)
+        SIGNAL XLXN_94(0:31)
+        SIGNAL XLXN_96(0:31)
+        SIGNAL XLXN_98(0:31)
+        SIGNAL XLXN_100(0:31)
+        SIGNAL XLXN_102(0:31)
+        SIGNAL XLXN_104(0:31)
+        SIGNAL XLXN_106(0:31)
+        SIGNAL XLXN_108(0:31)
+        SIGNAL XLXN_110(0:31)
+        SIGNAL XLXN_112(0:31)
+        SIGNAL XLXN_114(0:31)
+        SIGNAL XLXN_116(0:31)
+        SIGNAL XLXN_118(0:31)
+        SIGNAL XLXN_120(0:31)
+        SIGNAL XLXN_122(0:31)
+        SIGNAL XLXN_124(0:31)
+        SIGNAL ReadAdd1(0:4)
+        SIGNAL ReadAdd2(0:4)
+        SIGNAL ReadData1(0:31)
+        SIGNAL ReadData2(0:31)
+        SIGNAL XLXN_11(0:31)
+        SIGNAL XLXN_130(0:31)
+        SIGNAL XLXN_12(0:31)
+        SIGNAL XLXN_132(0:31)
+        SIGNAL XLXN_13(0:31)
+        SIGNAL XLXN_134(0:31)
+        SIGNAL XLXN_14(0:31)
+        SIGNAL XLXN_136(0:31)
+        SIGNAL XLXN_16(0:31)
+        SIGNAL XLXN_138(0:31)
+        SIGNAL XLXN_17(0:31)
+        SIGNAL XLXN_140(0:31)
+        SIGNAL XLXN_18(0:31)
+        SIGNAL XLXN_142(0:31)
+        SIGNAL XLXN_19(0:31)
+        SIGNAL XLXN_144(0:31)
+        SIGNAL XLXN_20(0:31)
+        SIGNAL XLXN_146(0:31)
+        SIGNAL XLXN_21(0:31)
+        SIGNAL XLXN_148(0:31)
+        SIGNAL XLXN_22(0:31)
+        SIGNAL XLXN_150(0:31)
+        SIGNAL XLXN_23(0:31)
+        SIGNAL XLXN_152(0:31)
+        SIGNAL XLXN_24(0:31)
+        SIGNAL XLXN_154(0:31)
+        SIGNAL XLXN_25(0:31)
+        SIGNAL XLXN_156(0:31)
+        SIGNAL XLXN_26(0:31)
+        SIGNAL XLXN_158(0:31)
+        SIGNAL XLXN_27(0:31)
+        SIGNAL XLXN_160(0:31)
+        SIGNAL XLXN_28(0:31)
+        SIGNAL XLXN_162(0:31)
+        SIGNAL XLXN_29(0:31)
+        SIGNAL XLXN_164(0:31)
+        SIGNAL XLXN_30(0:31)
+        SIGNAL XLXN_166(0:31)
+        SIGNAL XLXN_31(0:31)
+        SIGNAL XLXN_168(0:31)
+        SIGNAL XLXN_32(0:31)
+        SIGNAL XLXN_170(0:31)
+        SIGNAL XLXN_33(0:31)
+        SIGNAL XLXN_172(0:31)
+        SIGNAL XLXN_34(0:31)
+        SIGNAL XLXN_174(0:31)
+        SIGNAL XLXN_35(0:31)
+        SIGNAL XLXN_176(0:31)
+        SIGNAL XLXN_36(0:31)
+        SIGNAL XLXN_178(0:31)
+        SIGNAL XLXN_37(0:31)
+        SIGNAL XLXN_180(0:31)
+        SIGNAL XLXN_38(0:31)
+        SIGNAL XLXN_182(0:31)
+        SIGNAL XLXN_39(0:31)
+        SIGNAL XLXN_184(0:31)
+        SIGNAL XLXN_40(0:31)
+        SIGNAL XLXN_186(0:31)
+        SIGNAL XLXN_41(0:31)
+        SIGNAL XLXN_188(0:31)
+        SIGNAL XLXN_42(0:31)
+        SIGNAL XLXN_190(0:31)
+        SIGNAL XLXN_43(0:31)
+        SIGNAL XLXN_192(0:31)
+        SIGNAL XLXN_193(0:31)
+        SIGNAL XLXN_194
+        SIGNAL XLXN_195(0:31)
+        SIGNAL XLXN_196(0:31)
+        SIGNAL XLXN_197(0:31)
+        SIGNAL XLXN_198(0:31)
+        SIGNAL XLXN_199(0:31)
+        SIGNAL XLXN_200(0:31)
+        SIGNAL XLXN_201(0:31)
+        SIGNAL XLXN_202(0:31)
+        SIGNAL XLXN_203(0:31)
+        SIGNAL XLXN_204(0:31)
+        SIGNAL XLXN_205(0:31)
+        SIGNAL XLXN_206(0:31)
+        SIGNAL XLXN_207(0:31)
+        SIGNAL XLXN_208(0:31)
+        SIGNAL XLXN_209(0:31)
+        SIGNAL XLXN_210(0:31)
+        SIGNAL XLXN_211(0:31)
+        SIGNAL XLXN_212(0:31)
+        SIGNAL XLXN_213(0:31)
+        SIGNAL XLXN_214(0:31)
+        SIGNAL XLXN_215(0:31)
+        SIGNAL XLXN_216(0:31)
+        SIGNAL XLXN_217(0:31)
+        SIGNAL XLXN_218(0:31)
+        SIGNAL XLXN_219(0:31)
+        SIGNAL XLXN_220(0:31)
+        SIGNAL XLXN_221(0:31)
+        SIGNAL XLXN_222
+        SIGNAL XLXN_223
+        SIGNAL WriteEnable
+        SIGNAL XLXN_226
+        SIGNAL XLXN_227(0:31)
+        SIGNAL MuxPower
+        SIGNAL XLXN_229
+        SIGNAL Decoderpower
+        PORT Input Clock
+        PORT Input WriteData(0:31)
+        PORT Input WriteAdd(0:4)
+        PORT Input ReadAdd1(0:4)
+        PORT Input ReadAdd2(0:4)
+        PORT Output ReadData1(0:31)
+        PORT Output ReadData2(0:31)
+        PORT Input WriteEnable
+        PORT Input MuxPower
+        PORT Input Decoderpower
+        BEGIN BLOCKDEF Decoder32Bit
+            TIMESTAMP 2011 4 4 12 30 29
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -44 384 -20 
+            LINE N 320 -32 384 -32 
+            RECTANGLE N 64 -64 320 0 
+        END BLOCKDEF
+        BEGIN BLOCKDEF MemUnit32Bit
+            TIMESTAMP 2011 4 4 11 42 49
+            RECTANGLE N 480 20 544 44 
+            LINE N 480 32 544 32 
+            RECTANGLE N 0 -2028 64 -2004 
+            LINE N 64 -2016 0 -2016 
+            RECTANGLE N 0 -1036 64 -1012 
+            LINE N 64 -1024 0 -1024 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 480 -2028 544 -2004 
+            LINE N 480 -2016 544 -2016 
+            RECTANGLE N 480 -1964 544 -1940 
+            LINE N 480 -1952 544 -1952 
+            RECTANGLE N 480 -1900 544 -1876 
+            LINE N 480 -1888 544 -1888 
+            RECTANGLE N 480 -1836 544 -1812 
+            LINE N 480 -1824 544 -1824 
+            RECTANGLE N 480 -1772 544 -1748 
+            LINE N 480 -1760 544 -1760 
+            RECTANGLE N 480 -1708 544 -1684 
+            LINE N 480 -1696 544 -1696 
+            RECTANGLE N 480 -1644 544 -1620 
+            LINE N 480 -1632 544 -1632 
+            RECTANGLE N 480 -1580 544 -1556 
+            LINE N 480 -1568 544 -1568 
+            RECTANGLE N 480 -1516 544 -1492 
+            LINE N 480 -1504 544 -1504 
+            RECTANGLE N 480 -1452 544 -1428 
+            LINE N 480 -1440 544 -1440 
+            RECTANGLE N 480 -1388 544 -1364 
+            LINE N 480 -1376 544 -1376 
+            RECTANGLE N 480 -1324 544 -1300 
+            LINE N 480 -1312 544 -1312 
+            RECTANGLE N 480 -1260 544 -1236 
+            LINE N 480 -1248 544 -1248 
+            RECTANGLE N 480 -1196 544 -1172 
+            LINE N 480 -1184 544 -1184 
+            RECTANGLE N 480 -1132 544 -1108 
+            LINE N 480 -1120 544 -1120 
+            RECTANGLE N 480 -1068 544 -1044 
+            LINE N 480 -1056 544 -1056 
+            RECTANGLE N 480 -1004 544 -980 
+            LINE N 480 -992 544 -992 
+            RECTANGLE N 480 -940 544 -916 
+            LINE N 480 -928 544 -928 
+            RECTANGLE N 480 -876 544 -852 
+            LINE N 480 -864 544 -864 
+            RECTANGLE N 480 -812 544 -788 
+            LINE N 480 -800 544 -800 
+            RECTANGLE N 480 -748 544 -724 
+            LINE N 480 -736 544 -736 
+            RECTANGLE N 480 -684 544 -660 
+            LINE N 480 -672 544 -672 
+            RECTANGLE N 480 -620 544 -596 
+            LINE N 480 -608 544 -608 
+            RECTANGLE N 480 -556 544 -532 
+            LINE N 480 -544 544 -544 
+            RECTANGLE N 480 -492 544 -468 
+            LINE N 480 -480 544 -480 
+            RECTANGLE N 480 -428 544 -404 
+            LINE N 480 -416 544 -416 
+            RECTANGLE N 480 -364 544 -340 
+            LINE N 480 -352 544 -352 
+            RECTANGLE N 480 -300 544 -276 
+            LINE N 480 -288 544 -288 
+            RECTANGLE N 480 -236 544 -212 
+            LINE N 480 -224 544 -224 
+            RECTANGLE N 480 -172 544 -148 
+            LINE N 480 -160 544 -160 
+            RECTANGLE N 480 -108 544 -84 
+            LINE N 480 -96 544 -96 
+            RECTANGLE N 64 -2048 480 64 
+        END BLOCKDEF
+        BEGIN BLOCKDEF Mux32Bit
+            TIMESTAMP 2011 4 4 12 34 50
+            LINE N 64 32 0 32 
+            RECTANGLE N 0 -2092 64 -2068 
+            LINE N 64 -2080 0 -2080 
+            RECTANGLE N 0 -2028 64 -2004 
+            LINE N 64 -2016 0 -2016 
+            RECTANGLE N 0 -1964 64 -1940 
+            LINE N 64 -1952 0 -1952 
+            RECTANGLE N 0 -1900 64 -1876 
+            LINE N 64 -1888 0 -1888 
+            RECTANGLE N 0 -1836 64 -1812 
+            LINE N 64 -1824 0 -1824 
+            RECTANGLE N 0 -1772 64 -1748 
+            LINE N 64 -1760 0 -1760 
+            RECTANGLE N 0 -1708 64 -1684 
+            LINE N 64 -1696 0 -1696 
+            RECTANGLE N 0 -1644 64 -1620 
+            LINE N 64 -1632 0 -1632 
+            RECTANGLE N 0 -1580 64 -1556 
+            LINE N 64 -1568 0 -1568 
+            RECTANGLE N 0 -1516 64 -1492 
+            LINE N 64 -1504 0 -1504 
+            RECTANGLE N 0 -1452 64 -1428 
+            LINE N 64 -1440 0 -1440 
+            RECTANGLE N 0 -1388 64 -1364 
+            LINE N 64 -1376 0 -1376 
+            RECTANGLE N 0 -1324 64 -1300 
+            LINE N 64 -1312 0 -1312 
+            RECTANGLE N 0 -1260 64 -1236 
+            LINE N 64 -1248 0 -1248 
+            RECTANGLE N 0 -1196 64 -1172 
+            LINE N 64 -1184 0 -1184 
+            RECTANGLE N 0 -1132 64 -1108 
+            LINE N 64 -1120 0 -1120 
+            RECTANGLE N 0 -1068 64 -1044 
+            LINE N 64 -1056 0 -1056 
+            RECTANGLE N 0 -1004 64 -980 
+            LINE N 64 -992 0 -992 
+            RECTANGLE N 0 -940 64 -916 
+            LINE N 64 -928 0 -928 
+            RECTANGLE N 0 -876 64 -852 
+            LINE N 64 -864 0 -864 
+            RECTANGLE N 0 -812 64 -788 
+            LINE N 64 -800 0 -800 
+            RECTANGLE N 0 -748 64 -724 
+            LINE N 64 -736 0 -736 
+            RECTANGLE N 0 -684 64 -660 
+            LINE N 64 -672 0 -672 
+            RECTANGLE N 0 -620 64 -596 
+            LINE N 64 -608 0 -608 
+            RECTANGLE N 0 -556 64 -532 
+            LINE N 64 -544 0 -544 
+            RECTANGLE N 0 -492 64 -468 
+            LINE N 64 -480 0 -480 
+            RECTANGLE N 0 -428 64 -404 
+            LINE N 64 -416 0 -416 
+            RECTANGLE N 0 -364 64 -340 
+            LINE N 64 -352 0 -352 
+            RECTANGLE N 0 -300 64 -276 
+            LINE N 64 -288 0 -288 
+            RECTANGLE N 0 -236 64 -212 
+            LINE N 64 -224 0 -224 
+            RECTANGLE N 0 -172 64 -148 
+            LINE N 64 -160 0 -160 
+            RECTANGLE N 0 -108 64 -84 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 416 -2092 480 -2068 
+            LINE N 416 -2080 480 -2080 
+            RECTANGLE N 64 -2112 416 64 
+        END BLOCKDEF
+        BEGIN BLOCKDEF and2
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 0 -64 64 -64 
+            LINE N 0 -128 64 -128 
+            LINE N 256 -96 192 -96 
+            ARC N 96 -144 192 -48 144 -48 144 -144 
+            LINE N 144 -48 64 -48 
+            LINE N 64 -144 144 -144 
+            LINE N 64 -48 64 -144 
+        END BLOCKDEF
+        BEGIN BLOCKDEF SignExtend
+            TIMESTAMP 2011 4 4 10 55 33
+            RECTANGLE N 64 -64 272 64 
+            RECTANGLE N 208 -44 272 -20 
+            LINE N 128 32 64 32 
+            LINE N 208 -32 272 -32 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_4 MemUnit32Bit
+            PIN MemIN(0:31) WriteData(0:31)
+            PIN WriteEnable(0:31) XLXN_47(0:31)
+            PIN Clock Clock
+            PIN MemOUT2(0:31) XLXN_12(0:31)
+            PIN MemOUT3(0:31) XLXN_13(0:31)
+            PIN MemOUT4(0:31) XLXN_14(0:31)
+            PIN MemOUT5(0:31) XLXN_16(0:31)
+            PIN MemOUT6(0:31) XLXN_17(0:31)
+            PIN MemOUT7(0:31) XLXN_18(0:31)
+            PIN MemOUT8(0:31) XLXN_19(0:31)
+            PIN MemOUT9(0:31) XLXN_20(0:31)
+            PIN MemOUT10(0:31) XLXN_21(0:31)
+            PIN MemOUT11(0:31) XLXN_22(0:31)
+            PIN MemOUT12(0:31) XLXN_23(0:31)
+            PIN MemOUT13(0:31) XLXN_24(0:31)
+            PIN MemOUT14(0:31) XLXN_25(0:31)
+            PIN MemOUT15(0:31) XLXN_26(0:31)
+            PIN MemOUT16(0:31) XLXN_27(0:31)
+            PIN MemOUT17(0:31) XLXN_28(0:31)
+            PIN MemOUT18(0:31) XLXN_29(0:31)
+            PIN MemOUT19(0:31) XLXN_30(0:31)
+            PIN MemOUT20(0:31) XLXN_31(0:31)
+            PIN MemOUT21(0:31) XLXN_32(0:31)
+            PIN MemOUT23(0:31) XLXN_34(0:31)
+            PIN MemOUT24(0:31) XLXN_35(0:31)
+            PIN MemOUT25(0:31) XLXN_36(0:31)
+            PIN MemOUT27(0:31) XLXN_38(0:31)
+            PIN MemOUT28(0:31) XLXN_39(0:31)
+            PIN MemOUT29(0:31) XLXN_40(0:31)
+            PIN MemOUT31(0:31) XLXN_42(0:31)
+            PIN MemOUT32(0:31) XLXN_43(0:31)
+            PIN MemOUT30(0:31) XLXN_41(0:31)
+            PIN MemOUT1(0:31) XLXN_11(0:31)
+            PIN MemOUT22(0:31) XLXN_33(0:31)
+            PIN MemOUT26(0:31) XLXN_37(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_10(0:31) and2
+            PIN I0 XLXN_48(0:31)
+            PIN I1 XLXN_227(0:31)
+            PIN O XLXN_47(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_1 Decoder32Bit
+            PIN S(0:4) WriteAdd(0:4)
+            PIN DecoderNeedPower Decoderpower
+            PIN DecOUT(0:31) XLXN_48(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_8 Mux32Bit
+            PIN MuxPower MuxPower
+            PIN S(0:4) ReadAdd2(0:4)
+            PIN MUXIN1(0:31) XLXN_11(0:31)
+            PIN MUXIN2(0:31) XLXN_12(0:31)
+            PIN MUXIN3(0:31) XLXN_13(0:31)
+            PIN MUXIN4(0:31) XLXN_14(0:31)
+            PIN MUXIN5(0:31) XLXN_16(0:31)
+            PIN MUXIN6(0:31) XLXN_17(0:31)
+            PIN MUXIN7(0:31) XLXN_18(0:31)
+            PIN MUXIN8(0:31) XLXN_19(0:31)
+            PIN MUXIN9(0:31) XLXN_20(0:31)
+            PIN MUXIN10(0:31) XLXN_21(0:31)
+            PIN MUXIN11(0:31) XLXN_22(0:31)
+            PIN MUXIN12(0:31) XLXN_23(0:31)
+            PIN MUXIN13(0:31) XLXN_24(0:31)
+            PIN MUXIN14(0:31) XLXN_25(0:31)
+            PIN MUXIN15(0:31) XLXN_26(0:31)
+            PIN MUXIN16(0:31) XLXN_27(0:31)
+            PIN MUXIN17(0:31) XLXN_28(0:31)
+            PIN MUXIN18(0:31) XLXN_29(0:31)
+            PIN MUXIN19(0:31) XLXN_30(0:31)
+            PIN MUXIN20(0:31) XLXN_31(0:31)
+            PIN MUXIN21(0:31) XLXN_32(0:31)
+            PIN MUXIN22(0:31) XLXN_33(0:31)
+            PIN MUXIN23(0:31) XLXN_34(0:31)
+            PIN MUXIN24(0:31) XLXN_35(0:31)
+            PIN MUXIN25(0:31) XLXN_36(0:31)
+            PIN MUXIN26(0:31) XLXN_37(0:31)
+            PIN MUXIN27(0:31) XLXN_38(0:31)
+            PIN MUXIN28(0:31) XLXN_39(0:31)
+            PIN MUXIN29(0:31) XLXN_40(0:31)
+            PIN MUXIN30(0:31) XLXN_41(0:31)
+            PIN MUXIN31(0:31) XLXN_42(0:31)
+            PIN MUXIN32(0:31) XLXN_43(0:31)
+            PIN MUXOUT(0:31) ReadData2(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_7 Mux32Bit
+            PIN MuxPower MuxPower
+            PIN S(0:4) ReadAdd1(0:4)
+            PIN MUXIN1(0:31) XLXN_11(0:31)
+            PIN MUXIN2(0:31) XLXN_12(0:31)
+            PIN MUXIN3(0:31) XLXN_13(0:31)
+            PIN MUXIN4(0:31) XLXN_14(0:31)
+            PIN MUXIN5(0:31) XLXN_16(0:31)
+            PIN MUXIN6(0:31) XLXN_17(0:31)
+            PIN MUXIN7(0:31) XLXN_18(0:31)
+            PIN MUXIN8(0:31) XLXN_19(0:31)
+            PIN MUXIN9(0:31) XLXN_20(0:31)
+            PIN MUXIN10(0:31) XLXN_21(0:31)
+            PIN MUXIN11(0:31) XLXN_22(0:31)
+            PIN MUXIN12(0:31) XLXN_23(0:31)
+            PIN MUXIN13(0:31) XLXN_24(0:31)
+            PIN MUXIN14(0:31) XLXN_25(0:31)
+            PIN MUXIN15(0:31) XLXN_26(0:31)
+            PIN MUXIN16(0:31) XLXN_27(0:31)
+            PIN MUXIN17(0:31) XLXN_28(0:31)
+            PIN MUXIN18(0:31) XLXN_29(0:31)
+            PIN MUXIN19(0:31) XLXN_30(0:31)
+            PIN MUXIN20(0:31) XLXN_31(0:31)
+            PIN MUXIN21(0:31) XLXN_32(0:31)
+            PIN MUXIN22(0:31) XLXN_33(0:31)
+            PIN MUXIN23(0:31) XLXN_34(0:31)
+            PIN MUXIN24(0:31) XLXN_35(0:31)
+            PIN MUXIN25(0:31) XLXN_36(0:31)
+            PIN MUXIN26(0:31) XLXN_37(0:31)
+            PIN MUXIN27(0:31) XLXN_38(0:31)
+            PIN MUXIN28(0:31) XLXN_39(0:31)
+            PIN MUXIN29(0:31) XLXN_40(0:31)
+            PIN MUXIN30(0:31) XLXN_41(0:31)
+            PIN MUXIN31(0:31) XLXN_42(0:31)
+            PIN MUXIN32(0:31) XLXN_43(0:31)
+            PIN MUXOUT(0:31) ReadData1(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_15 SignExtend
+            PIN DataIn WriteEnable
+            PIN DataOut(0:31) XLXN_227(0:31)
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 7040 5440
+        BEGIN BRANCH Clock
+            WIRE 1024 3440 1232 3440
+            WIRE 1232 3440 1232 5232
+            WIRE 1232 5232 1312 5232
+        END BRANCH
+        IOMARKER 1024 3440 Clock R180 28
+        BEGIN BRANCH WriteData(0:31)
+            WIRE 912 3168 1088 3168
+            WIRE 1088 3168 1088 3312
+            WIRE 1088 3312 1232 3312
+            WIRE 1232 3248 1312 3248
+            WIRE 1232 3248 1232 3312
+        END BRANCH
+        IOMARKER 912 3168 WriteData(0:31) R180 28
+        BEGIN BRANCH XLXN_47(0:31)
+            WIRE 992 3376 1264 3376
+            WIRE 1264 3376 1264 4240
+            WIRE 1264 4240 1312 4240
+        END BRANCH
+        BEGIN BRANCH XLXN_48(0:31)
+            WIRE 720 3264 720 3408
+            WIRE 720 3408 736 3408
+            WIRE 720 3264 1072 3264
+            WIRE 1072 3264 1072 3520
+            WIRE 800 3520 1072 3520
+        END BRANCH
+        IOMARKER 208 3568 WriteAdd(0:4) R180 28
+        INSTANCE XLXI_10(0:31) 736 3472 R0
+        BEGIN INSTANCE XLXI_8 3024 5392 R0
+        END INSTANCE
+        BEGIN INSTANCE XLXI_7 3040 3168 R0
+        END INSTANCE
+        BEGIN BRANCH ReadAdd1(0:4)
+            WIRE 3008 1088 3040 1088
+        END BRANCH
+        BEGIN BRANCH ReadAdd2(0:4)
+            WIRE 2992 3312 3024 3312
+        END BRANCH
+        BEGIN BRANCH ReadData1(0:31)
+            WIRE 3520 1088 3552 1088
+        END BRANCH
+        BEGIN BRANCH ReadData2(0:31)
+            WIRE 3504 3312 3536 3312
+        END BRANCH
+        BEGIN BRANCH XLXN_11(0:31)
+            WIRE 1856 5104 1904 5104
+            WIRE 1904 3280 1904 5104
+            WIRE 1904 3280 2240 3280
+            WIRE 2240 3280 2240 3360
+            WIRE 2240 3360 3008 3360
+            WIRE 3008 3360 3008 3376
+            WIRE 3008 3376 3024 3376
+            WIRE 3008 1152 3040 1152
+            WIRE 3008 1152 3008 3360
+        END BRANCH
+        BEGIN BRANCH XLXN_12(0:31)
+            WIRE 1856 3248 2208 3248
+            WIRE 2208 3248 2208 3376
+            WIRE 2208 3376 2752 3376
+            WIRE 2752 3376 2752 3440
+            WIRE 2752 3440 3024 3440
+            WIRE 2752 1216 3040 1216
+            WIRE 2752 1216 2752 3376
+        END BRANCH
+        BEGIN BRANCH XLXN_13(0:31)
+            WIRE 1856 3312 2192 3312
+            WIRE 2192 3312 2192 3440
+            WIRE 2192 3440 2736 3440
+            WIRE 2736 3440 2736 3504
+            WIRE 2736 3504 3024 3504
+            WIRE 2736 1280 3040 1280
+            WIRE 2736 1280 2736 3440
+        END BRANCH
+        BEGIN BRANCH XLXN_14(0:31)
+            WIRE 1856 3376 2176 3376
+            WIRE 2176 3376 2176 3504
+            WIRE 2176 3504 2720 3504
+            WIRE 2720 3504 2720 3568
+            WIRE 2720 3568 3024 3568
+            WIRE 2720 1344 3040 1344
+            WIRE 2720 1344 2720 3504
+        END BRANCH
+        BEGIN BRANCH XLXN_16(0:31)
+            WIRE 1856 3440 2160 3440
+            WIRE 2160 3440 2160 3568
+            WIRE 2160 3568 2704 3568
+            WIRE 2704 3568 2704 3632
+            WIRE 2704 3632 3024 3632
+            WIRE 2704 1408 3040 1408
+            WIRE 2704 1408 2704 3568
+        END BRANCH
+        BEGIN BRANCH XLXN_17(0:31)
+            WIRE 1856 3504 2144 3504
+            WIRE 2144 3504 2144 3632
+            WIRE 2144 3632 2688 3632
+            WIRE 2688 3632 2688 3696
+            WIRE 2688 3696 3024 3696
+            WIRE 2688 1472 3040 1472
+            WIRE 2688 1472 2688 3632
+        END BRANCH
+        BEGIN BRANCH XLXN_18(0:31)
+            WIRE 1856 3568 2128 3568
+            WIRE 2128 3568 2128 3696
+            WIRE 2128 3696 2672 3696
+            WIRE 2672 3696 2672 3760
+            WIRE 2672 3760 3024 3760
+            WIRE 2672 1536 3040 1536
+            WIRE 2672 1536 2672 3696
+        END BRANCH
+        BEGIN BRANCH XLXN_19(0:31)
+            WIRE 1856 3632 2112 3632
+            WIRE 2112 3632 2112 3760
+            WIRE 2112 3760 2656 3760
+            WIRE 2656 3760 2656 3824
+            WIRE 2656 3824 3024 3824
+            WIRE 2656 1600 3040 1600
+            WIRE 2656 1600 2656 3760
+        END BRANCH
+        BEGIN BRANCH XLXN_20(0:31)
+            WIRE 1856 3696 2096 3696
+            WIRE 2096 3696 2096 3824
+            WIRE 2096 3824 2640 3824
+            WIRE 2640 3824 2640 3888
+            WIRE 2640 3888 3024 3888
+            WIRE 2640 1664 3040 1664
+            WIRE 2640 1664 2640 3824
+        END BRANCH
+        BEGIN BRANCH XLXN_21(0:31)
+            WIRE 1856 3760 2080 3760
+            WIRE 2080 3760 2080 3888
+            WIRE 2080 3888 2624 3888
+            WIRE 2624 3888 2624 3952
+            WIRE 2624 3952 3024 3952
+            WIRE 2624 1728 3040 1728
+            WIRE 2624 1728 2624 3888
+        END BRANCH
+        BEGIN BRANCH XLXN_22(0:31)
+            WIRE 1856 3824 2064 3824
+            WIRE 2064 3824 2064 3952
+            WIRE 2064 3952 2608 3952
+            WIRE 2608 3952 2608 4016
+            WIRE 2608 4016 3024 4016
+            WIRE 2608 1792 3040 1792
+            WIRE 2608 1792 2608 3952
+        END BRANCH
+        BEGIN BRANCH XLXN_23(0:31)
+            WIRE 1856 3888 2048 3888
+            WIRE 2048 3888 2048 4016
+            WIRE 2048 4016 2592 4016
+            WIRE 2592 4016 2592 4080
+            WIRE 2592 4080 3024 4080
+            WIRE 2592 1856 3040 1856
+            WIRE 2592 1856 2592 4016
+        END BRANCH
+        BEGIN BRANCH XLXN_24(0:31)
+            WIRE 1856 3952 2032 3952
+            WIRE 2032 3952 2032 4080
+            WIRE 2032 4080 2576 4080
+            WIRE 2576 4080 2576 4144
+            WIRE 2576 4144 3024 4144
+            WIRE 2576 1920 3040 1920
+            WIRE 2576 1920 2576 4080
+        END BRANCH
+        BEGIN BRANCH XLXN_25(0:31)
+            WIRE 1856 4016 2016 4016
+            WIRE 2016 4016 2016 4144
+            WIRE 2016 4144 2560 4144
+            WIRE 2560 4144 2560 4208
+            WIRE 2560 4208 3024 4208
+            WIRE 2560 1984 3040 1984
+            WIRE 2560 1984 2560 4144
+        END BRANCH
+        BEGIN BRANCH XLXN_26(0:31)
+            WIRE 1856 4080 2000 4080
+            WIRE 2000 4080 2000 4208
+            WIRE 2000 4208 2544 4208
+            WIRE 2544 4208 2544 4272
+            WIRE 2544 4272 3024 4272
+            WIRE 2544 2048 3040 2048
+            WIRE 2544 2048 2544 4208
+        END BRANCH
+        BEGIN BRANCH XLXN_27(0:31)
+            WIRE 1856 4144 1984 4144
+            WIRE 1984 4144 1984 4272
+            WIRE 1984 4272 2528 4272
+            WIRE 2528 4272 2528 4336
+            WIRE 2528 4336 3024 4336
+            WIRE 2528 2112 3040 2112
+            WIRE 2528 2112 2528 4272
+        END BRANCH
+        BEGIN BRANCH XLXN_28(0:31)
+            WIRE 1856 4208 1968 4208
+            WIRE 1968 4208 1968 4336
+            WIRE 1968 4336 2512 4336
+            WIRE 2512 4336 2512 4400
+            WIRE 2512 4400 3024 4400
+            WIRE 2512 2176 3040 2176
+            WIRE 2512 2176 2512 4336
+        END BRANCH
+        BEGIN BRANCH XLXN_29(0:31)
+            WIRE 1856 4272 1952 4272
+            WIRE 1952 4272 1952 4400
+            WIRE 1952 4400 2496 4400
+            WIRE 2496 4400 2496 4464
+            WIRE 2496 4464 3024 4464
+            WIRE 2496 2240 3040 2240
+            WIRE 2496 2240 2496 4400
+        END BRANCH
+        BEGIN BRANCH XLXN_30(0:31)
+            WIRE 1856 4336 1936 4336
+            WIRE 1936 4336 1936 4464
+            WIRE 1936 4464 2480 4464
+            WIRE 2480 4464 2480 4528
+            WIRE 2480 4528 3024 4528
+            WIRE 2480 2304 3040 2304
+            WIRE 2480 2304 2480 4464
+        END BRANCH
+        BEGIN BRANCH XLXN_31(0:31)
+            WIRE 1856 4400 1920 4400
+            WIRE 1920 4400 1920 4528
+            WIRE 1920 4528 2464 4528
+            WIRE 2464 4528 2464 4592
+            WIRE 2464 4592 3024 4592
+            WIRE 2464 2368 3040 2368
+            WIRE 2464 2368 2464 4528
+        END BRANCH
+        BEGIN BRANCH XLXN_32(0:31)
+            WIRE 1856 4464 1856 4480
+            WIRE 1856 4480 2240 4480
+            WIRE 2240 4480 2240 4592
+            WIRE 2240 4592 2448 4592
+            WIRE 2448 4592 2448 4656
+            WIRE 2448 4656 3024 4656
+            WIRE 2448 2432 3040 2432
+            WIRE 2448 2432 2448 4592
+        END BRANCH
+        BEGIN BRANCH XLXN_33(0:31)
+            WIRE 1856 5168 1856 5200
+            WIRE 1856 5200 2144 5200
+            WIRE 2144 4656 2432 4656
+            WIRE 2432 4656 2432 4720
+            WIRE 2432 4720 3024 4720
+            WIRE 2144 4656 2144 5200
+            WIRE 2432 2496 3040 2496
+            WIRE 2432 2496 2432 4656
+        END BRANCH
+        BEGIN BRANCH XLXN_34(0:31)
+            WIRE 1856 4528 1856 4544
+            WIRE 1856 4544 2208 4544
+            WIRE 2208 4544 2208 4720
+            WIRE 2208 4720 2416 4720
+            WIRE 2416 4720 2416 4784
+            WIRE 2416 4784 3024 4784
+            WIRE 2416 2560 3040 2560
+            WIRE 2416 2560 2416 4720
+        END BRANCH
+        BEGIN BRANCH XLXN_35(0:31)
+            WIRE 1856 4592 2192 4592
+            WIRE 2192 4592 2192 4784
+            WIRE 2192 4784 2400 4784
+            WIRE 2400 4784 2400 4848
+            WIRE 2400 4848 3024 4848
+            WIRE 2400 2624 3040 2624
+            WIRE 2400 2624 2400 4784
+        END BRANCH
+        BEGIN BRANCH XLXN_36(0:31)
+            WIRE 1856 4640 2176 4640
+            WIRE 2176 4640 2176 4848
+            WIRE 2176 4848 2384 4848
+            WIRE 2384 4848 2384 4912
+            WIRE 2384 4912 3024 4912
+            WIRE 1856 4640 1856 4656
+            WIRE 2384 2688 3040 2688
+            WIRE 2384 2688 2384 4848
+        END BRANCH
+        BEGIN BRANCH XLXN_37(0:31)
+            WIRE 1856 5264 2160 5264
+            WIRE 1856 5264 1856 5296
+            WIRE 2160 4912 2368 4912
+            WIRE 2368 4912 2368 4976
+            WIRE 2368 4976 3024 4976
+            WIRE 2160 4912 2160 5264
+            WIRE 2368 2752 3040 2752
+            WIRE 2368 2752 2368 4912
+        END BRANCH
+        BEGIN BRANCH XLXN_38(0:31)
+            WIRE 1856 4720 2128 4720
+            WIRE 2128 4720 2128 4976
+            WIRE 2128 4976 2352 4976
+            WIRE 2352 4976 2352 5040
+            WIRE 2352 5040 3024 5040
+            WIRE 2352 2816 3040 2816
+            WIRE 2352 2816 2352 4976
+        END BRANCH
+        BEGIN BRANCH XLXN_39(0:31)
+            WIRE 1856 4784 2112 4784
+            WIRE 2112 4784 2112 5040
+            WIRE 2112 5040 2336 5040
+            WIRE 2336 5040 2336 5104
+            WIRE 2336 5104 3024 5104
+            WIRE 2336 2880 3040 2880
+            WIRE 2336 2880 2336 5040
+        END BRANCH
+        BEGIN BRANCH XLXN_40(0:31)
+            WIRE 1856 4848 2096 4848
+            WIRE 2096 4848 2096 5104
+            WIRE 2096 5104 2320 5104
+            WIRE 2320 5104 2320 5168
+            WIRE 2320 5168 3024 5168
+            WIRE 2320 2944 3040 2944
+            WIRE 2320 2944 2320 5104
+        END BRANCH
+        BEGIN BRANCH XLXN_41(0:31)
+            WIRE 1856 5040 2080 5040
+            WIRE 2080 5040 2080 5168
+            WIRE 2080 5168 2304 5168
+            WIRE 2304 5168 2304 5232
+            WIRE 2304 5232 3024 5232
+            WIRE 2304 3008 3040 3008
+            WIRE 2304 3008 2304 5168
+        END BRANCH
+        BEGIN BRANCH XLXN_42(0:31)
+            WIRE 1856 4912 2000 4912
+            WIRE 2000 4912 2000 5232
+            WIRE 2000 5232 2288 5232
+            WIRE 2288 5232 2288 5296
+            WIRE 2288 5296 3024 5296
+            WIRE 2288 3072 3040 3072
+            WIRE 2288 3072 2288 5232
+        END BRANCH
+        BEGIN BRANCH XLXN_43(0:31)
+            WIRE 1856 4976 1920 4976
+            WIRE 1920 4976 1920 5296
+            WIRE 1920 5296 2272 5296
+            WIRE 2272 5296 2272 5360
+            WIRE 2272 5360 3024 5360
+            WIRE 2272 3136 3040 3136
+            WIRE 2272 3136 2272 5296
+        END BRANCH
+        IOMARKER 3008 1088 ReadAdd1(0:4) R180 28
+        IOMARKER 3552 1088 ReadData1(0:31) R0 28
+        IOMARKER 3536 3312 ReadData2(0:31) R0 28
+        BEGIN INSTANCE XLXI_4 1312 5264 R0
+        END INSTANCE
+        BEGIN BRANCH WriteEnable
+            WIRE 224 3120 368 3120
+        END BRANCH
+        BEGIN INSTANCE XLXI_15 304 3088 R0
+        END INSTANCE
+        BEGIN BRANCH XLXN_227(0:31)
+            WIRE 576 3056 656 3056
+            WIRE 656 3056 656 3344
+            WIRE 656 3344 736 3344
+        END BRANCH
+        IOMARKER 224 3120 WriteEnable R180 28
+        IOMARKER 2992 3312 ReadAdd2(0:4) R180 28
+        BEGIN BRANCH MuxPower
+            WIRE 1888 3200 1888 5344
+            WIRE 1888 5344 3008 5344
+            WIRE 3008 5344 3008 5424
+            WIRE 3008 5424 3024 5424
+            WIRE 1888 3200 3040 3200
+            WIRE 2992 5424 3008 5424
+        END BRANCH
+        IOMARKER 2992 5424 MuxPower R180 28
+        BEGIN INSTANCE XLXI_1 416 3552 R0
+        END INSTANCE
+        BEGIN BRANCH WriteAdd(0:4)
+            WIRE 208 3568 272 3568
+            WIRE 272 3184 272 3408
+            WIRE 272 3408 272 3568
+            WIRE 272 3408 336 3408
+            WIRE 336 3408 336 3536
+            WIRE 336 3536 368 3536
+            WIRE 368 3504 368 3536
+            WIRE 368 3504 416 3504
+        END BRANCH
+        BEGIN BRANCH Decoderpower
+            WIRE 400 3536 416 3536
+            WIRE 400 3536 400 3600
+            WIRE 400 3600 480 3600
+            WIRE 480 3600 480 3632
+            WIRE 416 3632 480 3632
+        END BRANCH
+        IOMARKER 416 3632 Decoderpower R180 28
+    END SHEET
+END SCHEMATIC

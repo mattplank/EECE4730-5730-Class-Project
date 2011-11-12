@@ -1,0 +1,1217 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "Adder1";
+      var device = "XA95144XL";
+      signals = new Array("Shifted0_SPECSIG","Shifted10_SPECSIG","Shifted11_SPECSIG","Shifted12_SPECSIG","Shifted13_SPECSIG","Shifted14_SPECSIG","Shifted15_SPECSIG","Shifted16_SPECSIG","Shifted17_SPECSIG","Shifted18_SPECSIG","Shifted19_SPECSIG","Shifted1_SPECSIG","Shifted20_SPECSIG","Shifted21_SPECSIG","Shifted22_SPECSIG","Shifted23_SPECSIG","Shifted24_SPECSIG","Shifted25_SPECSIG","Shifted26_SPECSIG","Shifted27_SPECSIG","Shifted28_SPECSIG","Shifted29_SPECSIG","Shifted2_SPECSIG","Shifted30_SPECSIG","Shifted31_SPECSIG","Shifted3_SPECSIG","Shifted4_SPECSIG","Shifted5_SPECSIG","Shifted6_SPECSIG","Shifted7_SPECSIG","Shifted8_SPECSIG","Shifted9_SPECSIG","XLXI_1XLXI_1C7XLXI_1XLXI_1C7_D2_SPECSIG","XLXI_1XLXI_1S15_8C3XLXI_1XLXI_1S15_8C3_D2_SPECSIG","XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG","XLXI_1XLXI_1XLXI_1C3XLXI_1XLXI_1XLXI_1C3_D2_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG","XLXI_1XLXI_2C7XLXI_1XLXI_2C7_D2_SPECSIG","XLXI_1XLXI_2S15_8C3XLXI_1XLXI_2S15_8C3_D2_SPECSIG","XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG","XLXI_1XLXI_2XLXI_1C3XLXI_1XLXI_2XLXI_1C3_D2_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG","XLXI_1XLXN_4XLXI_1XLXN_4_D236__SPECSIG","XLXN_10","XLXN_11","XLXN_12");
+      sigNegs = new Array("OFF","OFF","ON","ON","ON","OFF","ON","ON","ON","ON","ON","OFF","ON","ON","ON","ON","ON","ON","ON","ON","ON","ON","OFF","OFF","ON","ON","ON","ON","OFF","ON","ON","ON","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF","OFF");
+      sigTypes = new Array("","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","");
+
+      
+        specSig["Read_Address12_SPECSIG"]=new Array("Read_Address<12>");
+      
+        specSig["PlusOne12_SPECSIG"]=new Array("PlusOne<12>");
+      
+        specSig["Read_Address8_SPECSIG"]=new Array("Read_Address<8>");
+      
+        specSig["PlusOne8_SPECSIG"]=new Array("PlusOne<8>");
+      
+        specSig["Read_Address4_SPECSIG"]=new Array("Read_Address<4>");
+      
+        specSig["PlusOne4_SPECSIG"]=new Array("PlusOne<4>");
+      
+        specSig["Read_Address0_SPECSIG"]=new Array("Read_Address<0>");
+      
+        specSig["PlusOne0_SPECSIG"]=new Array("PlusOne<0>");
+      
+        specSig["Read_Address28_SPECSIG"]=new Array("Read_Address<28>");
+      
+        specSig["PlusOne28_SPECSIG"]=new Array("PlusOne<28>");
+      
+        specSig["Read_Address24_SPECSIG"]=new Array("Read_Address<24>");
+      
+        specSig["PlusOne24_SPECSIG"]=new Array("PlusOne<24>");
+      
+        specSig["Read_Address20_SPECSIG"]=new Array("Read_Address<20>");
+      
+        specSig["PlusOne20_SPECSIG"]=new Array("PlusOne<20>");
+      
+        specSig["Read_Address16_SPECSIG"]=new Array("Read_Address<16>");
+      
+        specSig["PlusOne16_SPECSIG"]=new Array("PlusOne<16>");
+      
+        specSig["PlusOne31_SPECSIG"]=new Array("PlusOne<31>");
+      
+        specSig["Read_Address31_SPECSIG"]=new Array("Read_Address<31>");
+      
+        specSig["Read_Address13_SPECSIG"]=new Array("Read_Address<13>");
+      
+        specSig["PlusOne13_SPECSIG"]=new Array("PlusOne<13>");
+      
+        specSig["Read_Address9_SPECSIG"]=new Array("Read_Address<9>");
+      
+        specSig["PlusOne9_SPECSIG"]=new Array("PlusOne<9>");
+      
+        specSig["Read_Address5_SPECSIG"]=new Array("Read_Address<5>");
+      
+        specSig["PlusOne5_SPECSIG"]=new Array("PlusOne<5>");
+      
+        specSig["Read_Address1_SPECSIG"]=new Array("Read_Address<1>");
+      
+        specSig["PlusOne1_SPECSIG"]=new Array("PlusOne<1>");
+      
+        specSig["Read_Address29_SPECSIG"]=new Array("Read_Address<29>");
+      
+        specSig["PlusOne29_SPECSIG"]=new Array("PlusOne<29>");
+      
+        specSig["Read_Address25_SPECSIG"]=new Array("Read_Address<25>");
+      
+        specSig["PlusOne25_SPECSIG"]=new Array("PlusOne<25>");
+      
+        specSig["Read_Address21_SPECSIG"]=new Array("Read_Address<21>");
+      
+        specSig["PlusOne21_SPECSIG"]=new Array("PlusOne<21>");
+      
+        specSig["Read_Address17_SPECSIG"]=new Array("Read_Address<17>");
+      
+        specSig["PlusOne17_SPECSIG"]=new Array("PlusOne<17>");
+      
+        specSig["Read_Address15_SPECSIG"]=new Array("Read_Address<15>");
+      
+        specSig["PlusOne15_SPECSIG"]=new Array("PlusOne<15>");
+      
+        specSig["Read_Address14_SPECSIG"]=new Array("Read_Address<14>");
+      
+        specSig["PlusOne14_SPECSIG"]=new Array("PlusOne<14>");
+      
+        specSig["Read_Address10_SPECSIG"]=new Array("Read_Address<10>");
+      
+        specSig["PlusOne10_SPECSIG"]=new Array("PlusOne<10>");
+      
+        specSig["Read_Address6_SPECSIG"]=new Array("Read_Address<6>");
+      
+        specSig["PlusOne6_SPECSIG"]=new Array("PlusOne<6>");
+      
+        specSig["Read_Address2_SPECSIG"]=new Array("Read_Address<2>");
+      
+        specSig["PlusOne2_SPECSIG"]=new Array("PlusOne<2>");
+      
+        specSig["Read_Address30_SPECSIG"]=new Array("Read_Address<30>");
+      
+        specSig["PlusOne30_SPECSIG"]=new Array("PlusOne<30>");
+      
+        specSig["Read_Address26_SPECSIG"]=new Array("Read_Address<26>");
+      
+        specSig["PlusOne26_SPECSIG"]=new Array("PlusOne<26>");
+      
+        specSig["Read_Address22_SPECSIG"]=new Array("Read_Address<22>");
+      
+        specSig["PlusOne22_SPECSIG"]=new Array("PlusOne<22>");
+      
+        specSig["Read_Address18_SPECSIG"]=new Array("Read_Address<18>");
+      
+        specSig["PlusOne18_SPECSIG"]=new Array("PlusOne<18>");
+      
+        specSig["PlusOne11_SPECSIG"]=new Array("PlusOne<11>");
+      
+        specSig["Read_Address11_SPECSIG"]=new Array("Read_Address<11>");
+      
+        specSig["PlusOne7_SPECSIG"]=new Array("PlusOne<7>");
+      
+        specSig["Read_Address7_SPECSIG"]=new Array("Read_Address<7>");
+      
+        specSig["PlusOne27_SPECSIG"]=new Array("PlusOne<27>");
+      
+        specSig["Read_Address27_SPECSIG"]=new Array("Read_Address<27>");
+      
+        specSig["PlusOne23_SPECSIG"]=new Array("PlusOne<23>");
+      
+        specSig["Read_Address23_SPECSIG"]=new Array("Read_Address<23>");
+      
+        specSig["PlusOne19_SPECSIG"]=new Array("PlusOne<19>");
+      
+        specSig["Read_Address19_SPECSIG"]=new Array("Read_Address<19>");
+      
+        specSig["PlusOne3_SPECSIG"]=new Array("PlusOne<3>");
+      
+        specSig["Read_Address3_SPECSIG"]=new Array("Read_Address<3>");
+      
+        specSig["Shifted10_SPECSIG"]=new Array("Shifted<10>");
+      
+        specSig["Shifted2_SPECSIG"]=new Array("Shifted<2>");
+      
+        specSig["Shifted1_SPECSIG"]=new Array("Shifted<1>");
+      
+        specSig["Shifted9_SPECSIG"]=new Array("Shifted<9>");
+      
+        specSig["Shifted0_SPECSIG"]=new Array("Shifted<0>");
+      
+        specSig["Shifted30_SPECSIG"]=new Array("Shifted<30>");
+      
+        specSig["b_SPECSIG"]=new Array("(b)");
+      
+        specSig["XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2");
+      
+        specSig["Shifted5_SPECSIG"]=new Array("Shifted<5>");
+      
+        specSig["Shifted13_SPECSIG"]=new Array("Shifted<13>");
+      
+        specSig["Shifted29_SPECSIG"]=new Array("Shifted<29>");
+      
+        specSig["Shifted6_SPECSIG"]=new Array("Shifted<6>");
+      
+        specSig["Shifted12_SPECSIG"]=new Array("Shifted<12>");
+      
+        specSig["Shifted15_SPECSIG"]=new Array("Shifted<15>");
+      
+        specSig["Shifted16_SPECSIG"]=new Array("Shifted<16>");
+      
+        specSig["Shifted17_SPECSIG"]=new Array("Shifted<17>");
+      
+        specSig["Shifted19_SPECSIG"]=new Array("Shifted<19>");
+      
+        specSig["Shifted20_SPECSIG"]=new Array("Shifted<20>");
+      
+        specSig["Shifted21_SPECSIG"]=new Array("Shifted<21>");
+      
+        specSig["XLXI_1XLXI_2XLXI_1C3XLXI_1XLXI_2XLXI_1C3_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2");
+      
+        specSig["Shifted22_SPECSIG"]=new Array("Shifted<22>");
+      
+        specSig["XLXI_1XLXI_1XLXI_1C3XLXI_1XLXI_1XLXI_1C3_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2");
+      
+        specSig["Shifted24_SPECSIG"]=new Array("Shifted<24>");
+      
+        specSig["Shifted25_SPECSIG"]=new Array("Shifted<25>");
+      
+        specSig["Shifted26_SPECSIG"]=new Array("Shifted<26>");
+      
+        specSig["XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2");
+      
+        specSig["Shifted27_SPECSIG"]=new Array("Shifted<27>");
+      
+        specSig["Shifted3_SPECSIG"]=new Array("Shifted<3>");
+      
+        specSig["Shifted4_SPECSIG"]=new Array("Shifted<4>");
+      
+        specSig["Shifted7_SPECSIG"]=new Array("Shifted<7>");
+      
+        specSig["Shifted28_SPECSIG"]=new Array("Shifted<28>");
+      
+        specSig["Shifted31_SPECSIG"]=new Array("Shifted<31>");
+      
+        specSig["Shifted8_SPECSIG"]=new Array("Shifted<8>");
+      
+        specSig["Shifted14_SPECSIG"]=new Array("Shifted<14>");
+      
+        specSig["Shifted11_SPECSIG"]=new Array("Shifted<11>");
+      
+        specSig["Shifted18_SPECSIG"]=new Array("Shifted<18>");
+      
+        specSig["Shifted23_SPECSIG"]=new Array("Shifted<23>");
+      
+        specSig["XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_");
+      
+        specSig["XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG"]=new Array("XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_");
+      
+        specSig["XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_");
+      
+        specSig["XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG"]=new Array("XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_");
+      
+        specSig["XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXN_4XLXI_1XLXN_4_D236__SPECSIG"]=new Array("XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_");
+      
+        specSig["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2");
+      
+        specSig["XLXI_1XLXI_1C7XLXI_1XLXI_1C7_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2");
+      
+        specSig["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXI_1S15_8C3XLXI_1XLXI_1S15_8C3_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2");
+      
+        specSig["XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2");
+      
+        specSig["XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2");
+      
+        specSig["XLXI_1XLXI_2S15_8C3XLXI_1XLXI_2S15_8C3_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2");
+      
+        specSig["XLXI_1XLXI_2C7XLXI_1XLXI_2C7_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2");
+      
+        specSig["XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG"]=new Array("XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2");
+      
+        specSig["XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG"]=new Array("XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_");
+      
+            pterms["FB1_2_1"]=new Array("XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG");
+          
+            pterms["FB1_2_2"]=new Array("Read_Address9_SPECSIG","PlusOne9_SPECSIG");
+          
+            pterms["FB1_2_3"]=new Array("Read_Address9_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB1_2_4"]=new Array("PlusOne9_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB1_5_1"]=new Array("XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG");
+          
+            pterms["FB1_5_2"]=new Array("Read_Address1_SPECSIG","PlusOne1_SPECSIG");
+          
+            pterms["FB1_5_3"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG","Read_Address1_SPECSIG");
+          
+            pterms["FB1_5_4"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG","PlusOne1_SPECSIG");
+          
+            pterms["FB1_8_1"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG");
+          
+            pterms["FB1_8_2"]=new Array("Read_Address1_SPECSIG","/PlusOne1_SPECSIG");
+          
+            pterms["FB1_8_3"]=new Array("/Read_Address1_SPECSIG","PlusOne1_SPECSIG");
+          
+            pterms["FB1_11_1"]=new Array("PlusOne9_SPECSIG");
+          
+            pterms["FB1_11_2"]=new Array("Read_Address9_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB1_11_3"]=new Array("/Read_Address9_SPECSIG","/XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB1_15_1"]=new Array("PlusOne0_SPECSIG");
+          
+            pterms["FB1_15_2"]=new Array("Read_Address0_SPECSIG");
+          
+            pterms["FB2_1_1"]=new Array("XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG");
+          
+            pterms["FB2_1_2"]=new Array("Read_Address29_SPECSIG","PlusOne29_SPECSIG");
+          
+            pterms["FB2_1_3"]=new Array("Read_Address29_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_1_4"]=new Array("PlusOne29_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_1_5"]=new Array("PlusOne5_SPECSIG","PlusOne6_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_2_1"]=new Array("Read_Address30_SPECSIG","PlusOne30_SPECSIG");
+          
+            pterms["FB2_2_2"]=new Array("Read_Address29_SPECSIG","PlusOne29_SPECSIG","Read_Address30_SPECSIG");
+          
+            pterms["FB2_2_3"]=new Array("Read_Address29_SPECSIG","PlusOne29_SPECSIG","PlusOne30_SPECSIG");
+          
+            pterms["FB2_2_4"]=new Array("Read_Address29_SPECSIG","Read_Address30_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_2_5"]=new Array("PlusOne29_SPECSIG","Read_Address30_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_3_1"]=new Array("Read_Address29_SPECSIG","PlusOne30_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_3_2"]=new Array("PlusOne29_SPECSIG","PlusOne30_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_4_1"]=new Array("PlusOne5_SPECSIG");
+          
+            pterms["FB2_4_2"]=new Array("Read_Address5_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_4_3"]=new Array("/Read_Address5_SPECSIG","/XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_10_1"]=new Array("PlusOne13_SPECSIG");
+          
+            pterms["FB2_10_2"]=new Array("Read_Address13_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_10_3"]=new Array("/Read_Address13_SPECSIG","/XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_13_1"]=new Array("Read_Address30_SPECSIG");
+          
+            pterms["FB2_13_2"]=new Array("PlusOne30_SPECSIG");
+          
+            pterms["FB2_14_1"]=new Array("PlusOne29_SPECSIG");
+          
+            pterms["FB2_14_2"]=new Array("Read_Address29_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_14_3"]=new Array("/Read_Address29_SPECSIG","/XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_15_1"]=new Array("Read_Address4_SPECSIG","PlusOne3_SPECSIG","Read_Address3_SPECSIG");
+          
+            pterms["FB2_15_2"]=new Array("PlusOne4_SPECSIG","PlusOne3_SPECSIG","Read_Address3_SPECSIG");
+          
+            pterms["FB2_16_1"]=new Array("Read_Address4_SPECSIG","PlusOne4_SPECSIG");
+          
+            pterms["FB2_16_2"]=new Array("Read_Address4_SPECSIG","PlusOne3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB2_16_3"]=new Array("Read_Address4_SPECSIG","Read_Address3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB2_16_4"]=new Array("PlusOne4_SPECSIG","PlusOne3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB2_16_5"]=new Array("PlusOne4_SPECSIG","Read_Address3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB2_17_1"]=new Array("XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG");
+          
+            pterms["FB2_17_2"]=new Array("Read_Address5_SPECSIG","PlusOne5_SPECSIG");
+          
+            pterms["FB2_17_3"]=new Array("Read_Address5_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_17_4"]=new Array("PlusOne5_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_17_5"]=new Array("Read_Address5_SPECSIG","PlusOne6_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_18_1"]=new Array("Read_Address6_SPECSIG","PlusOne6_SPECSIG");
+          
+            pterms["FB2_18_2"]=new Array("Read_Address5_SPECSIG","PlusOne5_SPECSIG","Read_Address6_SPECSIG");
+          
+            pterms["FB2_18_3"]=new Array("Read_Address5_SPECSIG","PlusOne5_SPECSIG","PlusOne6_SPECSIG");
+          
+            pterms["FB2_18_4"]=new Array("Read_Address5_SPECSIG","Read_Address6_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB2_18_5"]=new Array("PlusOne5_SPECSIG","Read_Address6_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB3_1_1"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG","Read_Address1_SPECSIG","PlusOne2_SPECSIG");
+          
+            pterms["FB3_1_2"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG","PlusOne1_SPECSIG","PlusOne2_SPECSIG");
+          
+            pterms["FB3_3_1"]=new Array("PlusOne12_SPECSIG");
+          
+            pterms["FB3_3_2"]=new Array("Read_Address12_SPECSIG","XLXI_1XLXI_1S15_8C3XLXI_1XLXI_1S15_8C3_D2_SPECSIG");
+          
+            pterms["FB3_3_3"]=new Array("/Read_Address12_SPECSIG","/XLXI_1XLXI_1S15_8C3XLXI_1XLXI_1S15_8C3_D2_SPECSIG");
+          
+            pterms["FB3_6_1"]=new Array("PlusOne15_SPECSIG");
+          
+            pterms["FB3_6_2"]=new Array("Read_Address15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_6_3"]=new Array("/Read_Address15_SPECSIG","/XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_9_1"]=new Array("PlusOne16_SPECSIG");
+          
+            pterms["FB3_9_2"]=new Array("Read_Address16_SPECSIG","XLXI_1XLXN_4XLXI_1XLXN_4_D236__SPECSIG");
+          
+            pterms["FB3_9_3"]=new Array("/Read_Address16_SPECSIG","/XLXI_1XLXN_4XLXI_1XLXN_4_D236__SPECSIG");
+          
+            pterms["FB3_11_1"]=new Array("Read_Address2_SPECSIG");
+          
+            pterms["FB3_11_2"]=new Array("PlusOne2_SPECSIG");
+          
+            pterms["FB3_12_1"]=new Array("PlusOne17_SPECSIG");
+          
+            pterms["FB3_12_2"]=new Array("Read_Address17_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB3_12_3"]=new Array("/Read_Address17_SPECSIG","/XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB3_13_1"]=new Array("Read_Address15_SPECSIG","PlusOne15_SPECSIG");
+          
+            pterms["FB3_13_2"]=new Array("Read_Address15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_13_3"]=new Array("PlusOne15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_14_1"]=new Array("Read_Address17_SPECSIG","PlusOne17_SPECSIG");
+          
+            pterms["FB3_14_2"]=new Array("Read_Address17_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB3_14_3"]=new Array("PlusOne17_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB3_15_1"]=new Array("PlusOne7_SPECSIG","Read_Address7_SPECSIG");
+          
+            pterms["FB3_15_2"]=new Array("PlusOne7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_15_3"]=new Array("Read_Address7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_15_4"]=new Array("Read_Address16_SPECSIG","PlusOne15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_16_1"]=new Array("Read_Address16_SPECSIG","Read_Address15_SPECSIG","PlusOne15_SPECSIG");
+          
+            pterms["FB3_16_2"]=new Array("Read_Address16_SPECSIG","Read_Address15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_16_3"]=new Array("PlusOne16_SPECSIG","Read_Address15_SPECSIG","PlusOne15_SPECSIG");
+          
+            pterms["FB3_16_4"]=new Array("PlusOne16_SPECSIG","Read_Address15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_16_5"]=new Array("PlusOne16_SPECSIG","PlusOne15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_17_1"]=new Array("Read_Address15_SPECSIG","PlusOne15_SPECSIG","/XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_17_2"]=new Array("/Read_Address15_SPECSIG","/PlusOne15_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB3_17_3"]=new Array("Read_Address16_SPECSIG","PlusOne16_SPECSIG");
+          
+            pterms["FB3_18_1"]=new Array("Read_Address2_SPECSIG","PlusOne2_SPECSIG");
+          
+            pterms["FB3_18_2"]=new Array("Read_Address1_SPECSIG","PlusOne1_SPECSIG","Read_Address2_SPECSIG");
+          
+            pterms["FB3_18_3"]=new Array("Read_Address1_SPECSIG","PlusOne1_SPECSIG","PlusOne2_SPECSIG");
+          
+            pterms["FB3_18_4"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG","Read_Address1_SPECSIG","Read_Address2_SPECSIG");
+          
+            pterms["FB3_18_5"]=new Array("Read_Address0_SPECSIG","PlusOne0_SPECSIG","PlusOne1_SPECSIG","Read_Address2_SPECSIG");
+          
+            pterms["FB4_1_1"]=new Array("Read_Address9_SPECSIG","PlusOne10_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_1_2"]=new Array("PlusOne9_SPECSIG","PlusOne10_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_2_1"]=new Array("PlusOne19_SPECSIG");
+          
+            pterms["FB4_2_2"]=new Array("Read_Address19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_2_3"]=new Array("/Read_Address19_SPECSIG","/XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_6_1"]=new Array("PlusOne20_SPECSIG");
+          
+            pterms["FB4_6_2"]=new Array("Read_Address20_SPECSIG","XLXI_1XLXI_2XLXI_1C3XLXI_1XLXI_2XLXI_1C3_D2_SPECSIG");
+          
+            pterms["FB4_6_3"]=new Array("/Read_Address20_SPECSIG","/XLXI_1XLXI_2XLXI_1C3XLXI_1XLXI_2XLXI_1C3_D2_SPECSIG");
+          
+            pterms["FB4_11_1"]=new Array("PlusOne21_SPECSIG");
+          
+            pterms["FB4_11_2"]=new Array("Read_Address21_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_11_3"]=new Array("/Read_Address21_SPECSIG","/XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_12_1"]=new Array("Read_Address21_SPECSIG","PlusOne21_SPECSIG");
+          
+            pterms["FB4_12_2"]=new Array("Read_Address21_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_12_3"]=new Array("PlusOne21_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_13_1"]=new Array("Read_Address22_SPECSIG","PlusOne22_SPECSIG");
+          
+            pterms["FB4_13_2"]=new Array("Read_Address22_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG");
+          
+            pterms["FB4_13_3"]=new Array("PlusOne22_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG");
+          
+            pterms["FB4_14_1"]=new Array("PlusOne19_SPECSIG","Read_Address19_SPECSIG");
+          
+            pterms["FB4_14_2"]=new Array("PlusOne19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_14_3"]=new Array("Read_Address19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_15_1"]=new Array("PlusOne22_SPECSIG");
+          
+            pterms["FB4_15_2"]=new Array("Read_Address22_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG");
+          
+            pterms["FB4_15_3"]=new Array("/Read_Address22_SPECSIG","/XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG");
+          
+            pterms["FB4_16_1"]=new Array("PlusOne3_SPECSIG","Read_Address3_SPECSIG");
+          
+            pterms["FB4_16_2"]=new Array("PlusOne3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_16_3"]=new Array("Read_Address3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_16_4"]=new Array("Read_Address20_SPECSIG","PlusOne19_SPECSIG","Read_Address19_SPECSIG");
+          
+            pterms["FB4_16_5"]=new Array("PlusOne20_SPECSIG","PlusOne19_SPECSIG","Read_Address19_SPECSIG");
+          
+            pterms["FB4_17_1"]=new Array("Read_Address20_SPECSIG","PlusOne20_SPECSIG");
+          
+            pterms["FB4_17_2"]=new Array("Read_Address20_SPECSIG","PlusOne19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_17_3"]=new Array("Read_Address20_SPECSIG","Read_Address19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_17_4"]=new Array("PlusOne20_SPECSIG","PlusOne19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_17_5"]=new Array("PlusOne20_SPECSIG","Read_Address19_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB4_18_1"]=new Array("Read_Address10_SPECSIG","PlusOne10_SPECSIG");
+          
+            pterms["FB4_18_2"]=new Array("Read_Address9_SPECSIG","PlusOne9_SPECSIG","Read_Address10_SPECSIG");
+          
+            pterms["FB4_18_3"]=new Array("Read_Address9_SPECSIG","PlusOne9_SPECSIG","PlusOne10_SPECSIG");
+          
+            pterms["FB4_18_4"]=new Array("Read_Address9_SPECSIG","Read_Address10_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB4_18_5"]=new Array("PlusOne9_SPECSIG","Read_Address10_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB5_1_1"]=new Array("Read_Address8_SPECSIG","PlusOne7_SPECSIG","Read_Address7_SPECSIG");
+          
+            pterms["FB5_1_2"]=new Array("PlusOne8_SPECSIG","PlusOne7_SPECSIG","Read_Address7_SPECSIG");
+          
+            pterms["FB5_2_1"]=new Array("PlusOne24_SPECSIG");
+          
+            pterms["FB5_2_2"]=new Array("Read_Address24_SPECSIG","XLXI_1XLXI_2C7XLXI_1XLXI_2C7_D2_SPECSIG");
+          
+            pterms["FB5_2_3"]=new Array("/Read_Address24_SPECSIG","/XLXI_1XLXI_2C7XLXI_1XLXI_2C7_D2_SPECSIG");
+          
+            pterms["FB5_7_1"]=new Array("PlusOne25_SPECSIG");
+          
+            pterms["FB5_7_2"]=new Array("Read_Address25_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB5_7_3"]=new Array("/Read_Address25_SPECSIG","/XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB5_11_1"]=new Array("PlusOne26_SPECSIG");
+          
+            pterms["FB5_11_2"]=new Array("Read_Address26_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB5_11_3"]=new Array("/Read_Address26_SPECSIG","/XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB5_12_1"]=new Array("Read_Address6_SPECSIG");
+          
+            pterms["FB5_12_2"]=new Array("PlusOne6_SPECSIG");
+          
+            pterms["FB5_13_1"]=new Array("Read_Address25_SPECSIG","PlusOne25_SPECSIG");
+          
+            pterms["FB5_13_2"]=new Array("Read_Address25_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB5_13_3"]=new Array("PlusOne25_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG");
+          
+            pterms["FB5_14_1"]=new Array("Read_Address26_SPECSIG","PlusOne26_SPECSIG");
+          
+            pterms["FB5_14_2"]=new Array("Read_Address26_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB5_14_3"]=new Array("PlusOne26_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB5_15_1"]=new Array("PlusOne27_SPECSIG");
+          
+            pterms["FB5_15_2"]=new Array("Read_Address27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_15_3"]=new Array("/Read_Address27_SPECSIG","/XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_16_1"]=new Array("PlusOne27_SPECSIG","Read_Address27_SPECSIG");
+          
+            pterms["FB5_16_2"]=new Array("PlusOne27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_16_3"]=new Array("Read_Address27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_16_4"]=new Array("Read_Address28_SPECSIG","PlusOne27_SPECSIG","Read_Address27_SPECSIG");
+          
+            pterms["FB5_16_5"]=new Array("PlusOne28_SPECSIG","PlusOne27_SPECSIG","Read_Address27_SPECSIG");
+          
+            pterms["FB5_17_1"]=new Array("Read_Address28_SPECSIG","PlusOne28_SPECSIG");
+          
+            pterms["FB5_17_2"]=new Array("Read_Address28_SPECSIG","PlusOne27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_17_3"]=new Array("Read_Address28_SPECSIG","Read_Address27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_17_4"]=new Array("PlusOne28_SPECSIG","PlusOne27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_17_5"]=new Array("PlusOne28_SPECSIG","Read_Address27_SPECSIG","XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_18_1"]=new Array("Read_Address8_SPECSIG","PlusOne8_SPECSIG");
+          
+            pterms["FB5_18_2"]=new Array("Read_Address8_SPECSIG","PlusOne7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_18_3"]=new Array("Read_Address8_SPECSIG","Read_Address7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_18_4"]=new Array("PlusOne8_SPECSIG","PlusOne7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB5_18_5"]=new Array("PlusOne8_SPECSIG","Read_Address7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB6_2_1"]=new Array("PlusOne3_SPECSIG");
+          
+            pterms["FB6_2_2"]=new Array("Read_Address3_SPECSIG","XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB6_2_3"]=new Array("/Read_Address3_SPECSIG","/XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB6_8_1"]=new Array("PlusOne4_SPECSIG");
+          
+            pterms["FB6_8_2"]=new Array("Read_Address4_SPECSIG","XLXI_1XLXI_1XLXI_1C3XLXI_1XLXI_1XLXI_1C3_D2_SPECSIG");
+          
+            pterms["FB6_8_3"]=new Array("/Read_Address4_SPECSIG","/XLXI_1XLXI_1XLXI_1C3XLXI_1XLXI_1XLXI_1C3_D2_SPECSIG");
+          
+            pterms["FB6_12_1"]=new Array("PlusOne7_SPECSIG");
+          
+            pterms["FB6_12_2"]=new Array("Read_Address7_SPECSIG","XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB6_12_3"]=new Array("/Read_Address7_SPECSIG","/XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB7_2_1"]=new Array("PlusOne28_SPECSIG");
+          
+            pterms["FB7_2_2"]=new Array("Read_Address28_SPECSIG","XLXI_1XLXI_2S15_8C3XLXI_1XLXI_2S15_8C3_D2_SPECSIG");
+          
+            pterms["FB7_2_3"]=new Array("/Read_Address28_SPECSIG","/XLXI_1XLXI_2S15_8C3XLXI_1XLXI_2S15_8C3_D2_SPECSIG");
+          
+            pterms["FB7_6_1"]=new Array("PlusOne31_SPECSIG");
+          
+            pterms["FB7_6_2"]=new Array("Read_Address31_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB7_6_3"]=new Array("/Read_Address31_SPECSIG","/XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB7_9_1"]=new Array("PlusOne8_SPECSIG");
+          
+            pterms["FB7_9_2"]=new Array("Read_Address8_SPECSIG","XLXI_1XLXI_1C7XLXI_1XLXI_1C7_D2_SPECSIG");
+          
+            pterms["FB7_9_3"]=new Array("/Read_Address8_SPECSIG","/XLXI_1XLXI_1C7XLXI_1XLXI_1C7_D2_SPECSIG");
+          
+            pterms["FB7_12_1"]=new Array("Read_Address31_SPECSIG","PlusOne31_SPECSIG");
+          
+            pterms["FB7_12_2"]=new Array("Read_Address31_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB7_12_3"]=new Array("PlusOne31_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB7_15_1"]=new Array("Read_Address31_SPECSIG","PlusOne31_SPECSIG","/XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB7_15_2"]=new Array("/Read_Address31_SPECSIG","/PlusOne31_SPECSIG","XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_1_1"]=new Array("Read_Address10_SPECSIG");
+          
+            pterms["FB8_1_2"]=new Array("PlusOne10_SPECSIG");
+          
+            pterms["FB8_1_3"]=new Array("Read_Address13_SPECSIG","PlusOne13_SPECSIG","PlusOne14_SPECSIG");
+          
+            pterms["FB8_1_4"]=new Array("Read_Address13_SPECSIG","PlusOne14_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB8_1_5"]=new Array("PlusOne13_SPECSIG","PlusOne14_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB8_2_1"]=new Array("XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG");
+          
+            pterms["FB8_2_2"]=new Array("Read_Address13_SPECSIG","PlusOne13_SPECSIG");
+          
+            pterms["FB8_2_3"]=new Array("Read_Address13_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB8_2_4"]=new Array("PlusOne13_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB8_6_1"]=new Array("PlusOne11_SPECSIG");
+          
+            pterms["FB8_6_2"]=new Array("Read_Address11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_6_3"]=new Array("/Read_Address11_SPECSIG","/XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_10_1"]=new Array("Read_Address14_SPECSIG");
+          
+            pterms["FB8_10_2"]=new Array("PlusOne14_SPECSIG");
+          
+            pterms["FB8_11_1"]=new Array("PlusOne18_SPECSIG");
+          
+            pterms["FB8_11_2"]=new Array("Read_Address18_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB8_11_3"]=new Array("/Read_Address18_SPECSIG","/XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB8_12_1"]=new Array("Read_Address18_SPECSIG","PlusOne18_SPECSIG");
+          
+            pterms["FB8_12_2"]=new Array("Read_Address18_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB8_12_3"]=new Array("PlusOne18_SPECSIG","XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG");
+          
+            pterms["FB8_13_1"]=new Array("PlusOne23_SPECSIG","Read_Address23_SPECSIG");
+          
+            pterms["FB8_13_2"]=new Array("PlusOne23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_13_3"]=new Array("Read_Address23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_14_1"]=new Array("PlusOne11_SPECSIG","Read_Address11_SPECSIG");
+          
+            pterms["FB8_14_2"]=new Array("PlusOne11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_14_3"]=new Array("Read_Address11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_14_4"]=new Array("/Read_Address23_SPECSIG","/XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_15_1"]=new Array("PlusOne23_SPECSIG");
+          
+            pterms["FB8_15_2"]=new Array("Read_Address23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_15_3"]=new Array("Read_Address24_SPECSIG","PlusOne23_SPECSIG","Read_Address23_SPECSIG");
+          
+            pterms["FB8_15_4"]=new Array("PlusOne24_SPECSIG","PlusOne23_SPECSIG","Read_Address23_SPECSIG");
+          
+            pterms["FB8_15_5"]=new Array("PlusOne24_SPECSIG","Read_Address23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_16_1"]=new Array("Read_Address24_SPECSIG","PlusOne24_SPECSIG");
+          
+            pterms["FB8_16_2"]=new Array("Read_Address24_SPECSIG","PlusOne23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_16_3"]=new Array("Read_Address24_SPECSIG","Read_Address23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_16_4"]=new Array("PlusOne24_SPECSIG","PlusOne23_SPECSIG","XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_16_5"]=new Array("Read_Address12_SPECSIG","PlusOne11_SPECSIG","Read_Address11_SPECSIG");
+          
+            pterms["FB8_17_1"]=new Array("Read_Address12_SPECSIG","PlusOne12_SPECSIG");
+          
+            pterms["FB8_17_2"]=new Array("Read_Address12_SPECSIG","PlusOne11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_17_3"]=new Array("Read_Address12_SPECSIG","Read_Address11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_17_4"]=new Array("PlusOne12_SPECSIG","PlusOne11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_17_5"]=new Array("PlusOne12_SPECSIG","Read_Address11_SPECSIG","XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG");
+          
+            pterms["FB8_18_1"]=new Array("Read_Address14_SPECSIG","PlusOne14_SPECSIG");
+          
+            pterms["FB8_18_2"]=new Array("Read_Address13_SPECSIG","PlusOne13_SPECSIG","Read_Address14_SPECSIG");
+          
+            pterms["FB8_18_3"]=new Array("Read_Address13_SPECSIG","Read_Address14_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB8_18_4"]=new Array("PlusOne13_SPECSIG","Read_Address14_SPECSIG","XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG");
+          
+            pterms["FB8_18_5"]=new Array("PlusOne12_SPECSIG","PlusOne11_SPECSIG","Read_Address11_SPECSIG");
+          
+          d1["Shifted10_SPECSIG"]=new Array("FB1_2_1");
+          
+            d1imp["Shifted10_SPECSIG"]=new Array("1");
+          
+          d2["Shifted10_SPECSIG"]=new Array("FB1_2_2","FB1_2_3","FB1_2_4");
+          
+            d2imp["Shifted10_SPECSIG"]=new Array("1","1","1");
+          
+          d1["Shifted2_SPECSIG"]=new Array("FB1_5_1");
+          
+            d1imp["Shifted2_SPECSIG"]=new Array("1");
+          
+          d2["Shifted2_SPECSIG"]=new Array("FB1_5_2","FB1_5_3","FB1_5_4");
+          
+            d2imp["Shifted2_SPECSIG"]=new Array("1","1","1");
+          
+          d1["Shifted1_SPECSIG"]=new Array("FB1_8_1");
+          
+            d1imp["Shifted1_SPECSIG"]=new Array("1");
+          
+          d2["Shifted1_SPECSIG"]=new Array("FB1_8_2","FB1_8_3");
+          
+            d2imp["Shifted1_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted9_SPECSIG"]=new Array("FB1_11_1");
+          
+            d1imp["Shifted9_SPECSIG"]=new Array("1");
+          
+          d2["Shifted9_SPECSIG"]=new Array("FB1_11_2","FB1_11_3");
+          
+            d2imp["Shifted9_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted0_SPECSIG"]=new Array("FB1_15_1");
+          
+            d1imp["Shifted0_SPECSIG"]=new Array("1");
+          
+          d2["Shifted0_SPECSIG"]=new Array("FB1_15_2");
+          
+            d2imp["Shifted0_SPECSIG"]=new Array("1");
+          
+          d1["Shifted30_SPECSIG"]=new Array("FB2_1_1");
+          
+            d1imp["Shifted30_SPECSIG"]=new Array("1");
+          
+          d2["Shifted30_SPECSIG"]=new Array("FB2_1_2","FB2_1_3","FB2_1_4");
+          
+            d2imp["Shifted30_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG"]=new Array("FB2_2_1","FB2_2_2","FB2_2_3","FB2_2_4","FB2_2_5","FB2_3_1","FB2_3_2");
+          
+            d2imp["XLXI_1XLXI_2S15_8S7_4XLXN_27XLXI_1XLXI_2S15_8S7_4XLXN_27_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d1["Shifted5_SPECSIG"]=new Array("FB2_4_1");
+          
+            d1imp["Shifted5_SPECSIG"]=new Array("1");
+          
+          d2["Shifted5_SPECSIG"]=new Array("FB2_4_2","FB2_4_3");
+          
+            d2imp["Shifted5_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted13_SPECSIG"]=new Array("FB2_10_1");
+          
+            d1imp["Shifted13_SPECSIG"]=new Array("1");
+          
+          d2["Shifted13_SPECSIG"]=new Array("FB2_10_2","FB2_10_3");
+          
+            d2imp["Shifted13_SPECSIG"]=new Array("1","1");
+          
+          d1["XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG"]=new Array("FB2_13_1");
+          
+            d1imp["XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG"]=new Array("1");
+          
+          d2["XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG"]=new Array("FB2_13_2");
+          
+            d2imp["XLXI_1XLXI_2S15_8S7_4X2XLXI_1XLXI_2S15_8S7_4X2_D27__SPECSIG"]=new Array("1");
+          
+          d1["Shifted29_SPECSIG"]=new Array("FB2_14_1");
+          
+            d1imp["Shifted29_SPECSIG"]=new Array("1");
+          
+          d2["Shifted29_SPECSIG"]=new Array("FB2_14_2","FB2_14_3");
+          
+            d2imp["Shifted29_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG"]=new Array("FB2_16_1","FB2_16_2","FB2_16_3","FB2_16_4","FB2_16_5","FB2_15_1","FB2_15_2");
+          
+            d2imp["XLXI_1XLXI_1XLXI_1S7_4XLXN_28XLXI_1XLXI_1XLXI_1S7_4XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d1["Shifted6_SPECSIG"]=new Array("FB2_17_1");
+          
+            d1imp["Shifted6_SPECSIG"]=new Array("1");
+          
+          d2["Shifted6_SPECSIG"]=new Array("FB2_17_2","FB2_17_3","FB2_17_4");
+          
+            d2imp["Shifted6_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG"]=new Array("FB2_18_1","FB2_18_2","FB2_18_3","FB2_18_4","FB2_18_5","FB2_1_5","FB2_17_5");
+          
+            d2imp["XLXI_1XLXI_1XLXI_1S7_4XLXN_27XLXI_1XLXI_1XLXI_1S7_4XLXN_27_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d1["Shifted12_SPECSIG"]=new Array("FB3_3_1");
+          
+            d1imp["Shifted12_SPECSIG"]=new Array("1");
+          
+          d2["Shifted12_SPECSIG"]=new Array("FB3_3_2","FB3_3_3");
+          
+            d2imp["Shifted12_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted15_SPECSIG"]=new Array("FB3_6_1");
+          
+            d1imp["Shifted15_SPECSIG"]=new Array("1");
+          
+          d2["Shifted15_SPECSIG"]=new Array("FB3_6_2","FB3_6_3");
+          
+            d2imp["Shifted15_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted16_SPECSIG"]=new Array("FB3_9_1");
+          
+            d1imp["Shifted16_SPECSIG"]=new Array("1");
+          
+          d2["Shifted16_SPECSIG"]=new Array("FB3_9_2","FB3_9_3");
+          
+            d2imp["Shifted16_SPECSIG"]=new Array("1","1");
+          
+          d1["XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG"]=new Array("FB3_11_1");
+          
+            d1imp["XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG"]=new Array("1");
+          
+          d2["XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG"]=new Array("FB3_11_2");
+          
+            d2imp["XLXI_1XLXI_1XLXI_1XLXI_1X2XLXI_1XLXI_1XLXI_1XLXI_1X2_D25__SPECSIG"]=new Array("1");
+          
+          d1["Shifted17_SPECSIG"]=new Array("FB3_12_1");
+          
+            d1imp["Shifted17_SPECSIG"]=new Array("1");
+          
+          d2["Shifted17_SPECSIG"]=new Array("FB3_12_2","FB3_12_3");
+          
+            d2imp["Shifted17_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXN_4XLXI_1XLXN_4_D236__SPECSIG"]=new Array("FB3_13_1","FB3_13_2","FB3_13_3");
+          
+            d2imp["XLXI_1XLXN_4XLXI_1XLXN_4_D236__SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG"]=new Array("FB3_14_1","FB3_14_2","FB3_14_3");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34XLXI_1XLXI_2XLXI_1XLXI_1XLXN_34_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_1C7XLXI_1XLXI_1C7_D2_SPECSIG"]=new Array("FB3_15_1","FB3_15_2","FB3_15_3");
+          
+            d2imp["XLXI_1XLXI_1C7XLXI_1XLXI_1C7_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG"]=new Array("FB3_16_1","FB3_16_2","FB3_16_3","FB3_16_4","FB3_16_5","FB3_15_4","FB3_17_3");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28XLXI_1XLXI_2XLXI_1XLXI_1XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d2["XLXN_11"]=new Array("FB3_17_1","FB3_17_2");
+          
+            d2imp["XLXN_11"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG"]=new Array("FB3_18_1","FB3_18_2","FB3_18_3","FB3_18_4","FB3_18_5","FB3_1_1","FB3_1_2");
+          
+            d2imp["XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27XLXI_1XLXI_1XLXI_1XLXI_1XLXN_27_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d1["Shifted19_SPECSIG"]=new Array("FB4_2_1");
+          
+            d1imp["Shifted19_SPECSIG"]=new Array("1");
+          
+          d2["Shifted19_SPECSIG"]=new Array("FB4_2_2","FB4_2_3");
+          
+            d2imp["Shifted19_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted20_SPECSIG"]=new Array("FB4_6_1");
+          
+            d1imp["Shifted20_SPECSIG"]=new Array("1");
+          
+          d2["Shifted20_SPECSIG"]=new Array("FB4_6_2","FB4_6_3");
+          
+            d2imp["Shifted20_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted21_SPECSIG"]=new Array("FB4_11_1");
+          
+            d1imp["Shifted21_SPECSIG"]=new Array("1");
+          
+          d2["Shifted21_SPECSIG"]=new Array("FB4_11_2","FB4_11_3");
+          
+            d2imp["Shifted21_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG"]=new Array("FB4_12_1","FB4_12_2","FB4_12_3");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1S7_4XLXN_34XLXI_1XLXI_2XLXI_1S7_4XLXN_34_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG"]=new Array("FB4_13_1","FB4_13_2","FB4_13_3");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1S7_4XLXN_27XLXI_1XLXI_2XLXI_1S7_4XLXN_27_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1C3XLXI_1XLXI_2XLXI_1C3_D2_SPECSIG"]=new Array("FB4_14_1","FB4_14_2","FB4_14_3");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1C3XLXI_1XLXI_2XLXI_1C3_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d1["Shifted22_SPECSIG"]=new Array("FB4_15_1");
+          
+            d1imp["Shifted22_SPECSIG"]=new Array("1");
+          
+          d2["Shifted22_SPECSIG"]=new Array("FB4_15_2","FB4_15_3");
+          
+            d2imp["Shifted22_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_1XLXI_1C3XLXI_1XLXI_1XLXI_1C3_D2_SPECSIG"]=new Array("FB4_16_1","FB4_16_2","FB4_16_3");
+          
+            d2imp["XLXI_1XLXI_1XLXI_1C3XLXI_1XLXI_1XLXI_1C3_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG"]=new Array("FB4_17_1","FB4_17_2","FB4_17_3","FB4_17_4","FB4_17_5","FB4_16_4","FB4_16_5");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1S7_4XLXN_28XLXI_1XLXI_2XLXI_1S7_4XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d2["XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG"]=new Array("FB4_18_1","FB4_18_2","FB4_18_3","FB4_18_4","FB4_18_5","FB4_1_1","FB4_1_2");
+          
+            d2imp["XLXI_1XLXI_1S15_8XLXI_1XLXN_27XLXI_1XLXI_1S15_8XLXI_1XLXN_27_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d1["Shifted24_SPECSIG"]=new Array("FB5_2_1");
+          
+            d1imp["Shifted24_SPECSIG"]=new Array("1");
+          
+          d2["Shifted24_SPECSIG"]=new Array("FB5_2_2","FB5_2_3");
+          
+            d2imp["Shifted24_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted25_SPECSIG"]=new Array("FB5_7_1");
+          
+            d1imp["Shifted25_SPECSIG"]=new Array("1");
+          
+          d2["Shifted25_SPECSIG"]=new Array("FB5_7_2","FB5_7_3");
+          
+            d2imp["Shifted25_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted26_SPECSIG"]=new Array("FB5_11_1");
+          
+            d1imp["Shifted26_SPECSIG"]=new Array("1");
+          
+          d2["Shifted26_SPECSIG"]=new Array("FB5_11_2","FB5_11_3");
+          
+            d2imp["Shifted26_SPECSIG"]=new Array("1","1");
+          
+          d1["XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG"]=new Array("FB5_12_1");
+          
+            d1imp["XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG"]=new Array("1");
+          
+          d2["XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG"]=new Array("FB5_12_2");
+          
+            d2imp["XLXI_1XLXI_1XLXI_1S7_4X2XLXI_1XLXI_1XLXI_1S7_4X2_D23__SPECSIG"]=new Array("1");
+          
+          d2["XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG"]=new Array("FB5_13_1","FB5_13_2","FB5_13_3");
+          
+            d2imp["XLXI_1XLXI_2S15_8XLXI_1XLXN_34XLXI_1XLXI_2S15_8XLXI_1XLXN_34_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG"]=new Array("FB5_14_1","FB5_14_2","FB5_14_3");
+          
+            d2imp["XLXI_1XLXI_2S15_8XLXI_1XLXN_27XLXI_1XLXI_2S15_8XLXI_1XLXN_27_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d1["Shifted27_SPECSIG"]=new Array("FB5_15_1");
+          
+            d1imp["Shifted27_SPECSIG"]=new Array("1");
+          
+          d2["Shifted27_SPECSIG"]=new Array("FB5_15_2","FB5_15_3");
+          
+            d2imp["Shifted27_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_2S15_8C3XLXI_1XLXI_2S15_8C3_D2_SPECSIG"]=new Array("FB5_16_1","FB5_16_2","FB5_16_3");
+          
+            d2imp["XLXI_1XLXI_2S15_8C3XLXI_1XLXI_2S15_8C3_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG"]=new Array("FB5_17_1","FB5_17_2","FB5_17_3","FB5_17_4","FB5_17_5","FB5_16_4","FB5_16_5");
+          
+            d2imp["XLXI_1XLXI_2S15_8S7_4XLXN_28XLXI_1XLXI_2S15_8S7_4XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d2["XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG"]=new Array("FB5_18_1","FB5_18_2","FB5_18_3","FB5_18_4","FB5_18_5","FB5_1_1","FB5_1_2");
+          
+            d2imp["XLXI_1XLXI_1S15_8XLXI_1XLXN_28XLXI_1XLXI_1S15_8XLXI_1XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d1["Shifted3_SPECSIG"]=new Array("FB6_2_1");
+          
+            d1imp["Shifted3_SPECSIG"]=new Array("1");
+          
+          d2["Shifted3_SPECSIG"]=new Array("FB6_2_2","FB6_2_3");
+          
+            d2imp["Shifted3_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted4_SPECSIG"]=new Array("FB6_8_1");
+          
+            d1imp["Shifted4_SPECSIG"]=new Array("1");
+          
+          d2["Shifted4_SPECSIG"]=new Array("FB6_8_2","FB6_8_3");
+          
+            d2imp["Shifted4_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted7_SPECSIG"]=new Array("FB6_12_1");
+          
+            d1imp["Shifted7_SPECSIG"]=new Array("1");
+          
+          d2["Shifted7_SPECSIG"]=new Array("FB6_12_2","FB6_12_3");
+          
+            d2imp["Shifted7_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted28_SPECSIG"]=new Array("FB7_2_1");
+          
+            d1imp["Shifted28_SPECSIG"]=new Array("1");
+          
+          d2["Shifted28_SPECSIG"]=new Array("FB7_2_2","FB7_2_3");
+          
+            d2imp["Shifted28_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted31_SPECSIG"]=new Array("FB7_6_1");
+          
+            d1imp["Shifted31_SPECSIG"]=new Array("1");
+          
+          d2["Shifted31_SPECSIG"]=new Array("FB7_6_2","FB7_6_3");
+          
+            d2imp["Shifted31_SPECSIG"]=new Array("1","1");
+          
+          d1["Shifted8_SPECSIG"]=new Array("FB7_9_1");
+          
+            d1imp["Shifted8_SPECSIG"]=new Array("1");
+          
+          d2["Shifted8_SPECSIG"]=new Array("FB7_9_2","FB7_9_3");
+          
+            d2imp["Shifted8_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXN_12"]=new Array("FB7_12_1","FB7_12_2","FB7_12_3");
+          
+            d2imp["XLXN_12"]=new Array("1","1","1");
+          
+          d2["XLXN_10"]=new Array("FB7_15_1","FB7_15_2");
+          
+            d2imp["XLXN_10"]=new Array("1","1");
+          
+          d1["XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG"]=new Array("FB8_1_1");
+          
+            d1imp["XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG"]=new Array("1");
+          
+          d2["XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG"]=new Array("FB8_1_2");
+          
+            d2imp["XLXI_1XLXI_1S15_8XLXI_1X2XLXI_1XLXI_1S15_8XLXI_1X2_D21__SPECSIG"]=new Array("1");
+          
+          d1["Shifted14_SPECSIG"]=new Array("FB8_2_1");
+          
+            d1imp["Shifted14_SPECSIG"]=new Array("1");
+          
+          d2["Shifted14_SPECSIG"]=new Array("FB8_2_2","FB8_2_3","FB8_2_4");
+          
+            d2imp["Shifted14_SPECSIG"]=new Array("1","1","1");
+          
+          d1["Shifted11_SPECSIG"]=new Array("FB8_6_1");
+          
+            d1imp["Shifted11_SPECSIG"]=new Array("1");
+          
+          d2["Shifted11_SPECSIG"]=new Array("FB8_6_2","FB8_6_3");
+          
+            d2imp["Shifted11_SPECSIG"]=new Array("1","1");
+          
+          d1["XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG"]=new Array("FB8_10_1");
+          
+            d1imp["XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG"]=new Array("1");
+          
+          d2["XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG"]=new Array("FB8_10_2");
+          
+            d2imp["XLXI_1XLXI_1S15_8S7_4X2XLXI_1XLXI_1S15_8S7_4X2_D19__SPECSIG"]=new Array("1");
+          
+          d1["Shifted18_SPECSIG"]=new Array("FB8_11_1");
+          
+            d1imp["Shifted18_SPECSIG"]=new Array("1");
+          
+          d2["Shifted18_SPECSIG"]=new Array("FB8_11_2","FB8_11_3");
+          
+            d2imp["Shifted18_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG"]=new Array("FB8_12_1","FB8_12_2","FB8_12_3");
+          
+            d2imp["XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27XLXI_1XLXI_2XLXI_1XLXI_1XLXN_27_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_2C7XLXI_1XLXI_2C7_D2_SPECSIG"]=new Array("FB8_13_1","FB8_13_2","FB8_13_3");
+          
+            d2imp["XLXI_1XLXI_2C7XLXI_1XLXI_2C7_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d2["XLXI_1XLXI_1S15_8C3XLXI_1XLXI_1S15_8C3_D2_SPECSIG"]=new Array("FB8_14_1","FB8_14_2","FB8_14_3");
+          
+            d2imp["XLXI_1XLXI_1S15_8C3XLXI_1XLXI_1S15_8C3_D2_SPECSIG"]=new Array("1","1","1");
+          
+          d1["Shifted23_SPECSIG"]=new Array("FB8_15_1");
+          
+            d1imp["Shifted23_SPECSIG"]=new Array("1");
+          
+          d2["Shifted23_SPECSIG"]=new Array("FB8_15_2","FB8_14_4");
+          
+            d2imp["Shifted23_SPECSIG"]=new Array("1","1");
+          
+          d2["XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG"]=new Array("FB8_16_1","FB8_16_2","FB8_16_3","FB8_16_4","FB8_15_3","FB8_15_4","FB8_15_5");
+          
+            d2imp["XLXI_1XLXI_2S15_8XLXI_1XLXN_28XLXI_1XLXI_2S15_8XLXI_1XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d2["XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG"]=new Array("FB8_17_1","FB8_17_2","FB8_17_3","FB8_17_4","FB8_17_5","FB8_16_5","FB8_18_5");
+          
+            d2imp["XLXI_1XLXI_1S15_8S7_4XLXN_28XLXI_1XLXI_1S15_8S7_4XLXN_28_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+          d2["XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG"]=new Array("FB8_18_1","FB8_18_2","FB8_18_3","FB8_18_4","FB8_1_3","FB8_1_4","FB8_1_5");
+          
+            d2imp["XLXI_1XLXI_1S15_8S7_4XLXN_27XLXI_1XLXI_1S15_8S7_4XLXN_27_D2_SPECSIG"]=new Array("1","1","1","1","1","1","1");
+          
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

@@ -1,0 +1,3 @@
+vhdl work "adder.vhf"
+vhdl work "Adder1.vhf"
+vhdl work "Shift1Test.vhd"

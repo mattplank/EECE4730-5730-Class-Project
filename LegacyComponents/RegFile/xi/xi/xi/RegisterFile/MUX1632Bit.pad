@@ -1,0 +1,173 @@
+Release 8.1i - Fit K.39
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 4- 3-2011  8:50PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  MUX1632Bit.ngd
+output file: MUX1632Bit.pad
+Part type:   xa95144xl
+Speed grade: -15
+Package:     cs144
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+A1|VCC||VCCIO||||||||||
+A10|TIE||I/O||||||||||
+A11|TIE||I/O||||||||||
+A12|TIE||I/O||||||||||
+A13|VCC||VCCIO||||||||||
+A2|TIE||I/O/GSR||||||||||
+A3|TIE||I/O||||||||||
+A4|TIE||I/O||||||||||
+A5|TIE||I/O||||||||||
+A6|TIE||I/O||||||||||
+A7|TIE||I/O||||||||||
+A8|TIE||I/O||||||||||
+A9|TIE||I/O||||||||||
+B1|TIE||I/O/GTS3||||||||||
+B10|TIE||I/O||||||||||
+B11|TIE||I/O||||||||||
+B12|GND||GND||||||||||
+B13|TIE||I/O||||||||||
+B2|GND||GND||||||||||
+B3|VCC||VCCINT||||||||||
+B4|TIE||I/O||||||||||
+B5|TIE||I/O||||||||||
+B6|TIE||I/O||||||||||
+B7|TIE||I/O||||||||||
+B8|GND||GND||||||||||
+B9|TIE||I/O||||||||||
+C1|TIE||I/O||||||||||
+C10|GND||GND||||||||||
+C11|TIE||I/O||||||||||
+C12|TIE||I/O||||||||||
+C13|TIE||I/O||||||||||
+C2|TIE||I/O/GTS4||||||||||
+C3|TIE||I/O||||||||||
+C4|TIE||I/O||||||||||
+C5|TIE||I/O||||||||||
+C6|TIE||I/O||||||||||
+C7|VCC||VCCIO||||||||||
+C8|TDO||TDO||||||||||
+C9|TIE||I/O||||||||||
+D1|VCC||VCCINT||||||||||
+D10|TIE||I/O||||||||||
+D11|TIE||I/O||||||||||
+D12|TIE||I/O||||||||||
+D13|TIE||I/O||||||||||
+D2|TIE||I/O||||||||||
+D3|TIE||I/O/GTS2||||||||||
+D4|TIE||I/O/GTS1||||||||||
+D5|TIE||I/O||||||||||
+D6|TIE||I/O||||||||||
+D7|TIE||I/O||||||||||
+D8|TIE||I/O||||||||||
+D9|TIE||I/O||||||||||
+E1|TIE||I/O||||||||||
+E10|TIE||I/O||||||||||
+E11|GND||GND||||||||||
+E12|TIE||I/O||||||||||
+E13|TIE||I/O||||||||||
+E2|TIE||I/O||||||||||
+E3|TIE||I/O||||||||||
+E4|TIE||I/O||||||||||
+F1|TIE||I/O||||||||||
+F10|TIE||I/O||||||||||
+F11|TIE||I/O||||||||||
+F12|TIE||I/O||||||||||
+F13|TIE||I/O||||||||||
+F2|TIE||I/O||||||||||
+F3|TIE||I/O||||||||||
+F4|TIE||I/O||||||||||
+G1|GND||GND||||||||||
+G10|TIE||I/O||||||||||
+G11|TIE||I/O||||||||||
+G12|GND||GND||||||||||
+G13|GND||GND||||||||||
+G2|TIE||I/O||||||||||
+G3|TIE||I/O||||||||||
+G4|TIE||I/O||||||||||
+H1|TIE||I/O||||||||||
+H10|TIE||I/O||||||||||
+H11|TIE||I/O||||||||||
+H12|TIE||I/O||||||||||
+H13|TIE||I/O||||||||||
+H2|TIE||I/O||||||||||
+H3|TIE||I/O||||||||||
+H4|TIE||I/O||||||||||
+J1|TIE||I/O||||||||||
+J10|TIE||I/O||||||||||
+J11|TIE||I/O||||||||||
+J12|TIE||I/O||||||||||
+J13|VCC||VCCINT||||||||||
+J2|TIE||I/O||||||||||
+J3|TIE||I/O||||||||||
+J4|TIE||I/O||||||||||
+K1|GND||GND||||||||||
+K10|TIE||I/O||||||||||
+K11|TIE||I/O||||||||||
+K12|TIE||I/O||||||||||
+K13|TIE||I/O||||||||||
+K2|TIE||I/O/GCK1||||||||||
+K3|TIE||I/O||||||||||
+K4|TIE||I/O||||||||||
+K5|TIE||I/O||||||||||
+K6|TIE||I/O||||||||||
+K7|TIE||I/O||||||||||
+K8|TIE||I/O||||||||||
+K9|TIE||I/O||||||||||
+L1|TIE||I/O/GCK2||||||||||
+L10|TCK||TCK||||||||||
+L11|TIE||I/O||||||||||
+L12|TIE||I/O||||||||||
+L13|TIE||I/O||||||||||
+L2|TIE||I/O||||||||||
+L3|TIE||I/O||||||||||
+L4|VCC||VCCINT||||||||||
+L5|TIE||I/O||||||||||
+L6|TIE||I/O||||||||||
+L7|VCC||VCCIO||||||||||
+L8|TIE||I/O||||||||||
+L9|TDI||TDI||||||||||
+M1|TIE||I/O||||||||||
+M10|TIE||I/O||||||||||
+M11|TIE||I/O||||||||||
+M12|GND||GND||||||||||
+M13|TIE||I/O||||||||||
+M2|GND||GND||||||||||
+M3|TIE||I/O||||||||||
+M4|TIE||I/O||||||||||
+M5|GND||GND||||||||||
+M6|TIE||I/O||||||||||
+M7|TIE||I/O||||||||||
+M8|TIE||I/O||||||||||
+M9|GND||GND||||||||||
+N1|VCC||VCCIO||||||||||
+N10|TMS||TMS||||||||||
+N11|TIE||I/O||||||||||
+N12|TIE||I/O||||||||||
+N13|VCC||VCCIO||||||||||
+N2|TIE||I/O/GCK3||||||||||
+N3|TIE||I/O||||||||||
+N4|TIE||I/O||||||||||
+N5|TIE||I/O||||||||||
+N6|TIE||I/O||||||||||
+N7|TIE||I/O||||||||||
+N8|TIE||I/O||||||||||
+N9|TIE||I/O||||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

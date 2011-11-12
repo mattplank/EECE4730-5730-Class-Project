@@ -1,0 +1,24 @@
+Running: C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemTest_isim_beh.exe -prj C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemTest_beh.prj work.MemTest 
+ISim O.40d (signature 0x79f3f3a8)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemUnitDlx.vhdl" into library work
+Parsing VHDL file "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemTest.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 61164 KB
+Fuse CPU Usage: 171 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+Compiling architecture memstruct of entity thirty2bit [thirty2bit_default]
+Compiling architecture behavior of entity memtest
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemTest_isim_beh.exe
+Fuse Memory Usage: 67824 KB
+Fuse CPU Usage: 296 ms

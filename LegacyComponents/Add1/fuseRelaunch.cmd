@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1_Adder1_sch_tb_isim_beh.exe" -prj "C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/Adder1_Adder1_sch_tb_beh.prj" "work.Adder1_Adder1_sch_tb" 

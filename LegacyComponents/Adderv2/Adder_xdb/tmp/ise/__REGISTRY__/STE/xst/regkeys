@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise -intstyle ise -ifn F:/Design Project 2/XilinxCode/Adder/Adder/adder.xst -ofn F:/Design Project 2/XilinxCode/Adder/Adder/adder.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

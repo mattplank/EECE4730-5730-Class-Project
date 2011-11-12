@@ -1,0 +1,440 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "xa9500xl"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL MuxPower
+        SIGNAL S(0:4)
+        SIGNAL S(0)
+        SIGNAL S(1)
+        SIGNAL S(2)
+        SIGNAL S(3)
+        SIGNAL S(4)
+        SIGNAL MUXIN1(0:31)
+        SIGNAL MUXIN2(0:31)
+        SIGNAL MUXIN3(0:31)
+        SIGNAL MUXIN4(0:31)
+        SIGNAL MUXIN5(0:31)
+        SIGNAL MUXIN6(0:31)
+        SIGNAL MUXIN7(0:31)
+        SIGNAL MUXIN8(0:31)
+        SIGNAL MUXIN9(0:31)
+        SIGNAL MUXIN10(0:31)
+        SIGNAL MUXIN11(0:31)
+        SIGNAL MUXIN12(0:31)
+        SIGNAL MUXIN13(0:31)
+        SIGNAL MUXIN14(0:31)
+        SIGNAL MUXIN15(0:31)
+        SIGNAL MUXIN16(0:31)
+        SIGNAL MUXIN17(0:31)
+        SIGNAL MUXIN18(0:31)
+        SIGNAL MUXIN19(0:31)
+        SIGNAL MUXIN20(0:31)
+        SIGNAL MUXIN21(0:31)
+        SIGNAL MUXIN22(0:31)
+        SIGNAL MUXIN23(0:31)
+        SIGNAL MUXIN24(0:31)
+        SIGNAL MUXIN25(0:31)
+        SIGNAL MUXIN26(0:31)
+        SIGNAL MUXIN27(0:31)
+        SIGNAL MUXIN28(0:31)
+        SIGNAL MUXIN29(0:31)
+        SIGNAL MUXIN30(0:31)
+        SIGNAL MUXIN31(0:31)
+        SIGNAL MUXIN32(0:31)
+        SIGNAL Upper(0:31)
+        SIGNAL Lower(0:31)
+        SIGNAL MUXOUT(0:31)
+        PORT Input MuxPower
+        PORT Input S(0:4)
+        PORT Input MUXIN1(0:31)
+        PORT Input MUXIN2(0:31)
+        PORT Input MUXIN3(0:31)
+        PORT Input MUXIN4(0:31)
+        PORT Input MUXIN5(0:31)
+        PORT Input MUXIN6(0:31)
+        PORT Input MUXIN7(0:31)
+        PORT Input MUXIN8(0:31)
+        PORT Input MUXIN9(0:31)
+        PORT Input MUXIN10(0:31)
+        PORT Input MUXIN11(0:31)
+        PORT Input MUXIN12(0:31)
+        PORT Input MUXIN13(0:31)
+        PORT Input MUXIN14(0:31)
+        PORT Input MUXIN15(0:31)
+        PORT Input MUXIN16(0:31)
+        PORT Input MUXIN17(0:31)
+        PORT Input MUXIN18(0:31)
+        PORT Input MUXIN19(0:31)
+        PORT Input MUXIN20(0:31)
+        PORT Input MUXIN21(0:31)
+        PORT Input MUXIN22(0:31)
+        PORT Input MUXIN23(0:31)
+        PORT Input MUXIN24(0:31)
+        PORT Input MUXIN25(0:31)
+        PORT Input MUXIN26(0:31)
+        PORT Input MUXIN27(0:31)
+        PORT Input MUXIN28(0:31)
+        PORT Input MUXIN29(0:31)
+        PORT Input MUXIN30(0:31)
+        PORT Input MUXIN31(0:31)
+        PORT Input MUXIN32(0:31)
+        PORT Output MUXOUT(0:31)
+        BEGIN BLOCKDEF m16_1e
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 0 -288 96 -288 
+            LINE N 0 -96 96 -96 
+            LINE N 0 -160 96 -160 
+            LINE N 0 -224 96 -224 
+            LINE N 0 -1312 96 -1312 
+            LINE N 0 -352 96 -352 
+            LINE N 0 -1248 96 -1248 
+            LINE N 0 -416 96 -416 
+            LINE N 0 -480 96 -480 
+            LINE N 0 -1120 96 -1120 
+            LINE N 0 -544 96 -544 
+            LINE N 0 -608 96 -608 
+            LINE N 0 -992 96 -992 
+            LINE N 0 -672 96 -672 
+            LINE N 0 -864 96 -864 
+            LINE N 0 -800 96 -800 
+            LINE N 0 -32 96 -32 
+            LINE N 232 -32 96 -32 
+            LINE N 232 -344 232 -32 
+            LINE N 200 -96 92 -96 
+            LINE N 200 -340 200 -96 
+            LINE N 172 -160 96 -160 
+            LINE N 172 -336 172 -160 
+            LINE N 148 -224 96 -224 
+            LINE N 148 -328 148 -224 
+            LINE N 120 -288 96 -288 
+            LINE N 120 -324 120 -288 
+            LINE N 320 -832 256 -832 
+            LINE N 96 -1344 96 -320 
+            LINE N 256 -1312 96 -1344 
+            LINE N 256 -352 256 -1312 
+            LINE N 96 -320 256 -352 
+            LINE N 0 -1184 96 -1184 
+            LINE N 0 -1056 96 -1056 
+            LINE N 0 -928 96 -928 
+            LINE N 0 -736 96 -736 
+        END BLOCKDEF
+        BEGIN BLOCKDEF m2_1
+            TIMESTAMP 2000 1 1 10 10 10
+            LINE N 96 -64 96 -192 
+            LINE N 256 -96 96 -64 
+            LINE N 256 -160 256 -96 
+            LINE N 96 -192 256 -160 
+            LINE N 176 -32 96 -32 
+            LINE N 176 -80 176 -32 
+            LINE N 0 -32 96 -32 
+            LINE N 320 -128 256 -128 
+            LINE N 0 -96 96 -96 
+            LINE N 0 -160 96 -160 
+        END BLOCKDEF
+        BEGIN BLOCK XLXI_1(0:31) m16_1e
+            PIN D0 MUXIN1(0:31)
+            PIN D1 MUXIN2(0:31)
+            PIN D10 MUXIN11(0:31)
+            PIN D11 MUXIN12(0:31)
+            PIN D12 MUXIN13(0:31)
+            PIN D13 MUXIN14(0:31)
+            PIN D14 MUXIN15(0:31)
+            PIN D15 MUXIN16(0:31)
+            PIN D2 MUXIN3(0:31)
+            PIN D3 MUXIN4(0:31)
+            PIN D4 MUXIN5(0:31)
+            PIN D5 MUXIN6(0:31)
+            PIN D6 MUXIN7(0:31)
+            PIN D7 MUXIN8(0:31)
+            PIN D8 MUXIN9(0:31)
+            PIN D9 MUXIN10(0:31)
+            PIN E MuxPower
+            PIN S0 S(0)
+            PIN S1 S(1)
+            PIN S2 S(2)
+            PIN S3 S(3)
+            PIN O Upper(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_2(0:31) m16_1e
+            PIN D0 MUXIN17(0:31)
+            PIN D1 MUXIN18(0:31)
+            PIN D10 MUXIN27(0:31)
+            PIN D11 MUXIN28(0:31)
+            PIN D12 MUXIN29(0:31)
+            PIN D13 MUXIN30(0:31)
+            PIN D14 MUXIN31(0:31)
+            PIN D15 MUXIN32(0:31)
+            PIN D2 MUXIN19(0:31)
+            PIN D3 MUXIN20(0:31)
+            PIN D4 MUXIN21(0:31)
+            PIN D5 MUXIN22(0:31)
+            PIN D6 MUXIN23(0:31)
+            PIN D7 MUXIN24(0:31)
+            PIN D8 MUXIN25(0:31)
+            PIN D9 MUXIN26(0:31)
+            PIN E MuxPower
+            PIN S0 S(0)
+            PIN S1 S(1)
+            PIN S2 S(2)
+            PIN S3 S(3)
+            PIN O Lower(0:31)
+        END BLOCK
+        BEGIN BLOCK XLXI_6(0:31) m2_1
+            PIN D0 Upper(0:31)
+            PIN D1 Lower(0:31)
+            PIN S0 S(4)
+            PIN O MUXOUT(0:31)
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 7040 5440
+        INSTANCE XLXI_1(0:31) 1600 1632 R0
+        INSTANCE XLXI_2(0:31) 1616 3248 R0
+        BEGIN BRANCH MuxPower
+            WIRE 1008 3344 1008 3360
+            WIRE 1008 3360 1248 3360
+            WIRE 1248 3360 1616 3360
+            WIRE 1248 1600 1248 3360
+            WIRE 1248 1600 1600 1600
+            WIRE 1616 3216 1616 3360
+        END BRANCH
+        BEGIN BRANCH S(0:4)
+            WIRE 192 1184 192 1344
+            WIRE 192 1344 192 1408
+            WIRE 192 1408 192 1472
+            WIRE 192 1472 192 1536
+            WIRE 192 1536 192 1664
+            WIRE 192 1664 192 2960
+            WIRE 192 2960 192 3024
+            WIRE 192 3024 192 3088
+            WIRE 192 3088 192 3152
+            WIRE 192 3152 192 3536
+        END BRANCH
+        BUSTAP 192 1344 288 1344
+        BEGIN BRANCH S(0)
+            WIRE 288 1344 944 1344
+            WIRE 944 1344 1600 1344
+            BEGIN DISPLAY 944 1344 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 1408 288 1408
+        BEGIN BRANCH S(1)
+            WIRE 288 1408 944 1408
+            WIRE 944 1408 1600 1408
+            BEGIN DISPLAY 944 1408 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 1472 288 1472
+        BEGIN BRANCH S(2)
+            WIRE 288 1472 944 1472
+            WIRE 944 1472 1600 1472
+            BEGIN DISPLAY 944 1472 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 1536 288 1536
+        BEGIN BRANCH S(3)
+            WIRE 288 1536 944 1536
+            WIRE 944 1536 1600 1536
+            BEGIN DISPLAY 944 1536 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 2960 288 2960
+        BEGIN BRANCH S(0)
+            WIRE 288 2960 944 2960
+            WIRE 944 2960 944 2960
+            WIRE 944 2960 1616 2960
+            BEGIN DISPLAY 952 2960 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 3024 288 3024
+        BEGIN BRANCH S(1)
+            WIRE 288 3024 944 3024
+            WIRE 944 3024 944 3024
+            WIRE 944 3024 1616 3024
+            BEGIN DISPLAY 952 3024 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 3088 288 3088
+        BEGIN BRANCH S(2)
+            WIRE 288 3088 944 3088
+            WIRE 944 3088 944 3088
+            WIRE 944 3088 1616 3088
+            BEGIN DISPLAY 952 3088 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BUSTAP 192 3152 288 3152
+        BEGIN BRANCH S(3)
+            WIRE 288 3152 944 3152
+            WIRE 944 3152 944 3152
+            WIRE 944 3152 1616 3152
+            BEGIN DISPLAY 952 3152 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        IOMARKER 192 1184 S(0:4) R270 28
+        BUSTAP 192 1664 288 1664
+        BEGIN BRANCH S(4)
+            WIRE 288 1664 1232 1664
+            WIRE 1232 1664 1232 1664
+            WIRE 1232 1664 2192 1664
+            WIRE 2192 1664 2480 1664
+            BEGIN DISPLAY 1240 1664 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH MUXIN1(0:31)
+            WIRE 1568 320 1600 320
+        END BRANCH
+        IOMARKER 1568 320 MUXIN1(0:31) R180 28
+        BEGIN BRANCH MUXIN2(0:31)
+            WIRE 1568 384 1600 384
+        END BRANCH
+        IOMARKER 1568 384 MUXIN2(0:31) R180 28
+        BEGIN BRANCH MUXIN3(0:31)
+            WIRE 1568 448 1600 448
+        END BRANCH
+        IOMARKER 1568 448 MUXIN3(0:31) R180 28
+        BEGIN BRANCH MUXIN4(0:31)
+            WIRE 1568 512 1600 512
+        END BRANCH
+        IOMARKER 1568 512 MUXIN4(0:31) R180 28
+        BEGIN BRANCH MUXIN5(0:31)
+            WIRE 1568 576 1600 576
+        END BRANCH
+        IOMARKER 1568 576 MUXIN5(0:31) R180 28
+        BEGIN BRANCH MUXIN6(0:31)
+            WIRE 1568 640 1600 640
+        END BRANCH
+        IOMARKER 1568 640 MUXIN6(0:31) R180 28
+        BEGIN BRANCH MUXIN7(0:31)
+            WIRE 1568 704 1600 704
+        END BRANCH
+        IOMARKER 1568 704 MUXIN7(0:31) R180 28
+        BEGIN BRANCH MUXIN8(0:31)
+            WIRE 1568 768 1600 768
+        END BRANCH
+        IOMARKER 1568 768 MUXIN8(0:31) R180 28
+        BEGIN BRANCH MUXIN9(0:31)
+            WIRE 1568 832 1600 832
+        END BRANCH
+        IOMARKER 1568 832 MUXIN9(0:31) R180 28
+        BEGIN BRANCH MUXIN10(0:31)
+            WIRE 1568 896 1600 896
+        END BRANCH
+        IOMARKER 1568 896 MUXIN10(0:31) R180 28
+        BEGIN BRANCH MUXIN11(0:31)
+            WIRE 1568 960 1600 960
+        END BRANCH
+        IOMARKER 1568 960 MUXIN11(0:31) R180 28
+        BEGIN BRANCH MUXIN12(0:31)
+            WIRE 1568 1024 1600 1024
+        END BRANCH
+        IOMARKER 1568 1024 MUXIN12(0:31) R180 28
+        BEGIN BRANCH MUXIN13(0:31)
+            WIRE 1568 1088 1600 1088
+        END BRANCH
+        IOMARKER 1568 1088 MUXIN13(0:31) R180 28
+        BEGIN BRANCH MUXIN14(0:31)
+            WIRE 1568 1152 1600 1152
+        END BRANCH
+        IOMARKER 1568 1152 MUXIN14(0:31) R180 28
+        BEGIN BRANCH MUXIN15(0:31)
+            WIRE 1568 1216 1600 1216
+        END BRANCH
+        IOMARKER 1568 1216 MUXIN15(0:31) R180 28
+        BEGIN BRANCH MUXIN16(0:31)
+            WIRE 1568 1280 1600 1280
+        END BRANCH
+        IOMARKER 1568 1280 MUXIN16(0:31) R180 28
+        BEGIN BRANCH MUXIN17(0:31)
+            WIRE 1584 1936 1616 1936
+        END BRANCH
+        IOMARKER 1584 1936 MUXIN17(0:31) R180 28
+        BEGIN BRANCH MUXIN18(0:31)
+            WIRE 1584 2000 1616 2000
+        END BRANCH
+        IOMARKER 1584 2000 MUXIN18(0:31) R180 28
+        BEGIN BRANCH MUXIN19(0:31)
+            WIRE 1584 2064 1616 2064
+        END BRANCH
+        IOMARKER 1584 2064 MUXIN19(0:31) R180 28
+        BEGIN BRANCH MUXIN20(0:31)
+            WIRE 1584 2128 1616 2128
+        END BRANCH
+        IOMARKER 1584 2128 MUXIN20(0:31) R180 28
+        BEGIN BRANCH MUXIN21(0:31)
+            WIRE 1584 2192 1616 2192
+        END BRANCH
+        IOMARKER 1584 2192 MUXIN21(0:31) R180 28
+        BEGIN BRANCH MUXIN22(0:31)
+            WIRE 1584 2256 1616 2256
+        END BRANCH
+        IOMARKER 1584 2256 MUXIN22(0:31) R180 28
+        BEGIN BRANCH MUXIN23(0:31)
+            WIRE 1584 2320 1616 2320
+        END BRANCH
+        IOMARKER 1584 2320 MUXIN23(0:31) R180 28
+        BEGIN BRANCH MUXIN24(0:31)
+            WIRE 1584 2384 1616 2384
+        END BRANCH
+        IOMARKER 1584 2384 MUXIN24(0:31) R180 28
+        BEGIN BRANCH MUXIN25(0:31)
+            WIRE 1584 2448 1616 2448
+        END BRANCH
+        IOMARKER 1584 2448 MUXIN25(0:31) R180 28
+        BEGIN BRANCH MUXIN26(0:31)
+            WIRE 1584 2512 1616 2512
+        END BRANCH
+        IOMARKER 1584 2512 MUXIN26(0:31) R180 28
+        BEGIN BRANCH MUXIN27(0:31)
+            WIRE 1584 2576 1616 2576
+        END BRANCH
+        IOMARKER 1584 2576 MUXIN27(0:31) R180 28
+        BEGIN BRANCH MUXIN28(0:31)
+            WIRE 1584 2640 1616 2640
+        END BRANCH
+        IOMARKER 1584 2640 MUXIN28(0:31) R180 28
+        BEGIN BRANCH MUXIN29(0:31)
+            WIRE 1584 2704 1616 2704
+        END BRANCH
+        IOMARKER 1584 2704 MUXIN29(0:31) R180 28
+        BEGIN BRANCH MUXIN30(0:31)
+            WIRE 1584 2768 1616 2768
+        END BRANCH
+        IOMARKER 1584 2768 MUXIN30(0:31) R180 28
+        BEGIN BRANCH MUXIN31(0:31)
+            WIRE 1584 2832 1616 2832
+        END BRANCH
+        IOMARKER 1584 2832 MUXIN31(0:31) R180 28
+        BEGIN BRANCH MUXIN32(0:31)
+            WIRE 1584 2896 1616 2896
+        END BRANCH
+        IOMARKER 1584 2896 MUXIN32(0:31) R180 28
+        INSTANCE XLXI_6(0:31) 2480 1696 R0
+        BEGIN BRANCH Upper(0:31)
+            WIRE 1920 800 2192 800
+            WIRE 2192 800 2192 1536
+            WIRE 2192 1536 2480 1536
+        END BRANCH
+        BEGIN BRANCH Lower(0:31)
+            WIRE 1936 2416 2208 2416
+            WIRE 2208 1600 2208 2416
+            WIRE 2208 1600 2480 1600
+        END BRANCH
+        BEGIN BRANCH MUXOUT(0:31)
+            WIRE 2800 1568 2832 1568
+        END BRANCH
+        IOMARKER 2832 1568 MUXOUT(0:31) R0 28
+        IOMARKER 1008 3344 MuxPower R270 28
+    END SHEET
+END SCHEMATIC

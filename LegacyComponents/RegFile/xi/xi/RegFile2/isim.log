@@ -1,0 +1,46 @@
+Command line:
+   ./TBREGFILE_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  53485
+
+Mon Apr 04 08:41:17 2011
+
+Total Line Count : 7190
+
+ Elaboration Time: 1.12321 sec
+
+ Current Memory Usage: 328.11 Meg
+
+ Total Signals          : 61258
+ Total Nets             : 13289
+ Total Signal Drivers   : 11241
+ Total Blocks           : 15409
+ Total Primitive Blocks : 11202
+ Total Processes        : 11236
+ Total Traceable Variables  : 1045
+ Total Scalar Nets and Variables : 15338
+ntrace select -o on -n /tbregfile/clock 
+ntrace select -o on -n /tbregfile/readadd1 
+ntrace select -o on -n /tbregfile/readadd2 
+ntrace select -o on -n /tbregfile/writeadd 
+ntrace select -o on -n /tbregfile/writedata 
+ntrace select -o on -n /tbregfile/writeenable 
+ntrace select -o on -n /tbregfile/readdata1 
+ntrace select -o on -n /tbregfile/readdata2 
+ntrace select -o on -n /tbregfile/period 
+ntrace select -o on -n /tbregfile/duty_cycle 
+ntrace select -o on -n /tbregfile/offset 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun 1000 ns 
+isimrun 1000 ns 
+
+ Total Simulation Time: 2.74562 sec
+
+ Current Memory Usage: 338.596 Meg
+
+Mon Apr 04 09:22:31 2011
+

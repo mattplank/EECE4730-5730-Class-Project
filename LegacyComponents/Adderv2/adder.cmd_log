@@ -1,0 +1,22 @@
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+xst -ise "C:/Users/7206toellnm/Desktop/Adder/Adder.ise" -intstyle ise -ifn "C:/Users/7206toellnm/Desktop/Adder/adder.xst" -ofn "C:/Users/7206toellnm/Desktop/Adder/adder.syr"
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf
+sch2verilog -intstyle ise -family xa9500xl   -w "F:/Design Project 2/XilinxCode/Adder/Adder/adder.sch" adder.vf
+xst -ise "F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise" -intstyle ise -ifn "F:/Design Project 2/XilinxCode/Adder/Adder/adder.xst" -ofn "F:/Design Project 2/XilinxCode/Adder/Adder/adder.syr"
+ngdbuild -ise "F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise" -intstyle ise -dd _ngo  -i -p xa9500xl "adder.ngc" adder.ngd
+cpldfit -ise "F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper adder.ngd
+XSLTProcess -ise "F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise" adder_build.xml
+tsim -ise "F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise" -intstyle ise adder adder.nga
+taengine -ise "F:/Design Project 2/XilinxCode/Adder/Adder/Adder.ise" -intstyle ise -f adder -w --format html1 -l F:/Design Project 2/XilinxCode/Adder/Adder/adder_html/tim/timing_report.htm
+sch2verilog -intstyle ise -family xa9500xl   -w "C:/Users/7206toellnm/Desktop/Adder/adder.sch" adder.vf

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">F:/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemUnitDlx.vhdl</arg>&quot; line <arg fmt="%d" index="2">39</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="790" delta="unknown" >&quot;<arg fmt="%s" index="1">F:/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemUnitDlx.vhdl</arg>&quot; line <arg fmt="%d" index="2">42</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="827" delta="unknown" >&quot;<arg fmt="%s" index="1">F:/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemUnitDlx.vhdl</arg>&quot; line <arg fmt="%d" index="2">30</arg>: Signal <arg fmt="%s" index="3">D_OUT</arg> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+</msg>
+
+</messages>
+

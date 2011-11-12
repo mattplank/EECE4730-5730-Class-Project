@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family xa9500xl -refsym adder {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.sch} {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.sym} 
+sch2hdl -intstyle ise -family xa9500xl -flat -suppress -vhdl adder_drc.vhf -w {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.sch} 
+sch2sym -intstyle ise -family xa9500xl -refsym adder {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.sch} {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.sym} 
+sch2hdl -intstyle ise -family xa9500xl -flat -suppress -vhdl adder.vhf -w {C:/Documents and Settings/User/My Documents/Dropbox/DesignProject3/Design Project 2/XilinxCode/Add1/adder.sch} 

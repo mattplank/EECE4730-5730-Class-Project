@@ -1,0 +1,3 @@
+MODULE Adder1
+	SUBMODULE adder
+		INSTANCE XLXI_1

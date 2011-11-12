@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1.03
+//  \   \         Application : ISE
+//  /   /         Filename : AdderTest.ant
+// /___/   /\     Timestamp : Sun Apr 03 23:54:35 2011
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: AdderTest
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module AdderTest;
+    reg [31:0] A = 32'b00000000000000000000000000000000;
+    reg [31:0] B = 32'b00000000000000000000000000000000;
+    wire O0;
+    wire O1;
+    wire [31:0] Z;
+
+
+    adder UUT (
+        .A(A),
+        .B(B),
+        .O0(O0),
+        .O1(O1),
+        .Z(Z));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process
+        #0;
+        ANNOTATE_O0;
+        ANNOTATE_O1;
+        ANNOTATE_Z;
+        forever begin
+            #50;
+            ANNOTATE_O0;
+            ANNOTATE_O1;
+            ANNOTATE_Z;
+            #50;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("C:\\Users\\7206toellnm\\Desktop\\Adder\\AdderTest.ano");
+        #1000 // Final time:  1000 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  100ns
+        #100;
+        A = 32'b00000100010000010000000000000010;
+        B = 32'b00001001000000010000000000000010;
+        // -------------------------------------
+        // -------------  Current Time:  200ns
+        #100;
+        A = 32'b00000100010000010000001000000010;
+    end
+
+    task ANNOTATE_O0;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,O0,%b]", $time, O0);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_O1;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,O1,%b]", $time, O1);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_Z;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,Z,%b]", $time, Z);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

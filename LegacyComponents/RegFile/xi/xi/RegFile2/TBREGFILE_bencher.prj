@@ -1,0 +1,6 @@
+vhdl work "SignExtend.vhd"
+vhdl work "D32Flip.vhf"
+vhdl work "Mux32Bit.vhf"
+vhdl work "MemUnit32Bit.vhf"
+vhdl work "Decoder32Bit.vhf"
+vhdl work "RegFile.vhf"

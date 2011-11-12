@@ -1,0 +1,1 @@
+xst -ise "F:/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/MemoryUnit.ise" -intstyle ise -ifn "F:/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/Thirty2Bit.xst" -ofn "F:/Design Project 2/XilinxCode/MemoryUnit/MemoryUnit/Thirty2Bit.syr"

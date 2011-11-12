@@ -1,0 +1,1354 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version O.40d                             Xilinx Inc.
+                                  Fitter Report
+Design Name: Adder1                              Date:  5- 5-2011,  8:49PM
+Device Used: XA95144XL-15-CS144
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+65 /144 ( 45%) 240 /720  ( 33%) 130/432 ( 30%)   0  /144 (  0%) 99 /117 ( 85%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           5/18        9/54       16/90      13/15
+FB2           9/18       20/54       40/90      13/15
+FB3          11/18       21/54       39/90      11/15
+FB4          10/18       20/54       38/90      12/15
+FB5          10/18       21/54       37/90      12/14
+FB6           3/18        9/54        9/90      10/13
+FB7           5/18        9/54       14/90      14/15
+FB8          12/18       21/54       47/90      14/15
+             -----       -----       -----      -----    
+             65/144     130/432     240/720     99/117
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   64          64    |  I/O              :    93     109
+Output        :   35          35    |  GCK/IO           :     3       3
+Bidirectional :    0           0    |  GTS/IO           :     3       4
+GCK           :    0           0    |  GSR/IO           :     0       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     99          99
+
+** Power Data **
+
+There are 0 macrocells in high performance mode (MCHP).
+There are 65 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'Adder1.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 35 Outputs **
+
+Signal                                                                      Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                                        Pts   Inps          No.  Type    Use     Mode Rate State
+Shifted<10>                                                                 4     4     FB1_2   F1   I/O     O       LOW  FAST 
+Shifted<2>                                                                  4     5     FB1_5   G3   I/O     O       LOW  FAST 
+Shifted<1>                                                                  3     4     FB1_8   H1   I/O     O       LOW  FAST 
+Shifted<9>                                                                  3     3     FB1_11  H4   I/O     O       LOW  FAST 
+Shifted<0>                                                                  2     2     FB1_15  J4   I/O     O       LOW  FAST 
+Shifted<30>                                                                 4     4     FB2_1   C3   I/O     O       LOW  FAST 
+Shifted<5>                                                                  3     3     FB2_4   C1   I/O     O       LOW  FAST 
+Shifted<13>                                                                 3     3     FB2_10  D2   I/O     O       LOW  FAST 
+Shifted<29>                                                                 3     3     FB2_14  E2   I/O     O       LOW  FAST 
+Shifted<6>                                                                  4     4     FB2_17  F2   I/O     O       LOW  FAST 
+Shifted<12>                                                                 3     3     FB3_3   K4   I/O     O       LOW  FAST 
+Shifted<15>                                                                 3     3     FB3_6   L3   I/O     O       LOW  FAST 
+Shifted<16>                                                                 3     3     FB3_9   N3   I/O     O       LOW  FAST 
+Shifted<17>                                                                 3     3     FB3_12  K5   I/O     O       LOW  FAST 
+XLXN_11                                                                     2     3     FB3_17  M6   I/O     O       LOW  FAST 
+Shifted<19>                                                                 3     3     FB4_2   A7   I/O     O       LOW  FAST 
+Shifted<20>                                                                 3     3     FB4_6   A6   I/O     O       LOW  FAST 
+Shifted<21>                                                                 3     3     FB4_11  D6   I/O     O       LOW  FAST 
+Shifted<22>                                                                 3     3     FB4_15  B4   I/O     O       LOW  FAST 
+Shifted<24>                                                                 3     3     FB5_2   N6   I/O     O       LOW  FAST 
+Shifted<25>                                                                 3     3     FB5_7   M10  I/O     O       LOW  FAST 
+Shifted<26>                                                                 3     3     FB5_11  M8   I/O     O       LOW  FAST 
+Shifted<27>                                                                 3     3     FB5_15  K9   I/O     O       LOW  FAST 
+Shifted<3>                                                                  3     3     FB6_2   C11  I/O     O       LOW  FAST 
+Shifted<4>                                                                  3     3     FB6_8   D10  I/O     O       LOW  FAST 
+Shifted<7>                                                                  3     3     FB6_12  A9   I/O     O       LOW  FAST 
+Shifted<28>                                                                 3     3     FB7_2   N12  I/O     O       LOW  FAST 
+Shifted<31>                                                                 3     3     FB7_6   L13  I/O     O       LOW  FAST 
+Shifted<8>                                                                  3     3     FB7_9   K13  I/O     O       LOW  FAST 
+XLXN_12                                                                     3     3     FB7_12  H10  I/O     O       LOW  FAST 
+XLXN_10                                                                     2     3     FB7_15  H12  I/O     O       LOW  FAST 
+Shifted<14>                                                                 4     4     FB8_2   G11  I/O     O       LOW  FAST 
+Shifted<11>                                                                 3     3     FB8_6   F13  I/O     O       LOW  FAST 
+Shifted<18>                                                                 3     3     FB8_11  E12  I/O     O       LOW  FAST 
+Shifted<23>                                                                 3     3     FB8_15  C13  I/O     O       LOW  FAST 
+
+** 30 Buried Nodes **
+
+Signal                                                                      Total Total Loc     Pwr  Reg Init
+Name                                                                        Pts   Inps          Mode State
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2        7     5     FB2_2   LOW  
+XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_                2     2     FB2_13  LOW  
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2      7     5     FB2_16  LOW  
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2      7     5     FB2_18  LOW  
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_          2     2     FB3_11  LOW  
+XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_                                           3     3     FB3_13  LOW  
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2  3     3     FB3_14  LOW  
+XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2                                        3     3     FB3_15  LOW  
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2  7     5     FB3_16  LOW  
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2  7     6     FB3_18  LOW  
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2      3     3     FB4_12  LOW  
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2      3     3     FB4_13  LOW  
+XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2                          3     3     FB4_14  LOW  
+XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2                          3     3     FB4_16  LOW  
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2      7     5     FB4_17  LOW  
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2    7     5     FB4_18  LOW  
+XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_              2     2     FB5_12  LOW  
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2    3     3     FB5_13  LOW  
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2    3     3     FB5_14  LOW  
+XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2                            3     3     FB5_16  LOW  
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2        7     5     FB5_17  LOW  
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2    7     5     FB5_18  LOW  
+XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_            2     2     FB8_1   LOW  
+XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_                2     2     FB8_10  LOW  
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2  3     3     FB8_12  LOW  
+XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2                                        3     3     FB8_13  LOW  
+XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2                            3     3     FB8_14  LOW  
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2    7     5     FB8_16  LOW  
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2        7     5     FB8_17  LOW  
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2        7     5     FB8_18  LOW  
+
+** 64 Inputs **
+
+Signal                                                                      Loc     Pin  Pin     Pin     
+Name                                                                                No.  Type    Use     
+PlusOne<17>                                                                 FB1_1   H3   I/O     I
+Read_Address<7>                                                             FB1_3   G2   I/O     I
+Read_Address<15>                                                            FB1_6   G4   I/O     I
+PlusOne<25>                                                                 FB1_9   H2   I/O     I
+Read_Address<2>                                                             FB1_10  K3   I/O     I
+PlusOne<26>                                                                 FB1_14  J3   I/O     I
+PlusOne<23>                                                                 FB1_16  M1   I/O     I
+Read_Address<12>                                                            FB1_17  K2   GCK/I/O I
+Read_Address<9>                                                             FB2_5   B1   GTS/I/O I
+PlusOne<8>                                                                  FB2_6   C2   GTS/I/O I
+PlusOne<29>                                                                 FB2_8   D4   GTS/I/O I
+Read_Address<22>                                                            FB2_11  E4   I/O     I
+Read_Address<29>                                                            FB2_12  E3   I/O     I
+PlusOne<15>                                                                 FB2_13  E1   I/O     I
+Read_Address<10>                                                            FB2_15  F4   I/O     I
+Read_Address<16>                                                            FB2_16  F3   I/O     I
+PlusOne<13>                                                                 FB3_2   L1   GCK/I/O I
+PlusOne<14>                                                                 FB3_7   L5   I/O     I
+Read_Address<14>                                                            FB3_8   N2   GCK/I/O I
+Read_Address<30>                                                            FB3_11  M4   I/O     I
+PlusOne<18>                                                                 FB3_14  K6   I/O     I
+Read_Address<3>                                                             FB3_15  L6   I/O     I
+Read_Address<23>                                                            FB4_1   C9   I/O     I
+Read_Address<31>                                                            FB4_5   D7   I/O     I
+Read_Address<13>                                                            FB4_8   B6   I/O     I
+PlusOne<1>                                                                  FB4_9   C6   I/O     I
+Read_Address<21>                                                            FB4_10  C5   I/O     I
+PlusOne<3>                                                                  FB4_12  B5   I/O     I
+PlusOne<10>                                                                 FB4_13  A4   I/O     I
+PlusOne<22>                                                                 FB4_17  A3   I/O     I
+PlusOne<27>                                                                 FB5_5   M7   I/O     I
+PlusOne<28>                                                                 FB5_6   N7   I/O     I
+PlusOne<4>                                                                  FB5_8   K7   I/O     I
+PlusOne<19>                                                                 FB5_9   N8   I/O     I
+PlusOne<16>                                                                 FB5_10  N11  I/O     I
+PlusOne<9>                                                                  FB5_12  K8   I/O     I
+PlusOne<12>                                                                 FB5_14  N9   I/O     I
+PlusOne<6>                                                                  FB5_17  M11  I/O     I
+PlusOne<0>                                                                  FB6_4   B11  I/O     I
+Read_Address<24>                                                            FB6_6   A11  I/O     I
+
+Signal                                                                      Loc     Pin  Pin     Pin     
+Name                                                                                No.  Type    Use     
+Read_Address<25>                                                            FB6_9   A10  I/O     I
+Read_Address<8>                                                             FB6_10  B10  I/O     I
+Read_Address<18>                                                            FB6_11  B9   I/O     I
+PlusOne<30>                                                                 FB6_15  A8   I/O     I
+Read_Address<6>                                                             FB6_17  B7   I/O     I
+PlusOne<5>                                                                  FB7_3   L12  I/O     I
+Read_Address<11>                                                            FB7_5   M13  I/O     I
+Read_Address<5>                                                             FB7_7   K10  I/O     I
+PlusOne<11>                                                                 FB7_8   K11  I/O     I
+Read_Address<26>                                                            FB7_11  J11  I/O     I
+Read_Address<4>                                                             FB7_13  J10  I/O     I
+Read_Address<0>                                                             FB7_14  H11  I/O     I
+Read_Address<17>                                                            FB7_16  J12  I/O     I
+PlusOne<21>                                                                 FB7_17  H13  I/O     I
+Read_Address<20>                                                            FB8_3   F11  I/O     I
+PlusOne<2>                                                                  FB8_5   G10  I/O     I
+PlusOne<31>                                                                 FB8_8   F12  I/O     I
+PlusOne<20>                                                                 FB8_9   F10  I/O     I
+PlusOne<24>                                                                 FB8_10  D13  I/O     I
+PlusOne<7>                                                                  FB8_12  E10  I/O     I
+Read_Address<19>                                                            FB8_13  D11  I/O     I
+Read_Address<27>                                                            FB8_14  D12  I/O     I
+Read_Address<1>                                                             FB8_16  B13  I/O     I
+Read_Address<28>                                                            FB8_17  C12  I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB1_1   H3    I/O     I
+Shifted<10>           4       0     0   1     FB1_2   F1    I/O     O
+(unused)              0       0     0   5     FB1_3   G2    I/O     I
+(unused)              0       0     0   5     FB1_4   J1    I/O     
+Shifted<2>            4       0     0   1     FB1_5   G3    I/O     O
+(unused)              0       0     0   5     FB1_6   G4    I/O     I
+(unused)              0       0     0   5     FB1_7         (b)     
+Shifted<1>            3       0     0   2     FB1_8   H1    I/O     O
+(unused)              0       0     0   5     FB1_9   H2    I/O     I
+(unused)              0       0     0   5     FB1_10  K3    I/O     I
+Shifted<9>            3       0     0   2     FB1_11  H4    I/O     O
+(unused)              0       0     0   5     FB1_12  J2    I/O     
+(unused)              0       0     0   5     FB1_13        (b)     
+(unused)              0       0     0   5     FB1_14  J3    I/O     I
+Shifted<0>            2       0     0   3     FB1_15  J4    I/O     O
+(unused)              0       0     0   5     FB1_16  M1    I/O     I
+(unused)              0       0     0   5     FB1_17  K2    GCK/I/O I
+(unused)              0       0     0   5     FB1_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: PlusOne<0>         4: Read_Address<0>    7: XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_ 
+  2: PlusOne<1>         5: Read_Address<1>    8: XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2 
+  3: PlusOne<9>         6: Read_Address<9>    9: XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_ 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<10>          ..X..XXX................................ 4
+Shifted<2>           XX.XX...X............................... 5
+Shifted<1>           XX.XX................................... 4
+Shifted<9>           ..X..X.X................................ 3
+Shifted<0>           X..X.................................... 2
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+Shifted<30>           4       0   /\1   0     FB2_1   C3    I/O     O
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2
+                      7       2<-   0   0     FB2_2   A2    GSR/I/O (b)
+(unused)              0       0   /\2   3     FB2_3         (b)     (b)
+Shifted<5>            3       0     0   2     FB2_4   C1    I/O     O
+(unused)              0       0     0   5     FB2_5   B1    GTS/I/O I
+(unused)              0       0     0   5     FB2_6   C2    GTS/I/O I
+(unused)              0       0     0   5     FB2_7         (b)     
+(unused)              0       0     0   5     FB2_8   D4    GTS/I/O I
+(unused)              0       0     0   5     FB2_9   D3    GTS/I/O 
+Shifted<13>           3       0     0   2     FB2_10  D2    I/O     O
+(unused)              0       0     0   5     FB2_11  E4    I/O     I
+(unused)              0       0     0   5     FB2_12  E3    I/O     I
+XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_
+                      2       0     0   3     FB2_13  E1    I/O     I
+Shifted<29>           3       0     0   2     FB2_14  E2    I/O     O
+(unused)              0       0   \/2   3     FB2_15  F4    I/O     I
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2
+                      7       2<-   0   0     FB2_16  F3    I/O     I
+Shifted<6>            4       0   \/1   0     FB2_17  F2    I/O     O
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2
+                      7       2<-   0   0     FB2_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: PlusOne<13>        8: Read_Address<13>  15: XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2 
+  2: PlusOne<29>        9: Read_Address<29>  16: XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_ 
+  3: PlusOne<30>       10: Read_Address<30>  17: XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2 
+  4: PlusOne<3>        11: Read_Address<3>   18: XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2 
+  5: PlusOne<4>        12: Read_Address<4>   19: XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_ 
+  6: PlusOne<5>        13: Read_Address<5>   20: XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2 
+  7: PlusOne<6>        14: Read_Address<6>  
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<30>          .X......X.........XX.................... 4
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2 
+                     .XX.....XX.........X.................... 5
+Shifted<5>           .....X......X...X....................... 3
+Shifted<13>          X......X......X......................... 3
+XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_ 
+                     ..X......X.............................. 2
+Shifted<29>          .X......X..........X.................... 3
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2 
+                     ...XX.....XX.....X...................... 5
+Shifted<6>           .....X......X..XX....................... 4
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2 
+                     .....XX.....XX..X....................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               21/33
+Number of signals used by logic mapping into function block:  21
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\2   3     FB3_1   M3    I/O     (b)
+(unused)              0       0     0   5     FB3_2   L1    GCK/I/O I
+Shifted<12>           3       0     0   2     FB3_3   K4    I/O     O
+(unused)              0       0     0   5     FB3_4   N4    I/O     
+(unused)              0       0     0   5     FB3_5   L2    I/O     
+Shifted<15>           3       0     0   2     FB3_6   L3    I/O     O
+(unused)              0       0     0   5     FB3_7   L5    I/O     I
+(unused)              0       0     0   5     FB3_8   N2    GCK/I/O I
+Shifted<16>           3       0     0   2     FB3_9   N3    I/O     O
+(unused)              0       0     0   5     FB3_10  N5    I/O     
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_
+                      2       0     0   3     FB3_11  M4    I/O     I
+Shifted<17>           3       0     0   2     FB3_12  K5    I/O     O
+XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_
+                      3       0     0   2     FB3_13        (b)     (b)
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2
+                      3       0     0   2     FB3_14  K6    I/O     I
+XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2
+                      3       0   \/1   1     FB3_15  L6    I/O     I
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2
+                      7       2<-   0   0     FB3_16        (b)     (b)
+XLXN_11               2       0   /\1   2     FB3_17  M6    I/O     O
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2
+                      7       2<-   0   0     FB3_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: PlusOne<0>         8: PlusOne<7>        15: Read_Address<2> 
+  2: PlusOne<12>        9: Read_Address<0>   16: Read_Address<7> 
+  3: PlusOne<15>       10: Read_Address<12>  17: XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2 
+  4: PlusOne<16>       11: Read_Address<15>  18: XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2 
+  5: PlusOne<17>       12: Read_Address<16>  19: XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2 
+  6: PlusOne<1>        13: Read_Address<17>  20: XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2 
+  7: PlusOne<2>        14: Read_Address<1>   21: XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_ 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<12>          .X.......X......X....................... 3
+Shifted<15>          ..X.......X......X...................... 3
+Shifted<16>          ...X.......X........X................... 3
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_ 
+                     ......X.......X......................... 2
+Shifted<17>          ....X.......X......X.................... 3
+XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_ 
+                     ..X.......X......X...................... 3
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2 
+                     ....X.......X......X.................... 3
+XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2 
+                     .......X.......X..X..................... 3
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2 
+                     ..XX......XX.....X...................... 5
+XLXN_11              ..X.......X......X...................... 3
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2 
+                     X....XX.X....XX......................... 6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\2   3     FB4_1   C9    I/O     I
+Shifted<19>           3       0     0   2     FB4_2   A7    I/O     O
+(unused)              0       0     0   5     FB4_3   A5    I/O     
+(unused)              0       0     0   5     FB4_4         (b)     
+(unused)              0       0     0   5     FB4_5   D7    I/O     I
+Shifted<20>           3       0     0   2     FB4_6   A6    I/O     O
+(unused)              0       0     0   5     FB4_7         (b)     
+(unused)              0       0     0   5     FB4_8   B6    I/O     I
+(unused)              0       0     0   5     FB4_9   C6    I/O     I
+(unused)              0       0     0   5     FB4_10  C5    I/O     I
+Shifted<21>           3       0     0   2     FB4_11  D6    I/O     O
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2
+                      3       0     0   2     FB4_12  B5    I/O     I
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2
+                      3       0     0   2     FB4_13  A4    I/O     I
+XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2
+                      3       0     0   2     FB4_14  D5    I/O     (b)
+Shifted<22>           3       0     0   2     FB4_15  B4    I/O     O
+XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2
+                      3       0   \/2   0     FB4_16  C4    I/O     (b)
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2
+                      7       2<-   0   0     FB4_17  A3    I/O     I
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2
+                      7       2<-   0   0     FB4_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: PlusOne<10>        8: Read_Address<10>  15: XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2 
+  2: PlusOne<19>        9: Read_Address<19>  16: XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2 
+  3: PlusOne<20>       10: Read_Address<20>  17: XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2 
+  4: PlusOne<21>       11: Read_Address<21>  18: XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2 
+  5: PlusOne<22>       12: Read_Address<22>  19: XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2 
+  6: PlusOne<3>        13: Read_Address<3>   20: XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2 
+  7: PlusOne<9>        14: Read_Address<9>  
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<19>          .X......X..........X.................... 3
+Shifted<20>          ..X......X......X....................... 3
+Shifted<21>          ...X......X......X...................... 3
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2 
+                     ...X......X......X...................... 3
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2 
+                     ....X......X......X..................... 3
+XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2 
+                     .X......X..........X.................... 3
+Shifted<22>          ....X......X......X..................... 3
+XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2 
+                     .....X......X..X........................ 3
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2 
+                     .XX.....XX.........X.................... 5
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2 
+                     X.....XX.....XX......................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB5  ***********************************
+Number of function block inputs used/remaining:               21/33
+Number of signals used by logic mapping into function block:  21
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0   /\2   3     FB5_1         (b)     (b)
+Shifted<24>           3       0     0   2     FB5_2   N6    I/O     O
+(unused)              0       0     0   5     FB5_3   L8    I/O     
+(unused)              0       0     0   5     FB5_4         (b)     
+(unused)              0       0     0   5     FB5_5   M7    I/O     I
+(unused)              0       0     0   5     FB5_6   N7    I/O     I
+Shifted<25>           3       0     0   2     FB5_7   M10   I/O     O
+(unused)              0       0     0   5     FB5_8   K7    I/O     I
+(unused)              0       0     0   5     FB5_9   N8    I/O     I
+(unused)              0       0     0   5     FB5_10  N11   I/O     I
+Shifted<26>           3       0     0   2     FB5_11  M8    I/O     O
+XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_
+                      2       0     0   3     FB5_12  K8    I/O     I
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2
+                      3       0     0   2     FB5_13  L11   I/O     (b)
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2
+                      3       0     0   2     FB5_14  N9    I/O     I
+Shifted<27>           3       0     0   2     FB5_15  K9    I/O     O
+XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2
+                      3       0   \/2   0     FB5_16        (b)     (b)
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2
+                      7       2<-   0   0     FB5_17  M11   I/O     I
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2
+                      7       2<-   0   0     FB5_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: PlusOne<24>        8: PlusOne<8>        15: Read_Address<7> 
+  2: PlusOne<25>        9: Read_Address<24>  16: Read_Address<8> 
+  3: PlusOne<26>       10: Read_Address<25>  17: XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2 
+  4: PlusOne<27>       11: Read_Address<26>  18: XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2 
+  5: PlusOne<28>       12: Read_Address<27>  19: XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2 
+  6: PlusOne<6>        13: Read_Address<28>  20: XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2 
+  7: PlusOne<7>        14: Read_Address<6>   21: XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<24>          X.......X........X...................... 3
+Shifted<25>          .X.......X.........X.................... 3
+Shifted<26>          ..X.......X.........X................... 3
+XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_ 
+                     .....X.......X.......................... 2
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 
+                     .X.......X.........X.................... 3
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2 
+                     ..X.......X.........X................... 3
+Shifted<27>          ...X.......X......X..................... 3
+XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2 
+                     ...X.......X......X..................... 3
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2 
+                     ...XX......XX.....X..................... 5
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2 
+                     ......XX......XXX....................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB6  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB6_1         (b)     
+Shifted<3>            3       0     0   2     FB6_2   C11   I/O     O
+(unused)              0       0     0   5     FB6_3         (b)     
+(unused)              0       0     0   5     FB6_4   B11   I/O     I
+(unused)              0       0     0   5     FB6_5   A12   I/O     
+(unused)              0       0     0   5     FB6_6   A11   I/O     I
+(unused)              0       0     0   5     FB6_7         (b)     
+Shifted<4>            3       0     0   2     FB6_8   D10   I/O     O
+(unused)              0       0     0   5     FB6_9   A10   I/O     I
+(unused)              0       0     0   5     FB6_10  B10   I/O     I
+(unused)              0       0     0   5     FB6_11  B9    I/O     I
+Shifted<7>            3       0     0   2     FB6_12  A9    I/O     O
+(unused)              0       0     0   5     FB6_13        (b)     
+(unused)              0       0     0   5     FB6_14  D8    I/O     
+(unused)              0       0     0   5     FB6_15  A8    I/O     I
+(unused)              0       0     0   5     FB6_16  D9    I/O     
+(unused)              0       0     0   5     FB6_17  B7    I/O     I
+(unused)              0       0     0   5     FB6_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: PlusOne<3>         4: Read_Address<3>    7: XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2 
+  2: PlusOne<4>         5: Read_Address<4>    8: XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2 
+  3: PlusOne<7>         6: Read_Address<7>    9: XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<3>           X..X....X............................... 3
+Shifted<4>           .X..X.X................................. 3
+Shifted<7>           ..X..X.X................................ 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB7  ***********************************
+Number of function block inputs used/remaining:               9/45
+Number of signals used by logic mapping into function block:  9
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB7_1         (b)     
+Shifted<28>           3       0     0   2     FB7_2   N12   I/O     O
+(unused)              0       0     0   5     FB7_3   L12   I/O     I
+(unused)              0       0     0   5     FB7_4         (b)     
+(unused)              0       0     0   5     FB7_5   M13   I/O     I
+Shifted<31>           3       0     0   2     FB7_6   L13   I/O     O
+(unused)              0       0     0   5     FB7_7   K10   I/O     I
+(unused)              0       0     0   5     FB7_8   K11   I/O     I
+Shifted<8>            3       0     0   2     FB7_9   K13   I/O     O
+(unused)              0       0     0   5     FB7_10  K12   I/O     
+(unused)              0       0     0   5     FB7_11  J11   I/O     I
+XLXN_12               3       0     0   2     FB7_12  H10   I/O     O
+(unused)              0       0     0   5     FB7_13  J10   I/O     I
+(unused)              0       0     0   5     FB7_14  H11   I/O     I
+XLXN_10               2       0     0   3     FB7_15  H12   I/O     O
+(unused)              0       0     0   5     FB7_16  J12   I/O     I
+(unused)              0       0     0   5     FB7_17  H13   I/O     I
+(unused)              0       0     0   5     FB7_18        (b)     
+
+Signals Used by Logic in Function Block
+  1: PlusOne<28>        4: Read_Address<28>   7: XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2 
+  2: PlusOne<31>        5: Read_Address<31>   8: XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2 
+  3: PlusOne<8>         6: Read_Address<8>    9: XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+Shifted<28>          X..X...X................................ 3
+Shifted<31>          .X..X...X............................... 3
+Shifted<8>           ..X..XX................................. 3
+XLXN_12              .X..X...X............................... 3
+XLXN_10              .X..X...X............................... 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB8  ***********************************
+Number of function block inputs used/remaining:               21/33
+Number of signals used by logic mapping into function block:  21
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_
+                      2       0   /\3   0     FB8_1         (b)     (b)
+Shifted<14>           4       0     0   1     FB8_2   G11   I/O     O
+(unused)              0       0     0   5     FB8_3   F11   I/O     I
+(unused)              0       0     0   5     FB8_4   E13   I/O     
+(unused)              0       0     0   5     FB8_5   G10   I/O     I
+Shifted<11>           3       0     0   2     FB8_6   F13   I/O     O
+(unused)              0       0     0   5     FB8_7         (b)     
+(unused)              0       0     0   5     FB8_8   F12   I/O     I
+(unused)              0       0     0   5     FB8_9   F10   I/O     I
+XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_
+                      2       0     0   3     FB8_10  D13   I/O     I
+Shifted<18>           3       0     0   2     FB8_11  E12   I/O     O
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2
+                      3       0     0   2     FB8_12  E10   I/O     I
+XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2
+                      3       0     0   2     FB8_13  D11   I/O     I
+XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2
+                      3       0   \/1   1     FB8_14  D12   I/O     I
+Shifted<23>           3       1<- \/3   0     FB8_15  C13   I/O     O
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2
+                      7       3<- \/1   0     FB8_16  B13   I/O     I
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2
+                      7       2<-   0   0     FB8_17  C12   I/O     I
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2
+                      7       3<- /\1   0     FB8_18        (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: PlusOne<10>        8: PlusOne<24>       15: Read_Address<23> 
+  2: PlusOne<11>        9: Read_Address<10>  16: Read_Address<24> 
+  3: PlusOne<12>       10: Read_Address<11>  17: XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_ 
+  4: PlusOne<13>       11: Read_Address<12>  18: XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2 
+  5: PlusOne<14>       12: Read_Address<13>  19: XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2 
+  6: PlusOne<18>       13: Read_Address<14>  20: XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2 
+  7: PlusOne<23>       14: Read_Address<18>  21: XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_ 
+                     X.......X............................... 2
+Shifted<14>          ...X.......X....XX...................... 4
+Shifted<11>          .X.......X........X..................... 3
+XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_ 
+                     ....X.......X........................... 2
+Shifted<18>          .....X.......X......X................... 3
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2 
+                     .....X.......X......X................... 3
+XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2 
+                     ......X.......X....X.................... 3
+XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2 
+                     .X.......X........X..................... 3
+Shifted<23>          ......X.......X....X.................... 3
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2 
+                     ......XX......XX...X.................... 5
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2 
+                     .XX......XX.......X..................... 5
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2 
+                     ...XX......XX....X...................... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+
+
+
+
+
+
+
+
+
+
+Shifted(0) <= PlusOne(0)
+	 XOR 
+Shifted(0) <= Read_Address(0);
+
+
+Shifted(1) <= (Read_Address(0) AND PlusOne(0))
+	 XOR 
+Shifted(1) <= ((Read_Address(1) AND NOT PlusOne(1))
+	OR (NOT Read_Address(1) AND PlusOne(1)));
+
+
+Shifted(2) <= XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_
+	 XOR 
+Shifted(2) <= ((Read_Address(1) AND PlusOne(1))
+	OR (Read_Address(0) AND PlusOne(0) AND Read_Address(1))
+	OR (Read_Address(0) AND PlusOne(0) AND PlusOne(1)));
+
+
+Shifted(3) <= NOT (PlusOne(3)
+	 XOR 
+Shifted(3) <= NOT (((Read_Address(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (NOT Read_Address(3) AND 
+	NOT XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2)));
+
+
+Shifted(4) <= NOT (PlusOne(4)
+	 XOR 
+Shifted(4) <= NOT (((Read_Address(4) AND 
+	XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2)
+	OR (NOT Read_Address(4) AND 
+	NOT XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2)));
+
+
+Shifted(5) <= NOT (PlusOne(5)
+	 XOR 
+Shifted(5) <= NOT (((Read_Address(5) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2)
+	OR (NOT Read_Address(5) AND 
+	NOT XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2)));
+
+
+Shifted(6) <= XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_
+	 XOR 
+Shifted(6) <= ((Read_Address(5) AND PlusOne(5))
+	OR (Read_Address(5) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2)
+	OR (PlusOne(5) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2));
+
+
+Shifted(7) <= NOT (PlusOne(7)
+	 XOR 
+Shifted(7) <= NOT (((Read_Address(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2)
+	OR (NOT Read_Address(7) AND 
+	NOT XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2)));
+
+
+Shifted(8) <= NOT (PlusOne(8)
+	 XOR 
+Shifted(8) <= NOT (((Read_Address(8) AND 
+	XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2)
+	OR (NOT Read_Address(8) AND 
+	NOT XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2)));
+
+
+Shifted(9) <= NOT (PlusOne(9)
+	 XOR 
+Shifted(9) <= NOT (((Read_Address(9) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2)
+	OR (NOT Read_Address(9) AND 
+	NOT XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2)));
+
+
+Shifted(10) <= XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_
+	 XOR 
+Shifted(10) <= ((Read_Address(9) AND PlusOne(9))
+	OR (Read_Address(9) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2)
+	OR (PlusOne(9) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2));
+
+
+Shifted(11) <= NOT (PlusOne(11)
+	 XOR 
+Shifted(11) <= NOT (((Read_Address(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2)
+	OR (NOT Read_Address(11) AND 
+	NOT XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2)));
+
+
+Shifted(12) <= NOT (PlusOne(12)
+	 XOR 
+Shifted(12) <= NOT (((Read_Address(12) AND 
+	XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2)
+	OR (NOT Read_Address(12) AND 
+	NOT XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2)));
+
+
+Shifted(13) <= NOT (PlusOne(13)
+	 XOR 
+Shifted(13) <= NOT (((Read_Address(13) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2)
+	OR (NOT Read_Address(13) AND 
+	NOT XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2)));
+
+
+Shifted(14) <= XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_
+	 XOR 
+Shifted(14) <= ((Read_Address(13) AND PlusOne(13))
+	OR (Read_Address(13) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2)
+	OR (PlusOne(13) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2));
+
+
+Shifted(15) <= NOT (PlusOne(15)
+	 XOR 
+Shifted(15) <= NOT (((Read_Address(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)
+	OR (NOT Read_Address(15) AND 
+	NOT XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)));
+
+
+Shifted(16) <= NOT (PlusOne(16)
+	 XOR 
+Shifted(16) <= NOT (((Read_Address(16) AND 
+	XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_)
+	OR (NOT Read_Address(16) AND 
+	NOT XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_)));
+
+
+Shifted(17) <= NOT (PlusOne(17)
+	 XOR 
+Shifted(17) <= NOT (((Read_Address(17) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2)
+	OR (NOT Read_Address(17) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2)));
+
+
+Shifted(18) <= NOT (PlusOne(18)
+	 XOR 
+Shifted(18) <= NOT (((Read_Address(18) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (NOT Read_Address(18) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)));
+
+
+Shifted(19) <= NOT (PlusOne(19)
+	 XOR 
+Shifted(19) <= NOT (((Read_Address(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (NOT Read_Address(19) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2)));
+
+
+Shifted(20) <= NOT (PlusOne(20)
+	 XOR 
+Shifted(20) <= NOT (((Read_Address(20) AND 
+	XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2)
+	OR (NOT Read_Address(20) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2)));
+
+
+Shifted(21) <= NOT (PlusOne(21)
+	 XOR 
+Shifted(21) <= NOT (((Read_Address(21) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2)
+	OR (NOT Read_Address(21) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2)));
+
+
+Shifted(22) <= NOT (PlusOne(22)
+	 XOR 
+Shifted(22) <= NOT (((Read_Address(22) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)
+	OR (NOT Read_Address(22) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)));
+
+
+Shifted(23) <= NOT (PlusOne(23)
+	 XOR 
+Shifted(23) <= NOT (((NOT Read_Address(23) AND 
+	NOT XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2)
+	OR (Read_Address(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2)));
+
+
+Shifted(24) <= NOT (PlusOne(24)
+	 XOR 
+Shifted(24) <= NOT (((Read_Address(24) AND 
+	XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2)
+	OR (NOT Read_Address(24) AND 
+	NOT XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2)));
+
+
+Shifted(25) <= NOT (PlusOne(25)
+	 XOR 
+Shifted(25) <= NOT (((Read_Address(25) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2)
+	OR (NOT Read_Address(25) AND 
+	NOT XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2)));
+
+
+Shifted(26) <= NOT (PlusOne(26)
+	 XOR 
+Shifted(26) <= NOT (((Read_Address(26) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)
+	OR (NOT Read_Address(26) AND 
+	NOT XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)));
+
+
+Shifted(27) <= NOT (PlusOne(27)
+	 XOR 
+Shifted(27) <= NOT (((Read_Address(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2)
+	OR (NOT Read_Address(27) AND 
+	NOT XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2)));
+
+
+Shifted(28) <= NOT (PlusOne(28)
+	 XOR 
+Shifted(28) <= NOT (((Read_Address(28) AND 
+	XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2)
+	OR (NOT Read_Address(28) AND 
+	NOT XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2)));
+
+
+Shifted(29) <= NOT (PlusOne(29)
+	 XOR 
+Shifted(29) <= NOT (((Read_Address(29) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2)
+	OR (NOT Read_Address(29) AND 
+	NOT XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2)));
+
+
+Shifted(30) <= XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_
+	 XOR 
+Shifted(30) <= ((Read_Address(29) AND PlusOne(29))
+	OR (Read_Address(29) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2)
+	OR (PlusOne(29) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2));
+
+
+Shifted(31) <= NOT (PlusOne(31)
+	 XOR 
+Shifted(31) <= NOT (((Read_Address(31) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2)
+	OR (NOT Read_Address(31) AND 
+	NOT XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2)));
+
+
+XLXI_1/XLXI_1/C7/XLXI_1/XLXI_1/C7_D2 <= ((PlusOne(7) AND Read_Address(7))
+	OR (PlusOne(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2)
+	OR (Read_Address(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2));
+
+
+XLXI_1/XLXI_1/S15_8/C3/XLXI_1/XLXI_1/S15_8/C3_D2 <= ((PlusOne(11) AND Read_Address(11))
+	OR (PlusOne(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_ <= Read_Address(14)
+	 XOR 
+XLXI_1/XLXI_1/S15_8/S7_4/X2/XLXI_1/XLXI_1/S15_8/S7_4/X2_D19_ <= PlusOne(14);
+
+
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2 <= ((Read_Address(13) AND PlusOne(13) AND PlusOne(14))
+	OR (Read_Address(13) AND PlusOne(14) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2)
+	OR (PlusOne(13) AND PlusOne(14) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2)
+	OR (Read_Address(14) AND PlusOne(14))
+	OR (Read_Address(13) AND PlusOne(13) AND 
+	Read_Address(14))
+	OR (Read_Address(13) AND Read_Address(14) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2)
+	OR (PlusOne(13) AND Read_Address(14) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2));
+
+
+XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_28_D2 <= ((Read_Address(12) AND PlusOne(11) AND 
+	Read_Address(11))
+	OR (PlusOne(12) AND PlusOne(11) AND Read_Address(11))
+	OR (Read_Address(12) AND PlusOne(12))
+	OR (Read_Address(12) AND PlusOne(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(12) AND Read_Address(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(12) AND PlusOne(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(12) AND Read_Address(11) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_ <= Read_Address(10)
+	 XOR 
+XLXI_1/XLXI_1/S15_8/XLXI_1/X2/XLXI_1/XLXI_1/S15_8/XLXI_1/X2_D21_ <= PlusOne(10);
+
+
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_27_D2 <= ((Read_Address(9) AND PlusOne(10) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2)
+	OR (PlusOne(9) AND PlusOne(10) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2)
+	OR (Read_Address(10) AND PlusOne(10))
+	OR (Read_Address(9) AND PlusOne(9) AND Read_Address(10))
+	OR (Read_Address(9) AND PlusOne(9) AND PlusOne(10))
+	OR (Read_Address(9) AND Read_Address(10) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2)
+	OR (PlusOne(9) AND Read_Address(10) AND 
+	XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2));
+
+
+XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_1/S15_8/XLXI_1/XLXN_28_D2 <= ((Read_Address(8) AND PlusOne(7) AND Read_Address(7))
+	OR (PlusOne(8) AND PlusOne(7) AND Read_Address(7))
+	OR (Read_Address(8) AND PlusOne(8))
+	OR (Read_Address(8) AND PlusOne(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2)
+	OR (Read_Address(8) AND Read_Address(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2)
+	OR (PlusOne(8) AND PlusOne(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2)
+	OR (PlusOne(8) AND Read_Address(7) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2));
+
+
+XLXI_1/XLXI_1/XLXI_1/C3/XLXI_1/XLXI_1/XLXI_1/C3_D2 <= ((PlusOne(3) AND Read_Address(3))
+	OR (PlusOne(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_ <= Read_Address(6)
+	 XOR 
+XLXI_1/XLXI_1/XLXI_1/S7_4/X2/XLXI_1/XLXI_1/XLXI_1/S7_4/X2_D23_ <= PlusOne(6);
+
+
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_27_D2 <= ((PlusOne(5) AND PlusOne(6) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2)
+	OR (Read_Address(5) AND PlusOne(6) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2)
+	OR (Read_Address(6) AND PlusOne(6))
+	OR (Read_Address(5) AND PlusOne(5) AND Read_Address(6))
+	OR (Read_Address(5) AND PlusOne(5) AND PlusOne(6))
+	OR (Read_Address(5) AND Read_Address(6) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2)
+	OR (PlusOne(5) AND Read_Address(6) AND 
+	XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2));
+
+
+XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_1/XLXI_1/S7_4/XLXN_28_D2 <= ((Read_Address(4) AND PlusOne(3) AND Read_Address(3))
+	OR (PlusOne(4) AND PlusOne(3) AND Read_Address(3))
+	OR (Read_Address(4) AND PlusOne(4))
+	OR (Read_Address(4) AND PlusOne(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(4) AND Read_Address(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(4) AND PlusOne(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(4) AND Read_Address(3) AND 
+	XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_ <= Read_Address(2)
+	 XOR 
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2/XLXI_1/XLXI_1/XLXI_1/XLXI_1/X2_D25_ <= PlusOne(2);
+
+
+XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_1/XLXI_1/XLXI_1/XLXN_27_D2 <= ((Read_Address(0) AND PlusOne(0) AND Read_Address(1) AND 
+	PlusOne(2))
+	OR (Read_Address(0) AND PlusOne(0) AND PlusOne(1) AND 
+	PlusOne(2))
+	OR (Read_Address(2) AND PlusOne(2))
+	OR (Read_Address(1) AND PlusOne(1) AND Read_Address(2))
+	OR (Read_Address(1) AND PlusOne(1) AND PlusOne(2))
+	OR (Read_Address(0) AND PlusOne(0) AND Read_Address(1) AND 
+	Read_Address(2))
+	OR (Read_Address(0) AND PlusOne(0) AND PlusOne(1) AND 
+	Read_Address(2)));
+
+
+XLXI_1/XLXI_2/C7/XLXI_1/XLXI_2/C7_D2 <= ((PlusOne(23) AND Read_Address(23))
+	OR (PlusOne(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2)
+	OR (Read_Address(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/S15_8/C3/XLXI_1/XLXI_2/S15_8/C3_D2 <= ((PlusOne(27) AND Read_Address(27))
+	OR (PlusOne(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_ <= Read_Address(30)
+	 XOR 
+XLXI_1/XLXI_2/S15_8/S7_4/X2/XLXI_1/XLXI_2/S15_8/S7_4/X2_D27_ <= PlusOne(30);
+
+
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2 <= ((Read_Address(29) AND PlusOne(30) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2)
+	OR (PlusOne(29) AND PlusOne(30) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2)
+	OR (Read_Address(30) AND PlusOne(30))
+	OR (Read_Address(29) AND PlusOne(29) AND 
+	Read_Address(30))
+	OR (Read_Address(29) AND PlusOne(29) AND PlusOne(30))
+	OR (Read_Address(29) AND Read_Address(30) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2)
+	OR (PlusOne(29) AND Read_Address(30) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2));
+
+
+XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_28_D2 <= ((Read_Address(28) AND PlusOne(27) AND 
+	Read_Address(27))
+	OR (PlusOne(28) AND PlusOne(27) AND Read_Address(27))
+	OR (Read_Address(28) AND PlusOne(28))
+	OR (Read_Address(28) AND PlusOne(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(28) AND Read_Address(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(28) AND PlusOne(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(28) AND Read_Address(27) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_27_D2 <= ((Read_Address(26) AND PlusOne(26))
+	OR (Read_Address(26) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2)
+	OR (PlusOne(26) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2));
+
+
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2 <= ((Read_Address(24) AND PlusOne(23) AND 
+	Read_Address(23))
+	OR (PlusOne(24) AND PlusOne(23) AND Read_Address(23))
+	OR (PlusOne(24) AND Read_Address(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2)
+	OR (Read_Address(24) AND PlusOne(24))
+	OR (Read_Address(24) AND PlusOne(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2)
+	OR (Read_Address(24) AND Read_Address(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2)
+	OR (PlusOne(24) AND PlusOne(23) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_34_D2 <= ((Read_Address(25) AND PlusOne(25))
+	OR (Read_Address(25) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2)
+	OR (PlusOne(25) AND 
+	XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28/XLXI_1/XLXI_2/S15_8/XLXI_1/XLXN_28_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/C3/XLXI_1/XLXI_2/XLXI_1/C3_D2 <= ((PlusOne(19) AND Read_Address(19))
+	OR (PlusOne(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_27_D2 <= ((Read_Address(22) AND PlusOne(22))
+	OR (Read_Address(22) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2)
+	OR (PlusOne(22) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2 <= ((Read_Address(20) AND PlusOne(19) AND 
+	Read_Address(19))
+	OR (PlusOne(20) AND PlusOne(19) AND Read_Address(19))
+	OR (Read_Address(20) AND PlusOne(20))
+	OR (Read_Address(20) AND PlusOne(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (Read_Address(20) AND Read_Address(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(20) AND PlusOne(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2)
+	OR (PlusOne(20) AND Read_Address(19) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_34_D2 <= ((Read_Address(21) AND PlusOne(21))
+	OR (Read_Address(21) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2)
+	OR (PlusOne(21) AND 
+	XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28/XLXI_1/XLXI_2/XLXI_1/S7_4/XLXN_28_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_27_D2 <= ((Read_Address(18) AND PlusOne(18))
+	OR (Read_Address(18) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2)
+	OR (PlusOne(18) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2 <= ((Read_Address(16) AND PlusOne(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)
+	OR (Read_Address(16) AND PlusOne(16))
+	OR (Read_Address(16) AND Read_Address(15) AND 
+	PlusOne(15))
+	OR (Read_Address(16) AND Read_Address(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)
+	OR (PlusOne(16) AND Read_Address(15) AND PlusOne(15))
+	OR (PlusOne(16) AND Read_Address(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)
+	OR (PlusOne(16) AND PlusOne(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2));
+
+
+XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_34_D2 <= ((Read_Address(17) AND PlusOne(17))
+	OR (Read_Address(17) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2)
+	OR (PlusOne(17) AND 
+	XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28/XLXI_1/XLXI_2/XLXI_1/XLXI_1/XLXN_28_D2));
+
+
+XLXI_1/XLXN_4/XLXI_1/XLXN_4_D236_ <= ((Read_Address(15) AND PlusOne(15))
+	OR (Read_Address(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)
+	OR (PlusOne(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2));
+
+
+XLXN_10 <= ((Read_Address(31) AND PlusOne(31) AND 
+	NOT XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2)
+	OR (NOT Read_Address(31) AND NOT PlusOne(31) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2));
+
+
+XLXN_11 <= ((Read_Address(15) AND PlusOne(15) AND 
+	NOT XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2)
+	OR (NOT Read_Address(15) AND NOT PlusOne(15) AND 
+	XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_1/S15_8/S7_4/XLXN_27_D2));
+
+
+XLXN_12 <= ((Read_Address(31) AND PlusOne(31))
+	OR (Read_Address(31) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2)
+	OR (PlusOne(31) AND 
+	XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27/XLXI_1/XLXI_2/S15_8/S7_4/XLXN_27_D2));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XA95144XL-15-CS144
+
+
+                     _____________________________________________________
+                    /                                                     \
+                   1|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   2|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   3|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   4|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                   5|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   6|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   7|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   8|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                   9|  o   o   o   o                       o   o   o   o  |
+                    |                                                     |
+                  10|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  11|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  12|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    |                                                     |
+                  13|  o   o   o   o   o   o   o   o   o   o   o   o   o  |
+                    \_____________________________________________________/
+                       A   B   C   D   E   F   G   H   J   K   L   M   N   
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+ A1 VCC                             G10 PlusOne<2>                    
+ A2 KPR                             G11 Shifted<14>                   
+ A3 PlusOne<22>                     G12 GND                           
+ A4 PlusOne<10>                     G13 GND                           
+ A5 KPR                              H1 Shifted<1>                    
+ A6 Shifted<20>                      H2 PlusOne<25>                   
+ A7 Shifted<19>                      H3 PlusOne<17>                   
+ A8 PlusOne<30>                      H4 Shifted<9>                    
+ A9 Shifted<7>                      H10 XLXN_12                       
+A10 Read_Address<25>                H11 Read_Address<0>               
+A11 Read_Address<24>                H12 XLXN_10                       
+A12 KPR                             H13 PlusOne<21>                   
+A13 VCC                              J1 KPR                           
+ B1 Read_Address<9>                  J2 KPR                           
+ B2 GND                              J3 PlusOne<26>                   
+ B3 VCC                              J4 Shifted<0>                    
+ B4 Shifted<22>                     J10 Read_Address<4>               
+ B5 PlusOne<3>                      J11 Read_Address<26>              
+ B6 Read_Address<13>                J12 Read_Address<17>              
+ B7 Read_Address<6>                 J13 VCC                           
+ B8 GND                              K1 GND                           
+ B9 Read_Address<18>                 K2 Read_Address<12>              
+B10 Read_Address<8>                  K3 Read_Address<2>               
+B11 PlusOne<0>                       K4 Shifted<12>                   
+B12 GND                              K5 Shifted<17>                   
+B13 Read_Address<1>                  K6 PlusOne<18>                   
+ C1 Shifted<5>                       K7 PlusOne<4>                    
+ C2 PlusOne<8>                       K8 PlusOne<9>                    
+ C3 Shifted<30>                      K9 Shifted<27>                   
+ C4 KPR                             K10 Read_Address<5>               
+ C5 Read_Address<21>                K11 PlusOne<11>                   
+ C6 PlusOne<1>                      K12 KPR                           
+ C7 VCC                             K13 Shifted<8>                    
+ C8 TDO                              L1 PlusOne<13>                   
+ C9 Read_Address<23>                 L2 KPR                           
+C10 GND                              L3 Shifted<15>                   
+C11 Shifted<3>                       L4 VCC                           
+C12 Read_Address<28>                 L5 PlusOne<14>                   
+C13 Shifted<23>                      L6 Read_Address<3>               
+ D1 VCC                              L7 VCC                           
+ D2 Shifted<13>                      L8 KPR                           
+ D3 KPR                              L9 TDI                           
+ D4 PlusOne<29>                     L10 TCK                           
+ D5 KPR                             L11 KPR                           
+ D6 Shifted<21>                     L12 PlusOne<5>                    
+ D7 Read_Address<31>                L13 Shifted<31>                   
+ D8 KPR                              M1 PlusOne<23>                   
+ D9 KPR                              M2 GND                           
+D10 Shifted<4>                       M3 KPR                           
+D11 Read_Address<19>                 M4 Read_Address<30>              
+D12 Read_Address<27>                 M5 GND                           
+D13 PlusOne<24>                      M6 XLXN_11                       
+ E1 PlusOne<15>                      M7 PlusOne<27>                   
+ E2 Shifted<29>                      M8 Shifted<26>                   
+ E3 Read_Address<29>                 M9 GND                           
+ E4 Read_Address<22>                M10 Shifted<25>                   
+E10 PlusOne<7>                      M11 PlusOne<6>                    
+E11 GND                             M12 GND                           
+E12 Shifted<18>                     M13 Read_Address<11>              
+E13 KPR                              N1 VCC                           
+ F1 Shifted<10>                      N2 Read_Address<14>              
+ F2 Shifted<6>                       N3 Shifted<16>                   
+ F3 Read_Address<16>                 N4 KPR                           
+ F4 Read_Address<10>                 N5 KPR                           
+F10 PlusOne<20>                      N6 Shifted<24>                   
+F11 Read_Address<20>                 N7 PlusOne<28>                   
+F12 PlusOne<31>                      N8 PlusOne<19>                   
+F13 Shifted<11>                      N9 PlusOne<12>                   
+ G1 GND                             N10 TMS                           
+ G2 Read_Address<7>                 N11 PlusOne<16>                   
+ G3 Shifted<2>                      N12 Shifted<28>                   
+ G4 Read_Address<15>                N13 VCC                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

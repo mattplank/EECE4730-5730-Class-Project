@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">WriteAdd&lt;0&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">WriteAdd&lt;1&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">WriteAdd&lt;2&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">WriteAdd&lt;3&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">WriteAdd&lt;4&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">WriteEnable</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;0&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;10&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;11&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;12&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;13&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;14&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;15&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;16&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;17&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;18&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;19&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;1&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;20&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;21&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;22&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;23&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;24&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;25&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;26&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;27&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;28&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;29&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;2&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;30&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;31&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;3&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;4&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;5&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;6&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;7&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;8&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="warning" file="Cpld" num="1007" delta="unknown" >Removing unused input(s) &apos;<arg fmt="%s" index="1">Write_Data&lt;9&gt;</arg>&apos;.  The input(s) are unused after optimization. Please verify functionality via simulation.
+</msg>
+
+<msg type="error" file="Cpld" num="1063" delta="unknown" >Design requires at least <arg fmt="%s" index="1">1152</arg> macrocells, exceeds device limit <arg fmt="%s" index="2">384</arg>.
+</msg>
+
+<msg type="error" file="Cpld" num="1062" delta="unknown" >Design contains <arg fmt="%s" index="1">2113</arg> unique product terms, exceeds device limit <arg fmt="%s" index="2">1344</arg>.
+</msg>
+
+<msg type="error" file="Cpld" num="1064" delta="unknown" >Design rules checking error. Fitting process stopped.
+</msg>
+
+<msg type="error" file="Cpld" num="868" delta="unknown" >Cannot fit the design into any of the specified devices with the selected implementation options.
+</msg>
+
+</messages>
+

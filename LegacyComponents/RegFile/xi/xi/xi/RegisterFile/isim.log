@@ -1,0 +1,53 @@
+Command line:
+   ./TBREG_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  10538
+
+Mon Apr 04 03:31:56 2011
+
+Total Line Count : 7258
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 284.43 Meg
+
+ Total Signals          : 11639
+ Total Nets             : 4330
+ Total Signal Drivers   : 2249
+ Total Blocks           : 3344
+ Total Primitive Blocks : 2211
+ Total Processes        : 2245
+ Total Traceable Variables  : 1045
+ Total Scalar Nets and Variables : 6379
+ntrace select -o on -n /tbreg/clock 
+ntrace select -o on -n /tbreg/readadd1 
+ntrace select -o on -n /tbreg/readadd2 
+ntrace select -o on -n /tbreg/writeadd 
+ntrace select -o on -n /tbreg/writeenable 
+ntrace select -o on -n /tbreg/write_data 
+ntrace select -o on -n /tbreg/read1out 
+ntrace select -o on -n /tbreg/read2out 
+ntrace select -o on -n /tbreg/period 
+ntrace select -o on -n /tbreg/duty_cycle 
+ntrace select -o on -n /tbreg/offset 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+isimrun 2000 ns 
+
+ Total Simulation Time: 0.483603 sec
+
+ Current Memory Usage: 297.079 Meg
+
+Mon Apr 04 03:33:35 2011
+

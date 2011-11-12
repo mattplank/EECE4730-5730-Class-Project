@@ -1,0 +1,6 @@
+vhdl work "Mux216Bit.vhd"
+vhdl work "Dff32b.vhf"
+vhdl work "Memunit32x32b.vhf"
+vhdl work "Decoder32b.vhf"
+vhdl work "RegFileSch.vhf"
+vhdl work "TBREGFILE.vhw"
