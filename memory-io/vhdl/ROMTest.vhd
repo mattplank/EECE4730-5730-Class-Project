@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   20:41:44 11/08/2011
+-- Design Name:   
+-- Module Name:   C:/Users/Paul/ROM/ROMTest.vhd
+-- Project Name:  ROM
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: ROM
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY ROMTest IS
+END ROMTest;
+ 
+ARCHITECTURE behavior OF ROMTest IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT ROM
+    PORT(
+         clock : IN  std_logic;
+         addressIn : IN  std_logic_vector(10 downto 0);
+         instrucOut : OUT  std_logic_vector(15 downto 0)
+        );
+    END COMPONENT;
+    
+
+   --Inputs
+   signal clock : std_logic := '0';
+   signal addressIn : std_logic_vector(10 downto 0) := (others => '0');
+
+ 	--Outputs
+   signal instrucOut : std_logic_vector(15 downto 0);
+
+   -- Clock period definitions
+   constant clock_period : time := 10 ns;
+ 
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: ROM PORT MAP (
+          clock => clock,
+          addressIn => addressIn,
+          instrucOut => instrucOut
+        );
+
+   -- Clock process definitions
+   clock_process :process
+   begin
+		clock <= '0';
+		wait for clock_period/2;
+		clock <= '1';
+		wait for clock_period/2;
+   end process;
+ 
+
+   -- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
+
+      wait for clock_period*10;
+
+      -- insert stimulus here 
+
+		addressIn <= "00000000000";
+		wait for 100 ns;
+		addressIn <= "00000000001";
+		wait for 100 ns;
+		addressIn <= "00000000010";
+		wait for 100 ns;
+		addressIn <= "00000000011";
+		wait for 100 ns;
+		addressIn <= "00000000100";
+      wait;
+   end process;
+
+END;
